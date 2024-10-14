@@ -44,8 +44,14 @@ TagManager:
   - name: Decorations
     uniqueID: 1048779605
     locked: 0
+  - name: NPCsBack
+    uniqueID: 955253833
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: NPCsFront
+    uniqueID: 47418481
     locked: 0
   m_RenderingLayers:
   - Default
