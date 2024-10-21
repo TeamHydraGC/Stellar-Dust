@@ -373,6 +373,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3249488141798125192, guid: 63499c58e71a63d4eb7ac5699e1ac8f3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1287059898}
+    - targetCorrespondingSourceObject: {fileID: 3249488141798125192, guid: 63499c58e71a63d4eb7ac5699e1ac8f3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1393798170}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 833732286570491802, guid: 63499c58e71a63d4eb7ac5699e1ac8f3, type: 3}
       insertIndex: -1
@@ -740,12 +743,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1393798167}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 5, z: -36.642273}
+  m_LocalScale: {x: 3.6642272, y: 3.6642272, z: 3.6642272}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1576192672}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1393798171
 MonoBehaviour:
@@ -1090,7 +1093,6 @@ SpriteRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1393798170}
   - {fileID: 1673851286}
   - {fileID: 772397872}
   - {fileID: 1155286315}
