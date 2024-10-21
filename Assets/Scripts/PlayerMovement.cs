@@ -1,33 +1,37 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public float moveSpeed = 5f;
+    public float jumpForce = 7f;
+    private bool isGrounded = true;
     private Rigidbody2D rb;
-    [SerializeField] private int moveSpeed;
 
-    public bool useTransformMovement;
-    // Start is called before the first frame update
     void Start()
     {
-        rb = gameObject.GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        float x = Input.GetAxis("Horizontal");
+        // Horizontal Movement
+        float moveX = Input.GetAxis("Horizontal") * moveSpeed;
+        rb.linearVelocity = new Vector2(moveX, rb.linearVelocity.y);
 
-        if(useTransformMovement == false)
+        // Jumping
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-            rb.linearVelocity = new Vector3(x, rb.linearVelocity.y, 0);
+            rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+            isGrounded = false;
         }
-        else
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Checking if the player is grounded
+        if (collision.contacts[0].normal.y > 0.5f)
         {
-            transform.position = new Vector3(transform.position.x + x * Time.deltaTime * moveSpeed, 
-            transform.position.y, transform.position.z);
+            isGrounded = true;
         }
-       
     }
 }
