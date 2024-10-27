@@ -2437,7 +2437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   title: Boss Room
-  author: Alex MacGregor
+  author: Alex MacGregor - 200609782
 --- !u!1001 &7565481246373082199
 PrefabInstance:
   m_ObjectHideFlags: 0
