@@ -2261,9 +2261,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 184614290504789537, guid: 500994b546f968b4d8a72455efdb8ae0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 184614290504789537, guid: 500994b546f968b4d8a72455efdb8ae0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6.56
+      objectReference: {fileID: 0}
     - target: {fileID: 2604498045751001313, guid: 500994b546f968b4d8a72455efdb8ae0, type: 3}
       propertyPath: m_Name
       value: UnderGround - Ian
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204648423720868587, guid: 500994b546f968b4d8a72455efdb8ae0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 6204648423720868587, guid: 500994b546f968b4d8a72455efdb8ae0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -10.27
       objectReference: {fileID: 0}
     - target: {fileID: 7014394968380886211, guid: 500994b546f968b4d8a72455efdb8ae0, type: 3}
       propertyPath: m_LocalPosition.x
