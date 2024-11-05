@@ -1,0 +1,8 @@
+﻿title: VinnyYarnScript
+tags:
+---
+You: Hey, Bartender!
+    Bartender: Hey buddy, what can i do ya for.
+        -> How about a beer.
+        Bartender: Sounds good, one beer comin right up.
+===
