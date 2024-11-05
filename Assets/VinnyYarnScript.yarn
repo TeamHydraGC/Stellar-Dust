@@ -1,8 +1,51 @@
 ﻿title: VinnyYarnScript
 tags:
+position: -310,-338
 ---
 You: Hey, Bartender!
-    Bartender: Hey buddy, what can i do ya for.
-        -> How about a beer.
-        Bartender: Sounds good, one beer comin right up.
+    Bartender: Hey buddy Welcome to the Stellar Saloon, what can i do ya for.
+        -> Well I've had a long journey I could use a drink.
+        Bartender: Sounds good, what would you like?
+            -> How about a whiskey.
+                Bartender: One whiskey comin right up!
+                    <<jump Continue>>
+            -> I'll take a beer.
+                Bartender: One beer comin right up!
+                    <<jump Continue>>
+            -> Maybe I'll have a Cider.
+                Bartender: One Cider comin right up!
+                    <<jump Continue>>
+===
+
+
+
+title: Continue
+position: -309,-108
+---
+Bartender: So what brings ya to this saloon all the way out in the middle of knowhere, you must be searchin for something.
+    -> What makes you say im lookin for something?
+        Bartender: Well this here Saloon is in an abandoned town as you can already tell, with nothing around for miles but vast open desert.
+        Bartender: You can see what I mean here.
+            -> Well you're right, umm I'm sorry I didn't get your name?
+                Bartender: Reggie, the names Reggie.
+                Reggie: Whats yours?
+                    -> John, John Simmons.
+                        Reggie: Well nice to meet you John.
+                            -> You as well Reggie
+                                <<jump Final>>
+===
+
+
+
+title: Final
+position: -308,99
+---
+You: And yes I am looking for something, looking someone more specifically.
+    Reggie: Looking for someone you say, who ya lookin for?
+        -> Looking for an old bounty hunter named Silas, he's supposed to own this here saloon.
+        Reggie: Silas! well I'll be darned, well your in the right place John.
+        Reggie: Silas does own this here old run down saloon, its like his own child. (laughing)
+            -> Well I'm glad I'm in the right place, but where is Silas?
+                Reggies: Silas left for a few days, he'll be back when...
+                Stellar Dust & Six Shooters: I'm done & ready to be played ;>
 ===
