@@ -2,7 +2,8 @@
   "projectFileVersion": 2,
   "sourceFiles": [
     "**/*.yarn",
-    "VinnyYarnScript.yarn"
+    "VinnyYarnScript.yarn",
+    "AJYarnScript.yarn"
   ],
   "excludeFiles": [
     "**/*~/*"
