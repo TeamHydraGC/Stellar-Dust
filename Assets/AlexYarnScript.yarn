@@ -1,0 +1,24 @@
+﻿title: AlexYarnScript
+tags:
+---
+Narrator: Written by Alex
+You: Huh? Who are you?
+    -> Continue
+Unit 77: I am Unit 77
+    -> Continue
+You: Aren't you supposed to be somewhere else, With your own kind? Why are you here?
+    -> Continue
+Unit 77: Well I was, until those horrifying portals started popping up every where.
+    -> How long have you been here?  
+Unit 77: I've been here for roughly 10 hours.
+    <<jump Continue2>>
+===
+
+title: Continue2
+---
+You: While I'm thinking about it, have you seen any kind of sand creature around here?
+    -> Continue
+Unity 77: Actually yes, he passed by me about 20 minutes ago. Looked as if he was in some sort of rush, he should be down that corridor.
+    -> Continue
+You: Perfect, stay here and guard the entracne. I'm going in.
+===

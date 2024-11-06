@@ -1,9 +1,13 @@
 {
   "projectFileVersion": 2,
   "sourceFiles": [
-    "**/*.yarn",
     "VinnyYarnScript.yarn",
-    "AJYarnScript.yarn"
+    "AJYarnScript.yarn",
+    "AlexYarnScript.yarn",
+    "**/*.yarn",
+    "IanYarnScript.yarn",
+    "EvanYarnScript.yarn",
+    "LiamYarnScript.yarn"
   ],
   "excludeFiles": [
     "**/*~/*"
