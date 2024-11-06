@@ -1,5 +1,48 @@
 ﻿title: AJYarnScript
 tags:
+position: -20,-215
 ---
-
+You: You stop, pausing a moment to analyze amidst the sand and grime. There is a man, slumped over on this ledge. He glances over his shoulder to meet your gaze.
+-> 'ay.
+You: The eyes of the miner meet yours. His eyes are bloodshot, his pupils small. His hands are coated in sand and grime.
+?: Ain't that somethin'! And here I thought I wasn't gon' see nobody again!
+    -> ..'cause of the sandstorm up on'na surface?
+        <<jump Continue1>> 
+-> You ain't lookin' so hot there, mudman.
+      <<jump Continue2>>
+===
+title: Continue1
+position: -116,-45
+---
+?: Yes-sirree! That there storm done beat me into submission!
+<<jump Continue2>>
+===
+title: Continue2
+position: 141,-74
+---
+?: I was try'na make it into town, but with that weather? Hoo, boy! Better to jus' wait 'er out 'nstead of chargin' right on in there!
+-> Sounds right to me. I thought the same.
+?: I figured so myself. You look smart 'nough.
+-> What's your name, old-timer?
+Miner: Oh, it ain't important. You ain't gon' remember it either way.
+-> Ain't gotta be so pessimistic on me, man.
+    <<jump Continue1A>>
+-> Fair 'nough, I guess.
+    <<jump Continue3>>
+===
+title: Continue1A
+position: -160,112
+---
+Miner: Ain't pessimistic. That's just how it goes with you young folk. Always one-track minded.
+<<jump Continue3>>
+===
+title: Continue3
+position: 70,221
+---
+Miner: Say, young man, while you're here.. I'm hearin' this..
+His eye twitches. He looks at you funny, like he's looking at an appetizing steak.
+Miner: INFERNAL RACKET. 
+Miner: Crashin'. Bangin' all over the place, just up that way on m'left. It's givin' me a real pain.
+Miner: Mind goin' and checkin' that out for me? There's a reward in it if 'ya do..
+-> Ain't got anything else to do, I suppose...
 ===
