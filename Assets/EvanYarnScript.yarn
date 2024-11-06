@@ -5,5 +5,53 @@ By: Evan Gentile (200602183)
 
 Stranger: How are you today fine stranger?
 	-> John Simmons: Doing good stranger.
-John Simmons: 
+John Simmons: I'm out here looking for a place to wind down after my journey. Do you happen to know of such a place?
+Stranger: I do know of a place, and it's not too far from here actually.
+	-> John Simmons: Oh that's great! What's the place called?
+Stranger: Woah, not so fast partner! 
+Stranger: I don't share easy to obtain information without more easy to obtain information in return.
+	-> John Simmons: Well there stranger, you bargain a steep price for the name of a place.
+Stranger: Damn right I do.
+Stranger: I take pride in my means of sale.
+	-> John Simmons: Sure seems so.
+John Simmons: So what information do you wish for?
+Stranger: I simply wish for information about why you've come here.
+Stranger: Information about your travels.
+	-> John Simmons: Now that's information I can give.
+		<<jump InformationExchange>>
+	-> Refuse the offer.
+		<<jump OfferRefusal>>
+
+
+===
+
+title: InformationExchange
+tags:
+---
+	-> Give information
+		<<jump InformationExchangePart2>>
+	-> Change your mind and refuse the offer.
+		<<jump OfferRefusal>>
+===
+
+title: InformationExchangePart2
+tags:
+---
+John Simmons: Okay, I have come here to seek out Silas "Dusty" Nova.
+	-> John Simmons: I have heard he tends to a saloon around these parts.
+John Simmons: As for my travels, I simply wish to put an end to the likes of bandits.
+Stranger: Hmm, that's a strange motive, but it is a respectable one.
+Stranger: The one you seek, Silas "Dusty" Nova, he does indeed tend to a saloon around these parts.
+Stranger: It's called the "Stellar Saloon", you'll find it just outside this mineshaft.
+	-> John Simmons: Thank you fellow traveller, I wish you the best on your adventures.
+Stranger: Likewise! Good luck achieving your goals!
+===
+
+title: OfferRefusal
+tags:
+---
+	-> John Simmons: I won't give you information.
+Stranger: That's a shame, seems I won't be giving you any either.
+John Simmons: I can do just fine without it.
+Stranger: Well then, farewell traveller, may our paths cross again.
 ===
