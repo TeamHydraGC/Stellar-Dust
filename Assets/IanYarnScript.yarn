@@ -1,5 +1,55 @@
 ﻿title: IanYarnScript
 tags:
 ---
+By: Ian Luscombe (200599466)
+As you stand next to the Monstrosity you can barley hear your thoughts. A loud high pich sound is coming from the Bone Birds voice box.
+You: So you're the menace whos been making so much noise.
+    Bone Bird: Caw, Caw?
+    Bone Bird:(In a Booming robotic voice) Who are you, why are you here?
+        -> HOLY COW! you can talk?
+            Bone Bird: Caw Caw!
+            Bone Bird: (Crackaling Voice Box) Yes I can talk! State why you are here or be anailated!
+            -> I've come to stop that awful noise you pest!
+                <<jump Bargin>>
+        -> I'm the man sent to deal with you pest.
+            <<jump Bargin>>
+===
 
+title: Bargin
+---
+Bone Bird: Caw? Caw caw. CAW.
+Bone Bird: I'm the pest? People like you brought me back to life. Strapped this box to me then it broke when that first bounty hunter tried to kill me.
+    You: That noise is a real problem, I can barely think.
+        Bone Bird: Caw Caw.
+        Bone Bird: (Crackaling Voice Box) It's making my undead life a living hell, Bounty hunters always ruin things.
+         -> Let Me help you destroy it
+                Bone Bird: Caw Caw.
+                Bone Bird: (Crackaling Voice Box) That wont work on me again Bounty Hunter! Not after the first one came and tried to trick me into trusting him.
+                Bone Bird: Caw Caw, CAW!
+                Bone Bird: (Crackaling Voice Box) He broke the box and now it wont stop making this noise, you will only make it worse!
+                    You: You leave me no other choice then.
+                     <<jump Battle>>
+         -> Life ain't fair bird brains, lets just end this quick!
+             <<jump Battle>>
+===
+
+title: Battle
+---
+Bone Bird: Caw Caw, CAW!
+Bone Bird: (Crackaling Voice Box) You seriously think you can take me on, Ha Ha Ha!
+    You: You ain't so tough.
+        Bone Bird: Caw... Caw!
+        Bone Bird: (Crackaling Voice Box) I am a being that shouldn't... exist, made from magic and technology!
+            Bone Bird: Caw, caw caw?
+            Bone Bird: (Crackaling Voice Box) You're just a bounty hunter with a horrible fashion sence and a tiny gun. Whats the worst you can do?
+                -> Let Me Show you!
+                    <<jump End>>
+                -> My fashion sense is impeccable! You're going to regret this.
+                    <<jump End>>
+===
+
+title: End
+---
+The bone bird lifts its wings and takes flight
+The Battle Begins!
 ===
