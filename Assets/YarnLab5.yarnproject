@@ -5,7 +5,9 @@
     "AJYarnScript.yarn",
     "AlexYarnScript.yarn",
     "**/*.yarn",
-    "IanYarnScript.yarn"
+    "IanYarnScript.yarn",
+    "EvanYarnScript.yarn",
+    "LiamYarnScript.yarn"
   ],
   "excludeFiles": [
     "**/*~/*"

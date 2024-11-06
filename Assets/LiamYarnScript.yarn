@@ -1,0 +1,72 @@
+﻿title:LiamYarnScript
+tags:
+By: Liam J
+---
+You: Hey, you here to see Silas too?
+???: ...
+You: HEY!
+???: AAAAH
+???: . . . . .
+???: You got to have some real nerve going around yelling like that... I like it! You don't see that level of confidence in a lotta people these days!
+???: Sorry Uhh.. What were you saying?
+You: Was asking if you were here to see Silas, he seems to have gotten real popular as of late.
+???: You don't think Old Silas was popular before?! He'd throw a right fit if you told him that! HA!
+???: I am looking for him now that you bring it up, he actually owes me a drink, but tough luck if you thought I'd know where he is, The bandit's in those mines would have better luck digging up gold than anyone would have finding him when he's off the job.
+You: Want me to give him a reminder if I do see him? 
+???:  Nah, He's had it rough lately, Just tell him Simon sends him..... well wishes. Oh! I'm Simon by the way! It's always a real pleasure to meet more of Sila's clients. Reminds me of my time working for him.
+John: The names John, John Simmons. Pleasure to meet you.
+    -> You find a different job out here? 
+        <<jump Job>>
+    -> Is he going to be here anytime today? I strolled through a sandstorm for this job...
+        Simon: Oh he'll be here. He like to act all non-chalant these days but the man still cares about this bar to a fault.
+        Simon: That shotgun on the wall ain't just for show! One time the lunatic fought off an entire bandit gang from behind the counter! Oh thats a great story... ya wanna hear it?
+            -> Sure why not!
+                 <<jump Story>>
+            -> Maybe some other time. I would be careless not to ask what I should expect from these jobs.
+                Simon: Oh Yeah! That actually makes a whole lotta sense! 
+                <<jump Job>>
+===
+title: Story
+tags:
+---
+Simon: So there was this old bandit crew, real basic types. Only way I can describe them is corny, they hit every stereotype of stupid bandits perfectly. 
+Simon: Their leader was a little different; a young fella by the name of Malachi. He was the only damn brains in their entire operation, but he had a bit of an ego too.
+Simon: One day Silas's caught one of Malachi's henchmen snooping around the back of the bar, and instead of getting him arrested or something he told him to relay a message to Malachi; just three words: Come at me.
+Simon: Next day the entire bar was surrounded, It looked hopeless for Old Silas! 
+Simon: Malachi barged straight in, sat down, pointed his gun, and told Silas he'd leave if Silas would make him a drink.
+Simon: Not kidding with you, Two seconds later he was knocked out cold on the floor, guess he didn't expect the old man to still pack that much of a punch!
+Simon: After that it was less of a firefight and more of an escape for the bandits, Soon as Silas fired off a couple of shots they all ran for the mines!
+Simon: Speaking of that... You came in to this town through the old mines didn't you? 
+<<jump EndS>>
+===
+title: Job
+tags:
+---
+Simon: I may not look it but I'm actually retired. Took my money and ran as soon as I had enough to live out the rest of my days.
+Simon: I've got a great deal of respect for everyone in this settlement because not a single person threw some kinda judgement or envy at me, it was all celebration the day I told them.
+Simon: Anyways! The jobs Silas gives newcomers are usually the easy ones. But I'l still run you through the... unique way he does things, cause sometimes it puts some confusion in people's heads. 
+Simon: There are no rules! Taking a job means you can complete it in whatever way you see fit, so long as it doesn't put Silas's name out there as the one who sent you out on it.
+Simon: We also got some extra tools of the trade if you wanna make some deals! I say we because I happen to have a few relics from my jobs I'd be willing to part with for some cash.
+Simon: ...
+Simon: Can't really think of much else...
+Simon: You already got experience around here anyways! You'l be fine! 
+Simon: You were the one that took out the bandits in the old mines weren't you?
+<<jump EndJ>>
+===
+title: EndS
+tags:
+---
+-> Sounds like they had it coming!
+    Simon: Thats the spirit! 
+    Simon: I gotta be heading out soon, You better tell me all about your first job next time I see ya!
+-> Didn't have much of a choice....
+    Simon: Don't bring the mood down! You've done all of us a damn service already!
+    Simon: I gotta be heading out soon, You better tell me all about your first job next time I see ya!
+===
+title: EndJ
+tags:
+---
+You: Didn't have much of a choice....
+Simon: Don't bring the mood down! You've done all of us a damn service already!
+Simon: I gotta be heading out soon, You better tell me all about your first job next time I see ya!
+===
