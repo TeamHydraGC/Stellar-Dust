@@ -7,17 +7,17 @@ You: You stop, pausing a moment to analyze amidst the sand and grime. There is a
 You: The eyes of the miner meet yours. His eyes are bloodshot, his pupils small. His hands are coated in sand and grime.
 ?: Ain't that somethin'! And here I thought I wasn't gon' see nobody again!
     -> ..'cause of the sandstorm up on'na surface?
-        <<jump Continue1>> 
+        <<jump Continue1Q>> 
 -> You ain't lookin' so hot there, mudman.
-      <<jump Continue2>>
+      <<jump Continue2Z>>
 ===
-title: Continue1
+title: Continue1Q
 position: -116,-45
 ---
 ?: Yes-sirree! That there storm done beat me into submission!
-<<jump Continue2>>
+<<jump Continue2Z>>
 ===
-title: Continue2
+title: Continue2Z
 position: 141,-74
 ---
 ?: I was try'na make it into town, but with that weather? Hoo, boy! Better to jus' wait 'er out 'nstead of chargin' right on in there!
