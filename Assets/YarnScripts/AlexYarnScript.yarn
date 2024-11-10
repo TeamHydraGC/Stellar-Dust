@@ -18,7 +18,14 @@ title: Continue2
 ---
 You: While I'm thinking about it, have you seen any kind of sand creature around here?
     -> Continue
-Unity 77: Actually yes, he passed by me about 20 minutes ago. Looked as if he was in some sort of rush, he should be down that corridor.
+Unit 77: Actually yes, he passed by me about 20 minutes ago. Looked as if he was in some sort of rush, he should be down that corridor.
     -> Continue
 You: Perfect, stay here and guard the entracne. I'm going in.
+    <<jump Continue3>>
 ===
+
+title: Continue3
+---
+Unit 77: Actually while you are currently here, can you find my spare battery? I’m not going to last much longer without it. I think it dropped down into the cave below. If you find it for me I can probably trade you a fancy weapon.
+    -> Accept Quest
+    -> Reject Quest
