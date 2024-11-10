@@ -7,14 +7,11 @@ You: Hey, Bartender!
     Bartender: Hey buddy Welcome to the Stellar Saloon, what can i do ya for.
         -> Well I've had a long journey I could use a drink.
         Bartender: Sounds good, what would you like?
-            -> How about a whiskey.
-                Bartender: One whiskey comin right up!
-                    <<jump Continue>>
-            -> I'll take a beer.
-                Bartender: One beer comin right up!
-                    <<jump Continue>>
-            -> Maybe I'll have a Cider.
-                Bartender: One Cider comin right up!
+            -> (Quest) How about a whisky.
+                Bartender: One whisky comin right up!
+                    <<jump Quest>>
+            -> Ah just give me whatever you got.
+                Bartender: Alright, one beer comin right up!
                     <<jump Continue>>
 ===
 
@@ -34,6 +31,18 @@ Bartender: So what brings ya to this saloon all the way out in the middle of kno
                         Reggie: Well nice to meet you John.
                             -> You as well Reggie
                                 <<jump Final>>
+===
+
+
+title: Quest
+position: -61,-106
+---
+// Quest Node, from here the text ends and you go do your Quest and come back and hand in the Quest Item and a new node for completing the quest will play.
+Bartender: Ah hot damn, my whisky barrels empty.
+Bartender: Hey you look like yer still itchin for some action, wanta go get me a barrel of whisky from the Sila's Booze Room? 
+    -> Sure thing, where's this Booze Room of yours tho?
+        Bartender: Oh not that far, just walk back from the path you took to get here and you'll see er there.
+            -> Sounds good.
 ===
 
 
