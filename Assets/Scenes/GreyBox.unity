@@ -793,8 +793,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Mini Boss Arena
-  author: Ian L (200599466)
 --- !u!61 &234929001
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1211,8 +1209,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Booze Room
-  author: Liam -  200608641
 --- !u!1001 &420734024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1873,8 +1869,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2211a40aea2173643bded7c5a9bb8105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  titleText: {fileID: 1182804623}
-  byLineText: {fileID: 1470462070}
 --- !u!1001 &752780030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2462,17 +2456,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4372969750842475773, guid: 9c0f35e6db4da2041ba59805127284fb, type: 3}
   m_PrefabInstance: {fileID: 1156254706}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1182804623 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1359573905321610160, guid: 94b6f8183dbab124c98a6196828f2653, type: 3}
-  m_PrefabInstance: {fileID: 4038099539126343915}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1253742061 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 331455383037872900, guid: 59a0e5bd0b9c8374d961eb831e4f935a, type: 3}
@@ -2490,8 +2473,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Underground Section 2
-  author: A.J. Howlett (200609705)
 --- !u!61 &1253742064
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2606,8 +2587,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: The Wild West
-  author: Temporary Name Inc
 --- !u!1 &1434746464
 GameObject:
   m_ObjectHideFlags: 0
@@ -2707,17 +2686,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 798986613379488671, guid: 2df3ae06e98a7f54894bd90b61aef342, type: 3}
   m_PrefabInstance: {fileID: 1455156465}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1470462070 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4289376438737423121, guid: 94b6f8183dbab124c98a6196828f2653, type: 3}
-  m_PrefabInstance: {fileID: 4038099539126343915}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1527849230
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3424,8 +3392,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Mineshaft
-  author: Evan Gentile - 200602183
 --- !u!61 &1757861997
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4059,8 +4025,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: The Wild West
-  author: Temporary Name Inc
 --- !u!61 &2674157792306783389
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4781,8 +4745,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Stellar Saloon
-  author: Vincent C - 200619288
 --- !u!1 &5056076219572910621 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1977940876346140825, guid: ab53a77cfc5e68e4b8258d58cc44c3da, type: 3}
@@ -5126,8 +5088,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Boss Room
-  author: Alex MacGregor - 200609782
 --- !u!61 &6726623262339977865
 BoxCollider2D:
   m_ObjectHideFlags: 0
