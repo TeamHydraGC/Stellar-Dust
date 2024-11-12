@@ -2,5 +2,20 @@
 tags:
 position: 0,0
 ---
-Test!
+???: [wave]psst...[/wave]
+    -> You: "Who's there?"
+        ???: [wave]over here...[/wave]
+        You look up and down, left and right. There's nothing notable other than the cactus in front of you.
+            -> You: "All I see is a cactus..."
+                cacton: [wave]ya thats me hi, im cacton uwu[/wave]
+                    -> You: "Wh... I... whatever. What do you want?"
+                        cacton: "can u get me a poncho plz, this sand is awful for my quills"
+                            -> You: "Sure..."
+                                <<jump cacton2>>
+
+===
+title: cacton2
+position: 0,67
+---
+weenis
 ===
