@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9ee32b184ee69d04abc72b1b4feb5823
+guid: 9eff9edd357eccc42a2b5853238902d7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,34 +95,12 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: StellarRat_0
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 0
-        width: 23
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93c18f90534edd64898012d50c71c9ba
-      internalID: -1896300248
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 97ea9e9d42f960b47a2954296f4a2c8f
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -131,8 +109,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      StellarRat_0: -1896300248
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
