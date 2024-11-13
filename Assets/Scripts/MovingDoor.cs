@@ -5,13 +5,16 @@ using UnityEngine;
 public class MovingDoor : MonoBehaviour
 {
 
-    public Vector3 originalPos;
+    [SerializeField]
+    GameObject door;
+
+    public Vector3 doorPos;
     bool moveBack = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        originalPos = transform.position;
+        doorPos = transform.position;
     }
 
     // Update is called once per frame
@@ -20,7 +23,7 @@ public class MovingDoor : MonoBehaviour
         if (moveBack)
         {
 
-            if (transform.position.y < originalPos.y)
+            if (transform.position.y < doorPos.y)
             {
                 transform.Translate(0, 0.01f, 0);
             }
@@ -32,35 +35,5 @@ public class MovingDoor : MonoBehaviour
 
 
     }
-
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.transform.name == "Player")
-        {
-
-            transform.Translate(0, -0.02f, 0);
-            moveBack = false;
-        }
-    }
-
-
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.transform.name == "Player")
-        {
-            collision.transform.parent = transform;
-            GetComponent<SpriteRenderer>().color = Color.red;
-        }
-
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        moveBack = true;
-        collision.transform.parent = null;
-        GetComponent<SpriteRenderer>().color = Color.white;
-    }
-
 }
 
