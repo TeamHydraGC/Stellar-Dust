@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e64a2d7b86a379640bdf995ff88949c6
+guid: 9ee32b184ee69d04abc72b1b4feb5823
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -97,23 +97,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: backgroundlab4_0
+      name: StellarRat_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 1907
-        height: 904
+        width: 23
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71b66f81c7d252548a3b4405e1e2c158
-      internalID: -2061046919
+      spriteID: 93c18f90534edd64898012d50c71c9ba
+      internalID: -1896300248
       vertices: []
       indices: 
       edges: []
@@ -122,7 +122,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 414a7e578f59ff244aafe6bd765f9fd0
+    spriteID: 97ea9e9d42f960b47a2954296f4a2c8f
     internalID: 0
     vertices: []
     indices: 
@@ -132,7 +132,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      backgroundlab4_0: -2061046919
+      StellarRat_0: -1896300248
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

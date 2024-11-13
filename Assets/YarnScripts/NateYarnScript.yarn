@@ -1,0 +1,46 @@
+﻿title: NateYarnScript
+tags:
+position: 0,0
+---
+???: [wave]psst...[/wave]
+    -> You: "Who's there?"
+        ???: [wave]over here...[/wave]
+        You look up and down, left and right. There's nothing notable other than the cactus in front of you.
+            -> You: "All I see is a cactus..."
+                cacton: [wave]ya thats me hi, im cacton[/wave]
+                    -> You: "Wh... I... you- whatever. Hi, I'm John. What do you want?"
+                        cacton: [wave]"can u get me that poncho plz, this sandstorm is awful for my areols"[/wave]
+                            -> You: "Sure..."
+                                cacton: [wave]"sick thx"[/wave]
+                                <<jump cactonQuestBegin>>
+                            -> You: "Uhm, no."
+                                cacton: [wave]"aw rats"[/wave]
+                                <<jump cactonFailure>>
+
+===
+title: cactonQuestBegin
+position: 0,200
+---
+You look to your right, and there is indeed a poncho resting on a box.
+You: "Nice."
+You grab the poncho. It's seen better days, but for a cactus, it'll work just fine.
+<<jump cactonSuccess>>
+===
+title: cactonFailure
+position: -225,200
+---
+Cacton will forever be haunted by your callous disregard to their safety and comfort. Oh well.
+===
+title: cactonSuccess
+position: 0,400
+---
+cacton: [wave]"la de laa, da le daaa... do do dooo..."[/wave]
+    -> You: "Uh, Cacton? I found your dusty-ass poncho."
+        cacton: [wave]"oh sweet. just toss it over my totally luscious arms."[/wave]
+            You wrap the poncho around the cactus, careful not to poke yourself on its spines.
+            cacton: [wave]"thx bro"[/wave]
+                You: "You erm, need anything else?"
+                cacton: [wave]"nah im chillin now, ur a real one john :3"[/wave]
+                You: "Sure... you're uh, welcome...?"
+                    You turn to move on. That was... weird.
+===

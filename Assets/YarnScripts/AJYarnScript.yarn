@@ -45,4 +45,19 @@ Miner: INFERNAL RACKET.
 Miner: Crashin'. Bangin' all over the place, just up that way on m'left. It's givin' me a real pain.
 Miner: Mind goin' and checkin' that out for me? There's a reward in it if 'ya do..
 -> Ain't got anything else to do, I suppose...
+    <<jump PositivityisGood>>
+-> I ain't want no handouts.
+    <<jump OkayYoureTheBossBigMan>>
+===
+title: PositivityisGood
+position: 70,221
+---
+Miner: I appreciate that, young man. Say, if durin’ your travels you spot ‘nythin’ shiny– gold, gems, whatever it may be.. You come back here and give ‘em to me. I promise I’ll make it worth ‘yer while.
+-> Thanks, mister.
+===
+title: OkayYoureTheBossBigMan
+position: 70,221
+---
+Miner: Your loss, young man. I ain’t offerin’ again.
+-> I don't need none of your handouts, old man.
 ===
