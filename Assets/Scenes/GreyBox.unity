@@ -394,11 +394,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2747833832944282092, guid: 2df3ae06e98a7f54894bd90b61aef342, type: 3}
   m_PrefabInstance: {fileID: 55464094}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &136723052 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5109378873904437171, guid: 450e1c5012ad6dd4bbb23f92508863a6, type: 3}
-  m_PrefabInstance: {fileID: 2674157792306783385}
+--- !u!114 &101118991 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4289376438737423121, guid: 94b6f8183dbab124c98a6196828f2653, type: 3}
+  m_PrefabInstance: {fileID: 4038099539126343915}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &139417515
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,11 +500,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2df3ae06e98a7f54894bd90b61aef342, type: 3}
---- !u!1 &166574861 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3135727642863976773, guid: ee3f069dbefc354458bcf6f6013d841b, type: 3}
-  m_PrefabInstance: {fileID: 7565481246373082199}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &181868263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -793,8 +794,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Stellar Saloon
-  author: 'By: Vincent C'
+  title: Mini Boss
+  author: Ian
 --- !u!61 &234929001
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1211,8 +1212,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Stellar Saloon
-  author: 'By: Vincent C'
+  title: Booze Room
+  author: Liam
 --- !u!1001 &420734024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1943,25 +1944,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5640301703936410866, guid: f5c4db24d6b71264fa465d31b4fc4b9d, type: 3}
   m_PrefabInstance: {fileID: 724871471}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &731244370 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3928096357643424343, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
-  m_PrefabInstance: {fileID: 1670758696}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &731244379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 731244370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2211a40aea2173643bded7c5a9bb8105, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  titleText: {fileID: 0}
-  byLineText: {fileID: 0}
 --- !u!1 &738259123
 GameObject:
   m_ObjectHideFlags: 0
@@ -2737,6 +2719,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4372969750842475773, guid: 9c0f35e6db4da2041ba59805127284fb, type: 3}
   m_PrefabInstance: {fileID: 1156254706}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1163114569 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1359573905321610160, guid: 94b6f8183dbab124c98a6196828f2653, type: 3}
+  m_PrefabInstance: {fileID: 4038099539126343915}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1253742061 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 331455383037872900, guid: 59a0e5bd0b9c8374d961eb831e4f935a, type: 3}
@@ -2754,8 +2747,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Stellar Saloon
-  author: 'By: Vincent C'
+  title: Underground
+  author: AJ
 --- !u!61 &1253742064
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2900,66 +2893,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7986505483843421485, guid: ee3f069dbefc354458bcf6f6013d841b, type: 3}
   m_PrefabInstance: {fileID: 7565481246373082199}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &1419988837
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 166574861}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 19.07, y: 9.04}
-    newSize: {x: 19.07, y: 9.04}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 19.07, y: 9.04}
-  m_EdgeRadius: 0
---- !u!114 &1419988838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 166574861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Stellar Saloon
-  author: 'By: Vincent C'
 --- !u!1 &1434746464
 GameObject:
   m_ObjectHideFlags: 0
@@ -3563,34 +3496,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 782469608044025329, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
-      propertyPath: jumpForce
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 782469608044025329, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
-      propertyPath: moveSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3125561803007935479, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3928096357643424343, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.31379056
-      objectReference: {fileID: 0}
-    - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.31379056
-      objectReference: {fileID: 0}
-    - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.31379056
-      objectReference: {fileID: 0}
+    - target: {fileID: 5082446756076488757, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: titleText
+      value: 
+      objectReference: {fileID: 1163114569}
+    - target: {fileID: 5082446756076488757, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: byLineText
+      value: 
+      objectReference: {fileID: 101118991}
     - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.9
@@ -3631,17 +3548,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8990510676579953578, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
-      propertyPath: orthographic
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3928096357643424343, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 731244379}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
 --- !u!4 &1685798005 stripped
 Transform:
@@ -3852,8 +3762,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Stellar Saloon
-  author: 'By: Vincent C'
+  title: Mineshaft
+  author: Evan
 --- !u!61 &1757861997
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4483,18 +4393,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 509579184}
     m_Modifications:
     - target: {fileID: 2308923365876511781, guid: 450e1c5012ad6dd4bbb23f92508863a6, type: 3}
-      propertyPath: m_LocalScale.x
-      value: -2.357781
-      objectReference: {fileID: 0}
-    - target: {fileID: 2308923365876511781, guid: 450e1c5012ad6dd4bbb23f92508863a6, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.4930503
-      objectReference: {fileID: 0}
-    - target: {fileID: 2308923365876511781, guid: 450e1c5012ad6dd4bbb23f92508863a6, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.4303
-      objectReference: {fileID: 0}
-    - target: {fileID: 2308923365876511781, guid: 450e1c5012ad6dd4bbb23f92508863a6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.058407
       objectReference: {fileID: 0}
@@ -4538,90 +4436,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: backgroundlab4nosun
       objectReference: {fileID: 0}
-    - target: {fileID: 7713725538716213855, guid: 450e1c5012ad6dd4bbb23f92508863a6, type: 3}
-      propertyPath: m_SortingLayer
-      value: -3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7713725538716213855, guid: 450e1c5012ad6dd4bbb23f92508863a6, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -2089877045
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5109378873904437171, guid: 450e1c5012ad6dd4bbb23f92508863a6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2674157792306783389}
-    - targetCorrespondingSourceObject: {fileID: 5109378873904437171, guid: 450e1c5012ad6dd4bbb23f92508863a6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2674157792306783388}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 450e1c5012ad6dd4bbb23f92508863a6, type: 3}
 --- !u!4 &2674157792306783386 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2308923365876511781, guid: 450e1c5012ad6dd4bbb23f92508863a6, type: 3}
   m_PrefabInstance: {fileID: 2674157792306783385}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2674157792306783388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 136723052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  title: Stellar Saloon
-  author: 'By: Vincent C'
---- !u!61 &2674157792306783389
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 136723052}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: -3.1924253, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 19.07, y: 8.01}
-    newSize: {x: 19.07, y: 8.01}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 12.685149, y: 8.01}
-  m_EdgeRadius: 0
 --- !u!1001 &3207076571351767670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5297,7 +5121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   title: Stellar Saloon
-  author: 'By: Vincent C'
+  author: Vincent C
 --- !u!1 &5056076219572910621 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1977940876346140825, guid: ab53a77cfc5e68e4b8258d58cc44c3da, type: 3}
@@ -5641,8 +5465,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Stellar Saloon
-  author: 'By: Vincent C'
+  title: Boss Room
+  author: Alex
 --- !u!61 &6726623262339977865
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5702,18 +5526,6 @@ PrefabInstance:
       value: backgroundlab4
       objectReference: {fileID: 0}
     - target: {fileID: 7986505483843421485, guid: ee3f069dbefc354458bcf6f6013d841b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.3980358
-      objectReference: {fileID: 0}
-    - target: {fileID: 7986505483843421485, guid: ee3f069dbefc354458bcf6f6013d841b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.2969543
-      objectReference: {fileID: 0}
-    - target: {fileID: 7986505483843421485, guid: ee3f069dbefc354458bcf6f6013d841b, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.2875086
-      objectReference: {fileID: 0}
-    - target: {fileID: 7986505483843421485, guid: ee3f069dbefc354458bcf6f6013d841b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -29.738092
       objectReference: {fileID: 0}
@@ -5756,13 +5568,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3135727642863976773, guid: ee3f069dbefc354458bcf6f6013d841b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1419988838}
-    - targetCorrespondingSourceObject: {fileID: 3135727642863976773, guid: ee3f069dbefc354458bcf6f6013d841b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1419988837}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee3f069dbefc354458bcf6f6013d841b, type: 3}
 --- !u!1001 &8141560870156574801
 PrefabInstance:
