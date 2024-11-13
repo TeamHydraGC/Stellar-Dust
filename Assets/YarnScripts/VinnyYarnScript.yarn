@@ -9,15 +9,15 @@ You: Hey, Bartender!
         Bartender: Sounds good, what would you like?
             -> (Quest) How about a whisky.
                 Bartender: One whisky comin right up!
-                    <<jump Quest>>
+                    <<jump QuestVin>>
             -> Ah just give me whatever you got.
                 Bartender: Alright, one beer comin right up!
-                    <<jump Continue>>
+                    <<jump ContinueDia>>
 ===
 
 
 
-title: Continue
+title: ContinueDia
 position: -309,-108
 ---
 Bartender: So what brings ya to this saloon all the way out in the middle of knowhere, you must be searchin for something.
@@ -30,16 +30,16 @@ Bartender: So what brings ya to this saloon all the way out in the middle of kno
                     -> John, John Simmons.
                         Reggie: Well nice to meet you John.
                             -> You as well Reggie
-                                <<jump Final>>
+                                <<jump FinalDia>>
 ===
 
 
-title: Quest
+title: QuestVin
 position: -61,-106
 ---
 // Quest Node, from here the text ends and you go do your Quest and come back and hand in the Quest Item and a new node for completing the quest will play.
 Bartender: Ah hot damn, my whisky barrels empty.
-Bartender: Hey you look like yer still itchin for some action, wanta go get me a barrel of whisky from the Sila's Booze Room? 
+Bartender: Hey you look like yer still itchin for some action, wanta go get me a barrel of whisky from the Silas's Booze Room? 
     -> Sure thing, where's this Booze Room of yours tho?
         Bartender: Oh not that far, just walk back from the path you took to get here and you'll see er there.
             -> Sounds good.
@@ -47,7 +47,7 @@ Bartender: Hey you look like yer still itchin for some action, wanta go get me a
 
 
 
-title: Final
+title: FinalDia
 position: -308,99
 ---
 You: And yes I am looking for something, looking someone more specifically.
