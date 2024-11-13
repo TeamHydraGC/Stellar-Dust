@@ -794,8 +794,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Stellar Saloon
-  author: 'By: Vincent C'
+  title: Underground - Mini Boss
+  author: Ian
 --- !u!61 &234929001
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1212,8 +1212,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Stellar Saloon
-  author: 'By: Vincent C'
+  title: Booze Room
+  author: Liam
 --- !u!1 &341161066
 GameObject:
   m_ObjectHideFlags: 0
@@ -2920,8 +2920,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Stellar Saloon
-  author: 'By: Vincent C'
+  title: Undeground
+  author: AJ
 --- !u!61 &1253742064
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5110,6 +5110,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7442948868310479488, guid: f6e90f340e797d744bb3ff2024ab0ce4, type: 3}
+      propertyPath: title
+      value: Mineshaft
+      objectReference: {fileID: 0}
+    - target: {fileID: 7442948868310479488, guid: f6e90f340e797d744bb3ff2024ab0ce4, type: 3}
+      propertyPath: author
+      value: Evan
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -5235,7 +5243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   title: Stellar Saloon
-  author: 'By: Vincent C'
+  author: Vincent C
 --- !u!1 &5056076219572910621 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1977940876346140825, guid: ab53a77cfc5e68e4b8258d58cc44c3da, type: 3}
@@ -5584,8 +5592,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Stellar Saloon
-  author: 'By: Vincent C'
+  title: Boss Room
+  author: Alex
 --- !u!61 &6726623262339977865
 BoxCollider2D:
   m_ObjectHideFlags: 0
