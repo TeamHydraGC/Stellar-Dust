@@ -793,6 +793,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  title: Stellar Saloon
+  author: 'By: Vincent C'
 --- !u!61 &234929001
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1209,6 +1211,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  title: Stellar Saloon
+  author: 'By: Vincent C'
 --- !u!1001 &420734024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1869,6 +1873,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2211a40aea2173643bded7c5a9bb8105, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  titleText: {fileID: 0}
+  byLineText: {fileID: 0}
 --- !u!1001 &752780030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2473,6 +2479,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  title: Stellar Saloon
+  author: 'By: Vincent C'
 --- !u!61 &1253742064
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2587,6 +2595,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  title: Stellar Saloon
+  author: 'By: Vincent C'
 --- !u!1 &1434746464
 GameObject:
   m_ObjectHideFlags: 0
@@ -3392,6 +3402,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  title: Stellar Saloon
+  author: 'By: Vincent C'
 --- !u!61 &1757861997
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4025,6 +4037,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  title: Stellar Saloon
+  author: 'By: Vincent C'
 --- !u!61 &2674157792306783389
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4745,6 +4759,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  title: Stellar Saloon
+  author: 'By: Vincent C'
 --- !u!1 &5056076219572910621 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1977940876346140825, guid: ab53a77cfc5e68e4b8258d58cc44c3da, type: 3}
@@ -5088,6 +5104,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0286fb3041c34842a9595edcbdf131b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  title: Stellar Saloon
+  author: 'By: Vincent C'
 --- !u!61 &6726623262339977865
 BoxCollider2D:
   m_ObjectHideFlags: 0
