@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9ee32b184ee69d04abc72b1b4feb5823
+guid: 3ab05a3446ea80745b9950fec7f582fa
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StellarRat_0
+      name: JohnSimmonsMain_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 6
         y: 0
-        width: 23
-        height: 8
+        width: 35
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93c18f90534edd64898012d50c71c9ba
-      internalID: -1896300248
+      spriteID: 2854216b9166b894687bdc30d45cf0a9
+      internalID: -1288131360
       vertices: []
       indices: 
       edges: []
@@ -122,7 +122,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 97ea9e9d42f960b47a2954296f4a2c8f
+    spriteID: 879cdeaaaa39e454bb1385ec8b25b104
     internalID: 0
     vertices: []
     indices: 
@@ -132,7 +132,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      StellarRat_0: -1896300248
+      JohnSimmonsMain_0: -1288131360
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
