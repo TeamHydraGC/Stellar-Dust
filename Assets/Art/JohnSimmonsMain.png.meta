@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a0318f2f2c5ec664daf44e1248e27b41
+guid: 15ef4971be9a94f439be4d70f73d23d8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cyborg_ninja_0
+      name: JohnSimmonsMain_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 1
-        width: 53
-        height: 61
+        x: 6
+        y: 0
+        width: 35
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,30 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7bc2e2b926578049ab23b135de0b2b5
-      internalID: 255795102
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cyborg_ninja_1
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 1
-        width: 53
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78d5c98d9c3048348bc45d6a0da79283
-      internalID: 1521933946
+      spriteID: 751f752fe47296047b86d8a0ecf76422
+      internalID: -1938670704
       vertices: []
       indices: 
       edges: []
@@ -144,7 +122,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 69c45157262d2a04fafd78db8269fc7b
+    spriteID: 2cf0905f3afa96a408cde8116dce3689
     internalID: 0
     vertices: []
     indices: 
@@ -154,8 +132,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cyborg_ninja_0: 255795102
-      cyborg_ninja_1: 1521933946
+      JohnSimmonsMain_0: -1938670704
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
