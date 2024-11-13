@@ -1,0 +1,38 @@
+title:LiamYarnScript2
+tags:
+By: Liam J
+---
+By: Liam J
+COMPUTER: TRANSMISSION START
+Cyborg: I’m gonna keep this real simple for ya John: I know what your deal is and I wanna make a deal of my own with you. 
+Cyborg: Seeing as I’m definitely posted up on Sila’s little bounty board I know trust is gonna be a little thin between us, but I’ve been tryin to be a little more optimistic lately. 
+Cyborg: I can see a future where both of us get exactly what we want and so much more if we’re just willing to work with each other. All I ask is that you try a little optimism as well.
+Cyborg: The deals simple, you just pick me up some random knick knacks from across time and space, and I make it worth it for you. With money. And a little something special if you get em all... 
+Cyborg: I’ve left a “peace offering” in front of the saloon, its part of your cut. Check it out then come back so you can hear the rest of the deal, will ya?
+COMPUTER: TRANSMISSION PAUSED
+===
+//This is an ongoing quest throught the entire game and will definitely recieve many changes over time.
+//This first transmission starts upon interacting with the computer for the first time.
+//A small futuristic metal crate will always be sitting in front of the saloon. Finishing the first part of the message will open it and allow you to collect the money from inside.
+//Going back to the computer and interacting with it after collecting the money will play the second message.
+title:Cyborgmessage2
+tags:
+---
+COMPUTER: TRANSMISSION RESUMED
+Cyborg: Pretty extravagant peace offering eh? You can expect more like that if this "partnership" is gonna happen.
+Cyborg: But that.... is up to you, John.
+ -> ACCEPT
+ Cyborg: Thank you John, Looking back at it this whole operation must look pretty ugly to you. But I have good reason to be taking these kind of measures, I refuse to let even the shattering of time itself put my wife and kids in harms way.
+ Cyborg: If you are a family man like me, I'd imagine you feel the same. 
+ Cyborg: And if you arent't, loneliness has nothing on a good night at the bar! I'll buy you as many damn drinks as you can handle if you pull this off!
+ Cyborg: The first thing I need ya to gets gonna be in that marauder's stash no doubt. It's a bright green circuit board, It'll be hidden well. But I trust you to find it.
+ -> DENY
+ Cyborg: Thought so... but remember... This offer is never off the table, I'll pay you enough to retire early just for one of those parts.
+ Cyborg: One more thing....
+ Cyborg: Listen; I understand your allegiance is to Silas. He's the one with the history, the reputation, the experience.
+ Cyborg: But what he isn't is worth your trust. Someone told me that back in the good old days, but I didn’t listen. For your own sake I hope you won't make the same mistake I did. 
+Cyborg: You think I'm more robot than human by choice?
+COMPUTER: TRANSMISSION END
+===
+//At any point regardless of whether you deny or accept his offers you can always pick up the items and give them to the Cyborg via a prompt on the computer. 
+//Giving 1 or 2 items will simply give you lots of currency, while giving 2 and finding the third in the final level will unlock a secret weapon near the end of the game.
