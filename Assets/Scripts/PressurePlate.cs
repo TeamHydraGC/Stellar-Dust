@@ -38,9 +38,18 @@ public class PressurePlate : MonoBehaviour
         if (collision.transform.name == "Player")
         {
 
+            GetComponent<Transform>().position += new Vector3 (0, -0.1f, 0);
+            moveBack = false;
+        }
+
+        if (collision.transform.name == "PushableCrate")
+        {
+
             transform.Translate(0, -0.02f, 0);
             moveBack = false;
         }
+
+
     }
 
 
@@ -52,7 +61,14 @@ public class PressurePlate : MonoBehaviour
             collision.transform.parent = transform;
             GetComponent<SpriteRenderer>().color = Color.red;
         }
-        
+
+        if (collision.transform.name == "PushableCrate")
+        {
+            collision.transform.parent = transform;
+            GetComponent<SpriteRenderer>().color = Color.red;
+        }
+
+
     }
 
     private void OnCollisionExit2D(Collision2D collision)
