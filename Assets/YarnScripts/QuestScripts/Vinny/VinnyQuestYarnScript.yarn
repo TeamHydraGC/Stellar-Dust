@@ -1,20 +1,27 @@
 ﻿title: VinnyQuestYarnScript
 tags:
 ---
+<<declare $grabBarrelBurglar = 0>>
+
 By: Vincent Courchesne (200619288)
     <<wait  0.5>>
+
+<<if $questItemBartender >= 1>>
+    Burglar: Stay away from me, please
+    <<stop>>
+<<else>>
 You: Hey what are you doin with that barrel!
     Burglar: Hey theres nothing to see here, mind your own damn business!
      -> I don't think that belongs to you, put it back
+        <<set $grabBarrelBurglar += 1>>
+            Burglar: I said mind your own business fella!, I'm takin this here barrel of whisky for myself
+            You: Well I'm making it my business, now if you don't drop that barrel right now I'll make sure the last barrel you ever see is the one from the end of my gun!
+                (The Burglar becomes SCARED)
+                Burglar: Ok ok sorry mister, I didn't know this here barrel of whisky belonged to you, here take it
+                Burglar: Just don't hurt me
+                    (You tip your hat)
+                    You: Why thank you
      -> (Leave)
         <<stop>>
-     Burglar: I said mind your own business fella!, I'm takin this here barrel of whisky for myself
-        You: Well I'm making it my business, now if you don't drop that barrel right now I'll make sure the last barrel you ever see is the one from the end of my gun!
-            (The Burglar becomes SCARED)
-            Burglar: Ok ok sorry mister, I didn't know this here barrel of whisky belonged to you, here take it
-            Burglar: Just don't hurt me
-                <<wait  0.5>>
-                (You tip your hat)
-                You: Why thank you
-
+<<endif>>        
 ===

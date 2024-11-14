@@ -1,0 +1,25 @@
+﻿title: VinnyBarrelYarnScript
+tags:
+---
+By: Vincent Courchesne (200619288)
+
+<<if $questItemBartender >= 1>>
+(Just an empty barrel)
+    <<stop>>
+<<endif>>
+
+(Just a big barrel full of whisky)
+hmmmmmmmmm
+
+<<if $grabBarrelRoom >= 1>>
+    -> Grab Barrel of whisky
+    <<set $questItemBartender +=1>>
+    (YOU GOT THE WHISKY BARREL!)
+<<endif>>
+
+<<if $grabBarrelBurglar >= 1>>
+    -> Grab Barrel of whisky
+    <<set $questItemBartender +=1>>
+    (YOU GOT THE WHISKY BARREL!)
+<<endif>>
+===

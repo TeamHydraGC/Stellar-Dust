@@ -1,17 +1,27 @@
 ﻿title: VinnyQuestYarnTwoScript
 tags:
 ---
+<<declare $grabBarrelRoom = 0>>
+
 By: Vincent Courchesne (200619288)
     <<wait  0.5>>
+
+<<if $questItemBartender >= 1>>
+    Drunkard: buhhhhh, I'm so drunk
+    <<stop>> 
+<<else>>       
 Drunkard: (Hic...)
 -> Hey there, do you know where I can find a full barrel of whisky?
     <<jump WhiskyBarrelDia>>
 -> (Leave)
     <<stop>>
+<<endif>>    
 ===
 
 title: WhiskyBarrelDia
 ---
+<<set $grabBarrelRoom += 1>>
+
     Drunkard: Well I dunno if your blind or not mister but clearly this room is full of barrels of alcohol, so maybe somewhere in here...
     You: Well clearly you must be blind because I only see a few barrels in here and they look to be completely empty
     Drunkard: Yeah well that might have been my fault, might have had a few drinks

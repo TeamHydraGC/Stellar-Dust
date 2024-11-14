@@ -3,10 +3,16 @@ tags:
 position: -310,-338
 ---
 <<declare $questItemBartender = 0>>
+<<declare $talkingPoints = 0>>
+<<declare $finishedBooze = 0>>
 
 By: Vincent Courchesne (200619288)
 <<if $questItemBartender >= 1>>
     <<jump EndWhisky>>
+<<elseif $talkingPoints >= 1>>
+    <<jump QuestBoozeNo>>
+<<elseif $finishedBooze >= 1>>
+    <<jump FinishedBoozeDia>>
 <<else>>
     You: Hey, Bartender!
         Bartender: Hey buddy Welcome to the Stellar Saloon, what can I do ya for.
@@ -19,6 +25,20 @@ By: Vincent Courchesne (200619288)
                     Bartender: Alright, one beer comin right up!
                         <<jump ContinueDia>>
 <<endif>>                                               
+===
+
+title: FinishedBoozeDia
+---
+You: Hey, Reggie!
+    Reggie: Hey John, what can I do ya for.
+        -> Well I could use a drink.
+        Reggie: Sounds good, what would you like?
+            -> How about that whisky.
+                Reggie: One whisky comin right up!
+                    <<jump FinalDia>>
+            -> Ah just give me whatever you got.
+                Reggie: Alright, one beer comin right up!
+                    <<jump FinalDia>>
 ===
 
 
@@ -49,6 +69,17 @@ Bartender: Hey you look like yer still itchin for some action, wanta go get me a
     -> Sure thing, where's this Booze Room of yours tho?
         Bartender: Oh not that far, just walk back from the path you took to get here and you'll see er there.
             -> Sounds good.
+            Bartender: By the way, call me Reggie.
+            Reggie: Whats your name feller?
+                -> The names John, John Simmons
+                Reggie: Well alright then, nice to meet ya John, Good luck with that barrel
+                <<set $talkingPoints += 1>>
+===
+
+title: QuestBoozeNo
+position: -61,-106
+---
+Reggie: Go get that barrel of whisky for me, then well talk some more John 
 ===
 
 title: EndWhisky
@@ -70,6 +101,9 @@ Reggie: Oh hey there John, your back already!
         Reggie: I'll be right back John
         <<wait  0.5>>
         (QUEST COMPLETED)
+            <<set $questItemBartender -= 2>>
+            <<set $talkingPoints -= 2>>
+            <<set $finishedBooze += 1>>
     -> Be right back
         <<stop>>
 ===
@@ -79,7 +113,7 @@ Reggie: Oh hey there John, your back already!
 title: FinalDia
 position: -308,99
 ---
-You: And yes I am looking for something, looking someone more specifically.
+You: Oh and actually, I am looking for something, looking someone more specifically.
     Reggie: Looking for someone you say, who ya lookin for?
         -> Looking for an old bounty hunter named Silas, he's supposed to own this here saloon.
         Reggie: Silas! well I'll be darned, well your in the right place John.
