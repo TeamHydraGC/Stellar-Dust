@@ -2,17 +2,23 @@
 tags:
 position: -310,-338
 ---
+<<declare $questItemBartender = 0>>
+
 By: Vincent Courchesne (200619288)
-You: Hey, Bartender!
-    Bartender: Hey buddy Welcome to the Stellar Saloon, what can I do ya for.
-        -> Well I've had a long journey I could use a drink.
-        Bartender: Sounds good, what would you like?
-            -> (Quest) How about a whisky.
-                Bartender: One whisky comin right up!
-                    <<jump QuestBooze>>
-            -> Ah just give me whatever you got.
-                Bartender: Alright, one beer comin right up!
-                    <<jump ContinueDia>>
+<<if $questItemBartender >= 1>>
+    <<jump EndWhisky>>
+<<else>>
+    You: Hey, Bartender!
+        Bartender: Hey buddy Welcome to the Stellar Saloon, what can I do ya for.
+            -> Well I've had a long journey I could use a drink.
+            Bartender: Sounds good, what would you like?
+                -> (Quest) How about a whisky.
+                    Bartender: One whisky comin right up!
+                        <<jump QuestBooze>>
+                -> Ah just give me whatever you got.
+                    Bartender: Alright, one beer comin right up!
+                        <<jump ContinueDia>>
+<<endif>>                                               
 ===
 
 
