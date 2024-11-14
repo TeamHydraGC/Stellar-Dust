@@ -1,5 +1,30 @@
 ﻿title: VinnyQuestYarnTwoScript
 tags:
 ---
+By: Vincent Courchesne (200619288)
+    <<wait  0.5>>
+Drunkard: (Hic...)
+-> Hey there, do you know where I can find a full barrel of whisky?
+    <<jump WhiskyBarrelDia>>
+-> (Leave)
+    <<stop>>
+===
 
+title: WhiskyBarrelDia
+---
+    Drunkard: Well I dunno if your blind or not mister but clearly this room is full of barrels of alcohol, so maybe somewhere in here...
+    You: Well clearly you must be blind because I only see a few barrels in here and they look to be completely empty
+    Drunkard: Yeah well that might have been my fault, might have had a few drinks
+    (Hic...)
+    Drunkard: And there's also some guy that came in here a minute ago and grabbed one of the barrels and stormed out the back over there
+    (Hic...)
+    Drunkard: But I think there might be one left somewhere at the top of that platform up there
+    (The Drunk NPC points towards the platorms above)
+        -> There better be, and I don't think the Bartender is going to be to happy when he finds most of his barrels empty and missing
+            Drunkard: Ah screw that guy, he never serves me more then two drinks.
+            (Hic...)
+                Drunkard: Because he says I get to drunk off this here whisky...
+                You: Well he might be right
+        -> (Leave)
+            <<stop>>
 ===

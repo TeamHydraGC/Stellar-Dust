@@ -2984,11 +2984,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2530384348294780047, guid: cced18dbfb41c374ca9f718beac277ac, type: 3}
       propertyPath: m_Name
-      value: NPC_Drunkerd
+      value: NPC_Drunkard
       objectReference: {fileID: 0}
     - target: {fileID: 4316881029839606753, guid: cced18dbfb41c374ca9f718beac277ac, type: 3}
       propertyPath: m_text
-      value: Drunkerd
+      value: Drunkard
       objectReference: {fileID: 0}
     - target: {fileID: 5277346076140777192, guid: cced18dbfb41c374ca9f718beac277ac, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3033,6 +3033,14 @@ PrefabInstance:
     - target: {fileID: 7970945274647460377, guid: cced18dbfb41c374ca9f718beac277ac, type: 3}
       propertyPath: startNode
       value: VinnyQuestYarnTwoScript
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239108542290199029, guid: cced18dbfb41c374ca9f718beac277ac, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000000022352
+      objectReference: {fileID: 0}
+    - target: {fileID: 8239108542290199029, guid: cced18dbfb41c374ca9f718beac277ac, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.303
       objectReference: {fileID: 0}
     - target: {fileID: 9162018319289422233, guid: cced18dbfb41c374ca9f718beac277ac, type: 3}
       propertyPath: m_Sprite
@@ -3586,11 +3594,11 @@ PrefabInstance:
       objectReference: {fileID: 101118991}
     - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -202.65
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.58
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5146,6 +5154,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 485605253580156471, guid: ba98c67c9fa62c540809987f5d0a3d60, type: 3}
+      propertyPath: m_Color.b
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 485605253580156471, guid: ba98c67c9fa62c540809987f5d0a3d60, type: 3}
+      propertyPath: m_Color.g
+      value: 0.427451
+      objectReference: {fileID: 0}
+    - target: {fileID: 485605253580156471, guid: ba98c67c9fa62c540809987f5d0a3d60, type: 3}
+      propertyPath: m_Color.r
+      value: 0.427451
+      objectReference: {fileID: 0}
     - target: {fileID: 1689980918242888327, guid: ba98c67c9fa62c540809987f5d0a3d60, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.5
@@ -5161,6 +5181,30 @@ PrefabInstance:
     - target: {fileID: 2269487928783695750, guid: ba98c67c9fa62c540809987f5d0a3d60, type: 3}
       propertyPath: m_Name
       value: Booze Room -  Liam
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407043344645498570, guid: ba98c67c9fa62c540809987f5d0a3d60, type: 3}
+      propertyPath: m_Color.b
+      value: 0.43137258
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407043344645498570, guid: ba98c67c9fa62c540809987f5d0a3d60, type: 3}
+      propertyPath: m_Color.g
+      value: 0.43137258
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407043344645498570, guid: ba98c67c9fa62c540809987f5d0a3d60, type: 3}
+      propertyPath: m_Color.r
+      value: 0.43137258
+      objectReference: {fileID: 0}
+    - target: {fileID: 2492429521746527823, guid: ba98c67c9fa62c540809987f5d0a3d60, type: 3}
+      propertyPath: m_Color.b
+      value: 0.43921572
+      objectReference: {fileID: 0}
+    - target: {fileID: 2492429521746527823, guid: ba98c67c9fa62c540809987f5d0a3d60, type: 3}
+      propertyPath: m_Color.g
+      value: 0.43921572
+      objectReference: {fileID: 0}
+    - target: {fileID: 2492429521746527823, guid: ba98c67c9fa62c540809987f5d0a3d60, type: 3}
+      propertyPath: m_Color.r
+      value: 0.43921572
       objectReference: {fileID: 0}
     - target: {fileID: 2783631970057906313, guid: ba98c67c9fa62c540809987f5d0a3d60, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5225,6 +5269,18 @@ PrefabInstance:
     - target: {fileID: 5020847419223811846, guid: ba98c67c9fa62c540809987f5d0a3d60, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 5343530838550373399, guid: ba98c67c9fa62c540809987f5d0a3d60, type: 3}
+      propertyPath: m_Color.b
+      value: 0.4339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 5343530838550373399, guid: ba98c67c9fa62c540809987f5d0a3d60, type: 3}
+      propertyPath: m_Color.g
+      value: 0.4339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 5343530838550373399, guid: ba98c67c9fa62c540809987f5d0a3d60, type: 3}
+      propertyPath: m_Color.r
+      value: 0.4339623
       objectReference: {fileID: 0}
     - target: {fileID: 5861034783683676832, guid: ba98c67c9fa62c540809987f5d0a3d60, type: 3}
       propertyPath: m_LocalScale.y

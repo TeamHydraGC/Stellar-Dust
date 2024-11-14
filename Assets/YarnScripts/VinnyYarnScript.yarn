@@ -4,12 +4,12 @@ position: -310,-338
 ---
 By: Vincent Courchesne (200619288)
 You: Hey, Bartender!
-    Bartender: Hey buddy Welcome to the Stellar Saloon, what can i do ya for.
+    Bartender: Hey buddy Welcome to the Stellar Saloon, what can I do ya for.
         -> Well I've had a long journey I could use a drink.
         Bartender: Sounds good, what would you like?
             -> (Quest) How about a whisky.
                 Bartender: One whisky comin right up!
-                    <<jump QuestVin>>
+                    <<jump QuestBooze>>
             -> Ah just give me whatever you got.
                 Bartender: Alright, one beer comin right up!
                     <<jump ContinueDia>>
@@ -34,7 +34,7 @@ Bartender: So what brings ya to this saloon all the way out in the middle of kno
 ===
 
 
-title: QuestVin
+title: QuestBooze
 position: -61,-106
 ---
 // Quest Node, from here the text ends and you go do your Quest and come back and hand in the Quest Item and a new node for completing the quest will play.
@@ -43,6 +43,29 @@ Bartender: Hey you look like yer still itchin for some action, wanta go get me a
     -> Sure thing, where's this Booze Room of yours tho?
         Bartender: Oh not that far, just walk back from the path you took to get here and you'll see er there.
             -> Sounds good.
+===
+
+title: EndWhisky
+position: -61,-106
+---
+Reggie: Oh hey there John, your back already!
+    -> I got your barrel of whisky
+        Reggie: Ah perfect your gonna like this here whisky I promise you, hope you found it alright through all those barrels
+        You: Well actually it wasn't a problem because there wasn't that many in there
+        You: Some guy was stealing them, and the ones left in there we're being drank by some guy in there that's completely off his rocker
+        Reggie: WAIT WHAT DID YOU SAY???
+        (...)
+        Reggie: You mean to tell me that there's someone in the Booze Room drinkin and some guy stealing all of Silas's stock?
+        You: Hate to say it, but yeah
+        (...)
+        Reggie: Well alright then...
+        Reggie: Well here pour yourself some whisky and take a seat and relax John
+        (Reggie reaches down under the counter & grabs a shotgun)
+        Reggie: I'll be right back John
+        <<wait  0.5>>
+        (QUEST COMPLETED)
+    -> Be right back
+        <<stop>>
 ===
 
 
