@@ -36,6 +36,17 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
             isGrounded = false;
+            
+            if (!isGrounded)
+            {
+                jumpForce = 0f;
+            }
+            else
+            {
+                jumpForce = 10f;
+            }
+
+           
         }
     }
 
@@ -51,6 +62,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.contacts[0].normal.y > 0.5f)
         {
             isGrounded = true;
+            jumpForce = 10f;
         }
     }
 }
