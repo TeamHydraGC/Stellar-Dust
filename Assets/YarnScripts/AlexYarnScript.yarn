@@ -28,5 +28,28 @@ title: BatteryQuest
 ---
 Unit 77: Actually while you are currently here, can you find my spare battery? I’m not going to last much longer without it. I think it dropped down into the cave below. If you find it for me I can probably trade you a fancy weapon.
     -> Accept Quest
+    <<jump AcceptQuest>>
     -> Reject Quest
+    <<jump RejectQuest>>
+=== 
+title: RejectQuest
+---
+You: Can’t do that I’m afraid, I’ve got a world to save.
+    -> Contiue
+Unit 77: Ah well, guess I’ll have to find it myself.
+
+===
+
+title: AcceptQuest
+---
+You: Sure.
+    -> Continue
+Unit 77: Thank you.
+
+===
+
+title: GivingBattery
+---
+Unit 77: “Oh thank the mechanical minds you got my battery back. Well I guess I got to keep my promise. Here’s the new weapon:”
+
 ===
