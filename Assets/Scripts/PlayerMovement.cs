@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
+        
     }
 
     void Update()
@@ -30,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
                                              transform.position.y,
                                              transform.position.z);
         }
+
 
         // Jumping
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
