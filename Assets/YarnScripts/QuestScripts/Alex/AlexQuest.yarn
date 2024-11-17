@@ -1,5 +1,6 @@
 ﻿title: BatteryQuest
 ---
+Narrator: Written by Alex
 Unit 77: Actually while you are currently here, can you find my spare battery? I’m not going to last much longer without it. I think it dropped down into the cave below. If you find it for me I can probably trade you a fancy weapon.
     -> Accept Quest
     <<jump AcceptQuest>>
