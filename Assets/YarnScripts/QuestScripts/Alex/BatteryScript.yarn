@@ -1,0 +1,18 @@
+﻿title: BatteryScript
+tags:
+---
+Written By: Alex MacGregor (200609782)
+
+<<if AlexQuest >= 1>>
+(No Battery)
+    <<stop>>
+<<endif>>
+
+<<if Battery >= 1>>
+    -> Grab Battery
+    <<set AlexQuest +1=>>
+    (You got a battery)
+You: Huh, this must be the battery that android is looking for, better take it back to him.
+<<endif>>
+
+===
