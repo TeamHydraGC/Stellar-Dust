@@ -3,16 +3,22 @@ tags:
 ---
 Written By: Alex MacGregor (200609782)
 
-<<if AlexQuest >= 1>>
-(No Battery)
+<<declare $AlexQuest = 0>>
+<<if $AlexQuest < 1>>
+    (There is a battery on the floor)
     <<stop>>
 <<endif>>
 
-<<if Battery >= 1>>
-    -> Grab Battery
-    <<set AlexQuest +1=>>
-    (You got a battery)
-You: Huh, this must be the battery that android is looking for, better take it back to him.
+<<if $AlexQuest == 1>>
+    <<set $AlexQuest = 2>>
+    You: Huh, this must be the battery that android is looking for, better take it back to him.
+<<endif>>
+
+<<if $AlexQuest > 2>>
 <<endif>>
 
 ===
+0 = not started quest
+1 = started quest, no battery
+2 = started quest, got battery
+3 = finished quest

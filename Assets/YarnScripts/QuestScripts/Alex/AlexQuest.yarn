@@ -10,7 +10,6 @@ Unit 77: Actually while you are currently here, can you find my spare battery? I
 title: RejectQuest
 ---
 You: Can’t do that I’m afraid, I’ve got a world to save.
-    -> Contiue
 Unit 77: Ah well, guess I’ll have to find it myself.
 
 ===
@@ -18,9 +17,8 @@ Unit 77: Ah well, guess I’ll have to find it myself.
 title: AcceptQuest
 ---
 You: Sure.
-    -> Continue
 Unit 77: Thank you.
-
+<<set $AlexQuest = 1>>
 ===
 
 title: GivingBattery

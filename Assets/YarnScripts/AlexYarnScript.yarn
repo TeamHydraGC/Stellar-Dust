@@ -1,13 +1,22 @@
 ﻿title: AlexYarnScript
 tags:
 ---
+<<if $AlexQuest == 2>>
+Unit 77: Hey is that my battery? Thank you sir, I have a weapon I can trade for you.
+You: Oh, sure.
+    (You recived a weapon)
+    <<set $AlexQuest = 3>>
+    <<stop>>
+<<endif>>
+<<if $AlexQuest == 1>>
+Unit: I need to look for my battery.
+You: Oh I actually saw it.
+    
+
 Narrator: Written by Alex MacGregor (200609782)
 You: Huh? Who are you?
-    -> Continue
 Unit 77: I am Unit 77
-    -> Continue
 You: Aren't you supposed to be somewhere else, With your own kind? Why are you here?
-    -> Continue
 Unit 77: Well I was, until those horrifying portals started popping up every where.
     -> How long have you been here?  
 Unit 77: I've been here for roughly 10 hours.
@@ -17,9 +26,9 @@ Unit 77: I've been here for roughly 10 hours.
 title: AskAboutSandMonster
 ---
 You: While I'm thinking about it, have you seen any kind of sand creature around here?
-    -> Continue
 Unit 77: Actually yes, he passed by me about 20 minutes ago. Looked as if he was in some sort of rush, he should be down that corridor.
-    -> Continue
 You: Perfect, stay here and guard the entracne. I'm going in.
     <<jump BatteryQuest>>
 ===
+
+
