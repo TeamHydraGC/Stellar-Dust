@@ -12,13 +12,23 @@ Written By: Alex MacGregor (200609782)
 <<if $AlexQuest == 1>>
     <<set $AlexQuest = 2>>
     You: Huh, this must be the battery that android is looking for, better take it back to him.
+    <<stop>>
 <<endif>>
 
 <<if $AlexQuest > 2>>
+    <<set $AlexQuest = 3>>
+    You: Here you go.
+    Unit 77: Thank you so much, here's that secret weapon I promised...
+    (You Recieved a New Weapon)
+    <<stop>>
+<<endif>>
+
+<<if $AlexQuest > 3>>
+    <<set $AlexQuest = 3>>
+    You: Here you go.
+    Unit 77: Thank you so much, here's that secret weapon I promised...
+    (You Recieved a New Weapon)
+    <<stop>>
 <<endif>>
 
 ===
-0 = not started quest
-1 = started quest, no battery
-2 = started quest, got battery
-3 = finished quest
