@@ -1,34 +1,50 @@
 ﻿title: AlexYarnScript
 tags:
 ---
+<<declare $AlexQuest = 0>>
+
+<<if $AlexQuest == 0>>
+Unit 77: Can you go look for my battery?
+You: Sure.
+Unit 77: Thank you.
+<<set $AlexQuest = 1>>
+<<endif>>
+
 <<if $AlexQuest == 2>>
 Unit 77: Hey is that my battery? Thank you sir, I have a weapon I can trade for you.
-You: Oh, sure.
-    (You recived a weapon)
-    <<set $AlexQuest = 3>>
-    <<stop>>
+You: No problem.
+    (You received a weapon)
 <<endif>>
+
 <<if $AlexQuest == 1>>
-Unit: I need to look for my battery.
-You: Oh I actually saw it.
-    
+Unit 77: The problem is that I don't know where it is.
+You: Oh I actually saw it, let me go get it.
+Unit 77: Oh thank you.
+<<endif>>
 
-Narrator: Written by Alex MacGregor (200609782)
-You: Huh? Who are you?
-Unit 77: I am Unit 77
-You: Aren't you supposed to be somewhere else, With your own kind? Why are you here?
-Unit 77: Well I was, until those horrifying portals started popping up every where.
-    -> How long have you been here?  
-Unit 77: I've been here for roughly 10 hours.
-    <<jump AskAboutSandMonster>>
-===
+<<if $AlexQuest > 2>>
+    <<set $AlexQuest = 3>>
+    You: Here you go.
+    Unit 77: Thank you so much, here's that secret weapon I promised...
+    (You Receieved a New Weapon)
+<<endif>>
 
-title: AskAboutSandMonster
----
-You: While I'm thinking about it, have you seen any kind of sand creature around here?
-Unit 77: Actually yes, he passed by me about 20 minutes ago. Looked as if he was in some sort of rush, he should be down that corridor.
-You: Perfect, stay here and guard the entracne. I'm going in.
-    <<jump BatteryQuest>>
+//Narrator: Written by Alex MacGregor (200609782)
+//You: Huh? Who are you?
+//Unit 77: I am Unit 77
+//You: Aren't you supposed to be somewhere else, With your own kind? Why are you here?
+//Unit 77: Well I was, until those horrifying portals started popping up every where.
+//    -> How long have you been here?  
+//Unit 77: I've been here for roughly 10 hours.
+//    <<jump AskAboutSandMonster>>
+//===
+
+//title: AskAboutSandMonster
+//---
+//You: While I'm thinking about it, have you seen any kind of sand creature around here?
+//Unit 77: Actually yes, he passed by me about 20 minutes ago. Looked as if he was in some sort of rush, he should be down that corridor.
+//You: Perfect, stay here and guard the entracne. I'm going in.
+//    <<jump BatteryQuest>>
 ===
 
 

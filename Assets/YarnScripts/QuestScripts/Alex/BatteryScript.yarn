@@ -3,32 +3,15 @@ tags:
 ---
 Written By: Alex MacGregor (200609782)
 
-<<declare $AlexQuest = 0>>
-<<if $AlexQuest < 1>>
-    (There is a battery on the floor)
-    <<stop>>
-<<endif>>
-
 <<if $AlexQuest == 1>>
-    <<set $AlexQuest = 2>>
+    (There is a battery on the floor)
     You: Huh, this must be the battery that android is looking for, better take it back to him.
-    <<stop>>
+    <<set $AlexQuest = 2>>
 <<endif>>
 
-<<if $AlexQuest > 2>>
-    <<set $AlexQuest = 3>>
-    You: Here you go.
-    Unit 77: Thank you so much, here's that secret weapon I promised...
-    (You Recieved a New Weapon)
-    <<stop>>
-<<endif>>
-
-<<if $AlexQuest > 3>>
-    <<set $AlexQuest = 3>>
-    You: Here you go.
-    Unit 77: Thank you so much, here's that secret weapon I promised...
-    (You Recieved a New Weapon)
-    <<stop>>
-<<endif>>
-
+<<if $AlexQuest == 0>>
+    (There is a battery on the floor)
+    You: What is this battery doing here?
+    <<set $AlexQuest = 2>>
+    <<endif>>
 ===
