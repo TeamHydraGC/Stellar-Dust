@@ -1,7 +1,17 @@
 title: ShadyManYarnScript
 tags:
 ---
+
+<<declare $RatKill = 0>>
+<<declare $RatRun = 0>>
+
+
 By: Ian Luscombe (200599466)
+<<if $RatKill >= 1>>
+        <<jump RatKill>>
+<<elseif $RatRun >= 1>>
+    <<jump RatRun>>
+<<endif>>
 Shady Man: Damn this place! There's always something going wrong for me.
 John Simmons: Why are ya so grim partner?
 Shady Man: There's this damned pest eating all of our supplies
@@ -14,5 +24,28 @@ Shady Man: Perhaps if you're not busy you could deal with it, I need to get more
 John Simmons: What's in it for me?
 Shady Man: Do you see any other place that sells food or booze out here?
 John Simmons: Alright I suppose I'll do it. Running out of food with nothing to eat out here will screw all of us over!
+===
 
+title: RatRun
+---
+Shady Man: Did you deal with the pest?
+John Simmons: Ya, it's been dealt with.
+Shady Man: Excellent! Now I'm ready to go to get supplies, thanks to you we will actually be able to eat the food I get!
+John Simmons:  I never got your name.
+Shady Man: Most Just call me Shady. What's your name stranger?
+John Simmons: John, John Simmons.
+Shady Man: I'll be off now.
+
+===
+
+title: RatKill
+---
+Shady Man: Did you get the pest?
+John Simmons: Sure did, shot the rat right in the head. Here he is!
+Shady Man: Damn look at the size of that thing, No wonder all the food was gone.
+Shady Man: You could have just told me you killed it but I guess I can make a stew from him!
+John Simmons: Nasty
+Shady Man: Don't knock it till you try it, Thanks stranger!
+John Simmons: My names John, John Simmons.
+Shady Man: Most Just call me Shady. I'll be off now to get some more supplies.
 ===

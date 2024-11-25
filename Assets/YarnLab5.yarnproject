@@ -12,7 +12,8 @@
     "ShadyManYarnScript.yarn",
     "VinnyQuestYarnScript.yarn",
     "VinnyQuestYarnTwoScript.yarn",
-    "VinnyBarrelYarnScript.yarn"
+    "VinnyBarrelYarnScript.yarn",
+    "RatYarnScript.yarn"
   ],
   "excludeFiles": [
     "**/*~/*"

@@ -1,0 +1,13 @@
+﻿title: RatYarnScript
+tags:
+---
+Rat: Squeak 
+John: Im sorry little one, but there aint enough food for the both of us!
+    -> Shoot Rat
+        You hit the rat in the heart. You pick it up putting it in your pocket.
+        <<set $RatKill += 1>>
+    -> Shoot Near Rat
+        The Rat Scurries off
+        <<set $RatRun += 1>>
+
+===
