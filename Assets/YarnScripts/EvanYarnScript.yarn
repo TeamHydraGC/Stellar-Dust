@@ -1,32 +1,93 @@
 ﻿title: EvanYarnScript
 tags:
+position: -63,18
 ---
 By: Evan Gentile (200602183)
 
-Stranger: How are you today fine stranger?
-	-> John Simmons: Doing good stranger.
-John Simmons: I'm out here looking for a place to wind down after my journey. Do you happen to know of such a place?
-Stranger: I do know of a place, and it's not too far from here actually.
-	-> John Simmons: Oh that's great! What's the place called?
-Stranger: Woah, not so fast partner! 
-Stranger: I don't share easy to obtain information without more easy to obtain information in return.
-	-> John Simmons: Well there stranger, you bargain a steep price for the name of a place.
-Stranger: Damn right I do.
-Stranger: I take pride in my means of sale.
-	-> John Simmons: Sure seems so.
-John Simmons: So what information do you wish for?
-Stranger: I simply wish for information about why you've come here.
-Stranger: Information about your travels.
-	-> John Simmons: Now that's information I can give.
-		<<jump InformationExchange>>
-	-> Refuse the offer.
-		<<jump OfferRefusal>>
+<<declare $EvanJunkQuest = 1>>
 
 
+//Stranger: How are you today fine stranger?
+//	-> John Simmons: Doing good stranger.
+//John Simmons: I'm out here looking for a place to wind down after my journey. Do you happen to know of such a place?
+//Stranger: I do know of a place, and it's not too far from here actually.
+//	-> John Simmons: Oh that's great! What's the place called?
+//Stranger: Woah, not so fast partner! 
+//Stranger: I don't share easy to obtain information without more easy to obtain information in return.
+//	-> John Simmons: Well there stranger, you bargain a steep price for the name of a place.
+//Stranger: Damn right I do.
+//Stranger: I take pride in my means of sale.
+//	-> John Simmons: Sure seems so.
+//John Simmons: So what information do you wish for?
+//Stranger: I simply wish for information about why you've come here.
+//Stranger: Information about your travels.
+//	-> John Simmons: Now that's information I can give.
+//		<<jump InformationExchange>>
+//	-> Refuse the offer.
+//		<<jump OfferRefusal>>
+//
+
+
+
+//junk quest
+<<if $EvanJunkQuest == 1>>
+Stranger: Traveller! We meet again, although in the same spot as last time!
+John Simmons: So we do.
+Stranger: If you have the time, I just so happen to have a job for you.
+Stranger: A few days ago I had almost all of my belongings taken from me by some meddling bandit. It would be a great help if you could go down into the mine and retrieve them for me.
+Stranger: I would go myself but this thief took my trusty revolver and ammunition too!
+Stranger: Fair warning, the drop down does seem quite far so you'll probably need some sort of tool to get back up.
+<<set $EvanJunkQuest = 2>>
+<<stop>>
+<<endif>>
+
+<<if $EvanJunkQuest == 2>>
+This looks like the stuff the stranger was talking about.
+I should take it back with me.
+	-> Pick it up.
+		<<set $EvanJunkQuest = 3>>
+	-> Leave it here for the stranger to get himself.
+		<<set $EvanJunkQuest = 5>>
+<<stop>>
+<<endif>>
+
+<<if $EvanJunkQuest == 3>>
+Stranger: You did it! You found my stuff!
+Stranger: Thank you so much, I can finally leave this mineshaft!
+Stranger: Here, have this as a reward.
+The man gives you one of his guns as thanks.
+Stranger: This is for you, my trusty revolver, I know you'll treat 'er good.
+	-> Thank you.
+		<<set $EvanJunkQuest = 6>>
+		<<stop>>
+<<endif>>
+
+<<if $EvanJunkQuest == 5>>
+Stranger: Hey there partner!
+Stranger: Hey uh, where's my belongings?
+	-> I left them down there for you.
+Stranger: Why???
+Stranger: I can't go get them! I don't have gear to go down!
+	-> Too bad so sad.
+John Simmons: I'm not your little dog.
+<<set $EvanJunkQuest = 7>>
+<<stop>>
+<<endif>>
+
+<<if $EvanJunkQuest == 6>>
+Stranger: Thank you for earlier!
+<<stop>>
+<<endif>>
+
+<<if $EvanJunkQuest == 7>>
+Stranger: Leave me be.
+<<stop>>
+<<endif>>
 ===
 
 title: InformationExchange
 tags:
+position: -151,266
 ---
 	-> Give information
 		<<jump InformationExchangePart2>>
@@ -36,6 +97,7 @@ tags:
 
 title: InformationExchangePart2
 tags:
+position: -159,482
 ---
 John Simmons: Okay, I have come here to seek out Silas "Dusty" Nova.
 	-> John Simmons: I have heard he tends to a saloon around these parts.
@@ -45,13 +107,16 @@ Stranger: The one you seek, Silas "Dusty" Nova, he does indeed tend to a saloon 
 Stranger: It's called the "Stellar Saloon", you'll find it just outside this mineshaft.
 	-> John Simmons: Thank you fellow traveller, I wish you the best on your adventures.
 Stranger: Likewise! Good luck achieving your goals!
+<<set $EvanJunkQuest = 1>>
 ===
 
 title: OfferRefusal
 tags:
+position: 180,297
 ---
 	-> John Simmons: I won't give you information.
 Stranger: That's a shame, seems I won't be giving you any either.
 John Simmons: I can do just fine without it.
 Stranger: Well then, farewell traveller, may our paths cross again.
+<<set $EvanJunkQuest = 1>>
 ===

@@ -1,0 +1,12 @@
+﻿title: MONEYBOX
+By: Liam J
+---
+<<if $CYBORGQUEST is false>> 
+John: Locked....
+<<endif>>
+
+<<if $CYBORGQUEST is true>>
+John: MONEYYYYYYYY
+<<set $MONEY = true>>
+<<endif>>
+===

@@ -5034,9 +5034,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2630655001499492521, guid: 5bcb89e326c58474e94d8595a09c48f0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 53.931255
+      objectReference: {fileID: 0}
+    - target: {fileID: 2630655001499492521, guid: 5bcb89e326c58474e94d8595a09c48f0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -76.6687
+      objectReference: {fileID: 0}
+    - target: {fileID: 2630655001499492521, guid: 5bcb89e326c58474e94d8595a09c48f0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.5339
+      objectReference: {fileID: 0}
     - target: {fileID: 3968132641624390167, guid: 5bcb89e326c58474e94d8595a09c48f0, type: 3}
       propertyPath: m_Name
       value: Roof (Underground)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8013972103323373209, guid: 5bcb89e326c58474e94d8595a09c48f0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 57.94296
+      objectReference: {fileID: 0}
+    - target: {fileID: 8013972103323373209, guid: 5bcb89e326c58474e94d8595a09c48f0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -21.5244
+      objectReference: {fileID: 0}
+    - target: {fileID: 8013972103323373209, guid: 5bcb89e326c58474e94d8595a09c48f0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.616
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
