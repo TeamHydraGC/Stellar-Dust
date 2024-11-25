@@ -67,9 +67,9 @@ Stranger: Well then, farewell traveller, may our paths cross again.
 
 title: JunkQuestStart
 tags:
-position: 613,-16
+position: 763,-23
 ---
-<<if $EvanJunkQuest <= 1>>
+<<if $EvanJunkQuest == 1>>
 Stranger: Traveller! We meet again, although in the same spot as last time!
 John Simmons: So we do.
 Stranger: If you have the time, I just so happen to have a job for you.
@@ -82,18 +82,40 @@ Stranger: Fair warning, the drop down does seem quite far so you'll probably nee
 
 title: JunkQuestPickup
 tags:
-position: 616,188
+position: 766,181
 ---
-<<if $EvanJunkQuest <= 2>>
+<<if $EvanJunkQuest == 2>>
 This looks like the stuff the stranger was talking about.
 I should take it back with me.
 	-> Pick it up.
-<<set $EvanJunkQuest = 3>>
+		<<set $EvanJunkQuest = 3>>
+	-> Leave it here for the stranger to get himself.
+		<<set $EvanJunkQuest = 5>>
 <<endif>>
 ===
 
-title: JunkQuestEnd
+title: JunkQuestEndGood
 tags:
+position: 645,378
 ---
+<<if $EvanJunkQuest == 3>>
+Stranger: You did it! You found my stuff!
+Stranger: Thank you so much, I can finally leave this mineshaft!
+Stranger: Here, have this as a reward.
+The man gives you one of his guns as thanks.
+Stranger: This is for you, my trusty revolver, I know you'll treat 'er good.
+	-> Thank you.
+		<<stop>>
+<<endif>>
+===
 
+title:JunkQuestEndBad
+tags:
+position: 887,377
+---
+<<if $EvanJunkQuest == 5>>
+
+
+
+<<endif>>
 ===
