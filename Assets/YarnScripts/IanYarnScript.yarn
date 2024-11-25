@@ -52,4 +52,5 @@ title: End
 ---
 The bone bird lifts its wings and takes flight
 The Battle Begins!
+<<set $checkforconversation = 1>>
 ===

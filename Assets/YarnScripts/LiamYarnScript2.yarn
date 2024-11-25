@@ -2,6 +2,19 @@ title:LiamYarnScript2
 tags:
 By: Liam J
 ---
+
+<<set $CYBORGQUEST = true>>
+<<declare $CYBORGQUEST = false>>
+<<declare $MONEY = false>>
+<<if $MONEY is true>>
+    <<jump Cyborgmessage2>>
+<<elseif $MONEY is false>>
+    <<jump LiamYarnScript3B>>
+<<endif>>
+===
+title: LiamYarnScript3B
+tags:
+---
 By: Liam J
 COMPUTER: TRANSMISSION START
 Cyborg: I’m gonna keep this real simple for ya John: I know what your deal is and I wanna make a deal of my own with you. 
@@ -11,10 +24,12 @@ Cyborg: The deals simple, you just pick me up some random knick knacks from acro
 Cyborg: I’ve left a “peace offering” in front of the saloon, its part of your cut. Check it out then come back so you can hear the rest of the deal, will ya?
 COMPUTER: TRANSMISSION PAUSED
 ===
+
 //This is an ongoing quest throught the entire game and will definitely recieve many changes over time.
 //This first transmission starts upon interacting with the computer for the first time.
 //A small futuristic metal crate will always be sitting in front of the saloon. Finishing the first part of the message will open it and allow you to collect the money from inside.
 //Going back to the computer and interacting with it after collecting the money will play the second message.
+
 title:Cyborgmessage2
 tags:
 ---
