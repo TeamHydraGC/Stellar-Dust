@@ -5333,6 +5333,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mineshaft
       objectReference: {fileID: 0}
+    - target: {fileID: 7468886009302069272, guid: 9e46cc4a13ef2c34887bcf3e071395c2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.9194846
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468886009302069272, guid: 9e46cc4a13ef2c34887bcf3e071395c2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -53.5888
+      objectReference: {fileID: 0}
     - target: {fileID: 8229262323931495833, guid: 9e46cc4a13ef2c34887bcf3e071395c2, type: 3}
       propertyPath: m_LocalScale.x
       value: 53.931255
