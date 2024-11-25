@@ -1,7 +1,11 @@
 ﻿title: EvanYarnScript
 tags:
+position: -63,18
 ---
 By: Evan Gentile (200602183)
+
+<<declare $EvanJunkQuest = 0>>
+
 
 Stranger: How are you today fine stranger?
 	-> John Simmons: Doing good stranger.
@@ -27,6 +31,7 @@ Stranger: Information about your travels.
 
 title: InformationExchange
 tags:
+position: -151,266
 ---
 	-> Give information
 		<<jump InformationExchangePart2>>
@@ -36,6 +41,7 @@ tags:
 
 title: InformationExchangePart2
 tags:
+position: -159,482
 ---
 John Simmons: Okay, I have come here to seek out Silas "Dusty" Nova.
 	-> John Simmons: I have heard he tends to a saloon around these parts.
@@ -45,13 +51,49 @@ Stranger: The one you seek, Silas "Dusty" Nova, he does indeed tend to a saloon 
 Stranger: It's called the "Stellar Saloon", you'll find it just outside this mineshaft.
 	-> John Simmons: Thank you fellow traveller, I wish you the best on your adventures.
 Stranger: Likewise! Good luck achieving your goals!
+<<set $EvanJunkQuest = 1>>
 ===
 
 title: OfferRefusal
 tags:
+position: 180,297
 ---
 	-> John Simmons: I won't give you information.
 Stranger: That's a shame, seems I won't be giving you any either.
 John Simmons: I can do just fine without it.
 Stranger: Well then, farewell traveller, may our paths cross again.
+<<set $EvanJunkQuest = 1>>
+===
+
+title: JunkQuestStart
+tags:
+position: 613,-16
+---
+<<if $EvanJunkQuest <= 1>>
+Stranger: Traveller! We meet again, although in the same spot as last time!
+John Simmons: So we do.
+Stranger: If you have the time, I just so happen to have a job for you.
+Stranger: A few days ago I had almost all of my belongings taken from me by some meddling bandit. It would be a great help if you could go down into the mine and retrieve them for me.
+Stranger: I would go myself but this thief took my trusty revolver and ammunition too!
+Stranger: Fair warning, the drop down does seem quite far so you'll probably need some sort of tool to get back up.
+<<set $EvanJunkQuest = 2>>
+<<endif>>
+===
+
+title: JunkQuestPickup
+tags:
+position: 616,188
+---
+<<if $EvanJunkQuest <= 2>>
+This looks like the stuff the stranger was talking about.
+I should take it back with me.
+	-> Pick it up.
+<<set $EvanJunkQuest = 3>>
+<<endif>>
+===
+
+title: JunkQuestEnd
+tags:
+---
+
 ===
