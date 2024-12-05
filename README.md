@@ -7,6 +7,7 @@ Narrative & Game Design (GitHub Collaborator): Joss Moo-Young/Joss.MooYoung@Geor
 Sprites & Assets: Evan G, Vincent C, Aaron H, Liam J, Ian L, Alex M, & Nate W.
 //////
 Code for PCMovement: Connor Smiley/connor.smiley@georgiancollege.ca 
+Code for Aim/Shoot Mechanic (in beta): MoreBBlakeyyy https://www.youtube.com/watch?v=-bkmPm_Besk
 //////
 ------------------------------
 Temporary Name Inc Members:
