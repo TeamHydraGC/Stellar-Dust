@@ -49737,6 +49737,19 @@ MonoBehaviour:
   detectionRange: 5
   avoidanceStrength: 5
   detectionAngle: 45
+--- !u!114 &1344271647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344271635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3e2c3bc148f69f4bb2c80b8b1fe2e1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 0
 --- !u!4 &1348387569 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7393978649137913212, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
@@ -57177,6 +57190,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3928096357643424343, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1344271646}
+    - targetCorrespondingSourceObject: {fileID: 3928096357643424343, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1344271647}
   m_SourcePrefab: {fileID: 100100000, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
 --- !u!1001 &6465648177148398630
 PrefabInstance:

@@ -16,7 +16,7 @@ public class BulletScript : MonoBehaviour
         Vector3 BulletDirection = mousepos - transform.position;
         Vector3 Rotation = transform.position - mousepos;
 
-        rb.velocity = new Vector2(BulletDirection.x, BulletDirection.y).normalized * force;
+        rb.linearVelocity = new Vector2(BulletDirection.x, BulletDirection.y).normalized * force;
 
         float rot = Mathf.Atan2(Rotation.y, Rotation.x) * Mathf.Rad2Deg;
 
