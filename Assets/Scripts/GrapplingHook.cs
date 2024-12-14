@@ -23,25 +23,35 @@ public class GrapplingHook : MonoBehaviour
     {
         if (isGrappleTargetInRange && Input.GetMouseButtonDown(1))
         {
-            joint.connectedAnchor = grapplePoint;
-            joint.enabled = true;
-            joint.distance = grappleLength;
-            rope.SetPosition(0, grapplePoint);
-            rope.SetPosition(1, transform.position);
-            rope.enabled = true;
-            audioSource.PlayOneShot(grappleSound);
+            ActivateGrapple();
         }
 
         if (Input.GetMouseButtonUp(1))
         {
-            joint.enabled = false;
-            rope.enabled = false;
+            DeactivateGrapple();
         }
 
         if (rope.enabled)
         {
             rope.SetPosition(1, transform.position);
         }
+    }
+
+    public void ActivateGrapple()
+    {
+        joint.connectedAnchor = grapplePoint;
+        joint.enabled = true;
+        joint.distance = grappleLength;
+        rope.SetPosition(0, grapplePoint);
+        rope.SetPosition(1, transform.position);
+        rope.enabled = true;
+        audioSource.PlayOneShot(grappleSound);
+    }
+
+    public void DeactivateGrapple()
+    {
+        joint.enabled = false;
+        rope.enabled = false;
     }
 
     void OnTriggerEnter2D(Collider2D other)
