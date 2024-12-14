@@ -46,4 +46,12 @@ public class AJEnemyTrackerScript : MonoBehaviour
         // Move the enemy towards the adjusted direction
         transform.position = Vector2.MoveTowards(transform.position, (Vector2)transform.position + directionToPlayer, speed * Time.deltaTime);
     }
+
+    void OnCollisionEnter2D()
+    {
+        if (GameObject.FindWithTag("Bullet") == true)
+        {
+            Destroy(gameObject);
+        }
+    }
 }
