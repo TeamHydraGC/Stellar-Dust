@@ -6,6 +6,8 @@ public class Shooting : MonoBehaviour
     private Vector3 mousepos;
     public GameObject bullet;
     public Transform bulletTransform;
+    public AudioSource audioSource;
+    public AudioClip fireSound;
     public bool canfire = true; // Start with canfire being true, so shooting can begin
     private float timer;
     public float fireTime = 0.5f; // Time between shots
@@ -47,6 +49,8 @@ public class Shooting : MonoBehaviour
             canfire = false; // Disable firing until the cooldown is finished
             timer = 0; // Reset the timer after firing
             Instantiate(bullet, bulletTransform.position, Quaternion.identity); // Fire the bullet
+
+            audioSource.PlayOneShot(fireSound); // Play fire sound
         }
     }
 }

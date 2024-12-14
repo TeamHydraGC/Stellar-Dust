@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpForce = 10f;
     public bool useTransformMovement;
     private bool isGrounded = false;
+    public AudioSource audioSource;
+    public AudioClip jumpSound;
 
     void Start()
     {
@@ -47,6 +49,8 @@ public class PlayerMovement : MonoBehaviour
             {
                 jumpForce = 10f;
             }
+
+            audioSource.PlayOneShot(jumpSound);
 
            
         }

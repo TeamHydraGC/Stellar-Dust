@@ -5,6 +5,8 @@ public class PlayerController : MonoBehaviour
 {
     public float movementSpeed = 5.0f;
     public float jumpForce = 10.0f;
+    public AudioSource audioSource;
+    public AudioClip jumpSound;
 
     private Vector2 moveInput;
     private bool isFacingRight;
@@ -45,6 +47,7 @@ public class PlayerController : MonoBehaviour
         {
             rbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             Debug.Log("Jump");  // Debug log to check jump
+            audioSource.PlayOneShot(jumpSound);
         }
     }
 
