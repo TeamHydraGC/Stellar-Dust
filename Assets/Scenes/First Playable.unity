@@ -1912,7 +1912,7 @@ GameObject:
   - component: {fileID: 578455226}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: Ground
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51153,7 +51153,7 @@ GameObject:
   - component: {fileID: 1142989679}
   m_Layer: 0
   m_Name: Grid
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56338,6 +56338,10 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1434724646}
+    - target: {fileID: 1883493367002727761, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_GravityScale
+      value: 1.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2113080808047443451, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: jumpSound
       value: 
@@ -56396,7 +56400,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_ActionEvents.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_ActionEvents.Array.data[4].m_ActionId
@@ -56434,7 +56438,8 @@ PrefabInstance:
       propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4624390667095288852, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}

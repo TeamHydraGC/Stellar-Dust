@@ -27,4 +27,12 @@ public class BulletScript : MonoBehaviour
     {
         
     }
+
+    void OnCollisionEnter2D()
+    {
+        if (GameObject.FindWithTag("Bullet") == true)
+        {
+            Destroy(gameObject);
+        }
+    }
 }
