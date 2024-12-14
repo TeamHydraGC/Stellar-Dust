@@ -5,6 +5,8 @@ public class GrapplingHook : MonoBehaviour
     [SerializeField] private float grappleLength;
     [SerializeField] private LayerMask grappleLayer;
     [SerializeField] private LineRenderer rope;
+    public AudioSource audioSource;
+    public AudioClip grappleSound;
 
     private Vector3 grapplePoint;
     private DistanceJoint2D joint;
@@ -27,6 +29,7 @@ public class GrapplingHook : MonoBehaviour
             rope.SetPosition(0, grapplePoint);
             rope.SetPosition(1, transform.position);
             rope.enabled = true;
+            audioSource.PlayOneShot(grappleSound);
         }
 
         if (Input.GetMouseButtonUp(1))
