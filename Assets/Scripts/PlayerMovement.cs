@@ -12,10 +12,11 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip jumpSound;
 
+    private bool isFacingRight = true;
+
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
-        
     }
 
     void Update()
@@ -34,13 +35,18 @@ public class PlayerMovement : MonoBehaviour
                                              transform.position.z);
         }
 
+        // Flip Object
+        if ((x > 0 && !isFacingRight) || (x < 0 && isFacingRight))
+        {
+            FlipObject();
+        }
 
         // Jumping
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
             isGrounded = false;
-            
+
             if (!isGrounded)
             {
                 jumpForce = 0f;
@@ -51,8 +57,6 @@ public class PlayerMovement : MonoBehaviour
             }
 
             audioSource.PlayOneShot(jumpSound);
-
-           
         }
     }
 
@@ -70,5 +74,13 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = true;
             jumpForce = 10f;
         }
+    }
+
+    private void FlipObject()
+    {
+        isFacingRight = !isFacingRight;
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
     }
 }
