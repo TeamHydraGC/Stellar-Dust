@@ -25,9 +25,9 @@ public class BountyPickup : MonoBehaviour
     public void OnMouseEnter()
     {
         
-        if  (Input.GetMouseButton(1))
+        if  (Input.GetMouseButton(1) == true)
         {
-            
+            Debug.Log("Picked up bounty!");
         }
 
 
