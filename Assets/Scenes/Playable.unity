@@ -138331,6 +138331,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7d3ee2335329b24caebf2b7f84a9d72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1434724650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434724634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5562a8b3d135a1641b2cc5ef5054b5d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: 0
+  playerMaxHealth: 4
 --- !u!1001 &1435887792
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -141646,8 +141660,16 @@ PrefabInstance:
       value: 41ea8829-62c9-4418-80e6-98964ee76ae9
       objectReference: {fileID: 0}
     - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionId
+      value: 11a42d75-8bb4-474d-94a1-77735bbea968
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_ActionEvents.Array.data[4].m_ActionName
       value: 'Controller/GrappleAction[/DualSenseGamepadHID/rightShoulder]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionName
+      value: Controller/ShootingAction
       objectReference: {fileID: 0}
     - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.size
@@ -141655,7 +141677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -141713,6 +141735,9 @@ PrefabInstance:
       insertIndex: 0
       addedObject: {fileID: 1106985555}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3928096357643424343, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1434724650}
     - targetCorrespondingSourceObject: {fileID: 3928096357643424343, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1434724646}
