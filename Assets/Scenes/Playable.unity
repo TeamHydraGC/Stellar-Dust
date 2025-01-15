@@ -138944,7 +138944,7 @@ GameObject:
   - component: {fileID: 1660947555}
   - component: {fileID: 1660947554}
   m_Layer: 0
-  m_Name: SceneBox
+  m_Name: SceneChange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -141581,6 +141581,10 @@ PrefabInstance:
       propertyPath: inputActions
       value: 
       objectReference: {fileID: -944628639613478452, guid: fb5cf4f7496cced4496a18bbcc9e553c, type: 3}
+    - target: {fileID: 3125561803007935479, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3343216261540068133, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_EnableCollision
       value: 1
@@ -141599,11 +141603,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 158
+      value: 130
       objectReference: {fileID: 0}
     - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.8
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_LocalPosition.z
