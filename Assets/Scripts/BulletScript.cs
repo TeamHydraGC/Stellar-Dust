@@ -5,7 +5,7 @@ public class BulletScript : MonoBehaviour
     private Vector3 mousepos;
     private Camera maincam;
     private Rigidbody2D rb;
-    public float force;
+    public float force; // effectively the bullet's speed
 
     void Start()
     {
@@ -30,9 +30,9 @@ public class BulletScript : MonoBehaviour
 
     void OnCollisionEnter2D()
     {
-        if (GameObject.FindWithTag("Bullet") == true)
+        if (GameObject.FindWithTag("Ground") == true) // if the bullet collides with the ground, DESTROY ITTTT
         {
-            Destroy(gameObject);
+            Destroy(gameObject); // poof
         }
     }
 }
