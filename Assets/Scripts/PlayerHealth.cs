@@ -19,7 +19,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int amount) // function to deal damage to the player
     {
-        playerHealth -= amount; // 
+        playerHealth -= amount; // setting player health as whatever TakeDamage reports it to be
         if (playerHealth <= 0) // player death logic
         {
             Destroy(gameObject); // VERY TEMPORARY, DO NOT SHIP THIS

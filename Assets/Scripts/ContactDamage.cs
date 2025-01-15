@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class ContactDamage : MonoBehaviour
@@ -17,11 +18,12 @@ public class ContactDamage : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision) // detecting collission
     {
-        if(collision.gameObject.tag == "Player")
+        if(collision.gameObject.tag == "Player") // if colliding with an object tagged as Player, deal damage
         {
             playerHealth.TakeDamage(1);
+            Task.Delay(250); // This is a hack. Pause the execution of this script for 0.250 seconds (effectively a cooldown on taking damage)
         }
     }
 
