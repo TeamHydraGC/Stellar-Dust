@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 7570983564878976095}
   - component: {fileID: 5791078525129919291}
   m_Layer: 0
-  m_Name: Player 1
+  m_Name: Player (WildWest)
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

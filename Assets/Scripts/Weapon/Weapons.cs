@@ -29,10 +29,10 @@ public class WeaponSwitch : MonoBehaviour
         //Cycle Weapon
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            int weaponNumber = (int)weaponType;
-            weaponNumber++;
-            weaponNumber %= (int)weaponType.COUNT;
-            weaponType
+            //int weaponNumber = (int)weaponType;
+            //weaponNumber++;
+            //weaponNumber %= (int)weaponType.COUNT;
+            //weaponType
 
         }
 
@@ -45,7 +45,7 @@ public class WeaponSwitch : MonoBehaviour
     }
 
 
-    void ShootRifle()
+    //void ShootRifle()
 
 
 }
