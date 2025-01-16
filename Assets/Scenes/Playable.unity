@@ -1644,7 +1644,7 @@ GameObject:
   - component: {fileID: 306339512}
   - component: {fileID: 306339511}
   m_Layer: 0
-  m_Name: TutorialText_Shoot (1)
+  m_Name: TutorialText_Crate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -143223,10 +143223,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1708592435}
   - {fileID: 145606510}
   - {fileID: 1594750769}
   - {fileID: 306339510}
-  - {fileID: 1708592435}
   m_Father: {fileID: 2146882732}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1972869738
