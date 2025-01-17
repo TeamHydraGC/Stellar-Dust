@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
 
-    public int playerHealth; // current player health, do not touch unless via the TakeDamage function below!
+    public int currPlayerHealth; // current player health, do not touch unless via the TakeDamage function below!
     public int playerMaxHealth = 4; // maximum player health, dont tweak during runtime
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,9 +19,17 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int amount) // function to deal damage to the player
     {
-        playerHealth -= amount; // setting player health as whatever TakeDamage reports it to be
-        if (playerHealth <= 0) // player death logic
+        currPlayerHealth -= amount; // setting player health as whatever TakeDamage reports it to be
+
+        if (currPlayerHealth == 1)
         {
+            Debug.Log("Player health is at 1! Taking damage again WILL BREAK THINGS, so be careful!");
+        }
+;
+        
+        if (currPlayerHealth <= 0) // player death logic
+        {
+            Debug.Log("Player health <= 0, destroying player");
             Destroy(gameObject); // VERY TEMPORARY, DO NOT SHIP THIS
         }
     }
