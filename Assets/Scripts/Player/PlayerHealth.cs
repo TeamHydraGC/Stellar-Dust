@@ -23,13 +23,13 @@ public class PlayerHealth : MonoBehaviour
 
         if (currPlayerHealth == 1)
         {
-            Debug.Log("Player health is at 1! Taking damage again WILL BREAK THINGS, so be careful!");
+            Debug.Log("Player health is at 1! Taking damage again will destroy the player object and this WILL BREAK THINGS, so be careful!");
         }
 ;
         
         if (currPlayerHealth <= 0) // player death logic
         {
-            Debug.Log("Player health <= 0, destroying player");
+            Debug.Log("Player health <= 0, destroying player! THIS BREAKS A LOT OF THINGS, DO NOT SHIP!");
             Destroy(gameObject); // VERY TEMPORARY, DO NOT SHIP THIS
         }
     }
