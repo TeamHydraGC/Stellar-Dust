@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
         var playerMap = inputActions.FindActionMap("Player");
         if (playerMap == null)
         {
-            Debug.LogError("Player action map not found! You're probably using controller.");
+            Debug.LogError("Player action map not found! You're probably not using controller.");
             return;
         }
     }
