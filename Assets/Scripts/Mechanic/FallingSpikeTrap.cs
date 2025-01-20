@@ -3,7 +3,7 @@ using UnityEngine;
 public class FallingSpikeTrap : MonoBehaviour
 {
     public float fallSpeed = 5f;
-    public int damageAmount = 4; 
+    public int damageAmount = 2; 
     private bool playerNearby = false;
     private bool hasFallen = false;
 
@@ -28,11 +28,12 @@ public class FallingSpikeTrap : MonoBehaviour
     {
         if (collision.collider.CompareTag("Player"))
         {
-            // Call the TakeDamage method on the player's health script
+            //Call the TakeDamage method on the player's health script
             PlayerHealth playerHealth = collision.collider.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(damageAmount);
+                playerHealth.playerTakeDamage(damageAmount);
+                Debug.Log("Player took " + damageAmount + " damage.");
             }
 
             // Stop the spike from falling further after hitting the player

@@ -144909,6 +144909,10 @@ PrefabInstance:
       propertyPath: m_BodyType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8072805260640822923, guid: 9e3cd4fc578280d4685a7cebd347cfe2, type: 3}
+      propertyPath: damageAmount
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 8076522769765669472, guid: 9e3cd4fc578280d4685a7cebd347cfe2, type: 3}
       propertyPath: m_Name
       value: SpikeTrap1
