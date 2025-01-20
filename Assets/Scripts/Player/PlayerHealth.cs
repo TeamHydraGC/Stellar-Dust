@@ -5,7 +5,7 @@ public class PlayerHealth : MonoBehaviour
     public int playerHealth; // current player health, do not touch unless via the TakeDamage function below!
     public int playerMaxHealth = 4; // maximum player health, dont tweak during runtime
 
-    public void playerTakeDamage(int amount) // function to deal damage to the player
+    public void playerTakeDamage(int amount) // Method to deal damage to the player
     {
         playerHealth -= amount; // Sets player health as whatever TakeDamage reports it to be
 
