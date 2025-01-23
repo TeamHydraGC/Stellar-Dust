@@ -1,3 +1,4 @@
+// Authored by Nate
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
@@ -11,7 +12,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (playerHealth == 1) // Warning for player health being at 1
         {
-            Debug.Log("Player health is at 1! Taking damage again will destroy the player object and this WILL BREAK THINGS, so be careful!");
+            Debug.Log("Player health is at 1! Taking any more damage will kill the player!");
         }
         
         if (playerHealth <= 0) // player death logic, DO NOT SHIP THIS
