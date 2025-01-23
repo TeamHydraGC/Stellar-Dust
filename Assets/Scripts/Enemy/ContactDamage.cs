@@ -8,14 +8,13 @@ public class ContactDamage : MonoBehaviour
 
     public int damageValue = 1;
 
-    private void OnCollisionEnter2D(Collision2D collision) // detecting collission
+    private void OnTriggerEnter2D(Collider2D other) // detecting collission
     {
-        if(collision.gameObject.tag == "Player") // if colliding with an object tagged as Player, do:
+        if(other.gameObject.tag == "Player") // if colliding with an object tagged as Player, do:
         {
             playerHealth.playerTakeDamage(damageValue);
             Debug.Log("Dealt " + damageValue + " to player.");
-            Task.Delay(250); // This is a hack. Pause the execution of this script for 0.250 seconds (effectively a cooldown on taking damage)
-            //if(PlayerHealth)
+            Task.Delay(250); // This is a hack, replace this with a real solution. Pause the execution of this script for 0.250 seconds (effectively a cooldown on taking damage)
         }
     }
 
