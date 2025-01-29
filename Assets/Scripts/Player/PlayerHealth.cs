@@ -52,11 +52,8 @@ public class PlayerHealth : MonoBehaviour
     }
     IEnumerator InvulnAfterDamageTaken() // i-frame shit 
     {
-        if (playerInvulnerable)
-        {
-            yield return new WaitForSeconds(invulnTimeInSeconds);
-            playerInvulnerable = !playerInvulnerable;
-            Debug.Log("Player now vulnerable.");
-        }
+        yield return new WaitForSeconds(invulnTimeInSeconds);
+        playerInvulnerable = !playerInvulnerable;
+        Debug.Log("Player now vulnerable.");
     }
 }
