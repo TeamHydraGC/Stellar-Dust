@@ -46,7 +46,7 @@ public class PlayerHealth : MonoBehaviour
         {
             Debug.Log("Player health <= 0, entering Game Over screen.");
             playerDead = true;
-            SceneManager.LoadScene(sceneBuildIndex: 2);
+            SceneManager.LoadScene(sceneBuildIndex: 3);
             playerDead = !playerDead;
         }
     }
