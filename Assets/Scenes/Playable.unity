@@ -144699,16 +144699,28 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 5791078525129919291, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: playerDead
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5791078525129919291, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: spawnpoint
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5791078525129919291, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: playerHealth
-      value: 1
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5791078525129919291, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: playerMaxHealth
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5791078525129919291, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: currPlayerHealth
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5791078525129919291, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: playerInvulnerable
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_LocalPosition.x

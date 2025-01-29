@@ -11,9 +11,9 @@ public class PlayerHealth : MonoBehaviour
     public bool playerDead = false; // If true, player goes to GameOver scene
     public bool playerInvulnerable = false; // Used for invulnerability after taking damage, DO NOT TOUCH
 
-    private void Start() // Making sure that playerHealth never goes above playerMaxHealth
+    private void Start() 
     {
-        if (playerHealth > playerMaxHealth)
+        if (playerHealth > playerMaxHealth)// Making sure that playerHealth never goes above playerMaxHealth
         {
             playerHealth = playerMaxHealth;
         }
