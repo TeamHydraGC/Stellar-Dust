@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b80d0f4d5655a614abe66364ae8107b8
+guid: c5910ad5ff65b2e4e861a6b1d92e72b1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -81,6 +81,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -110,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PauseMenuSDSS_0
+      name: TitleScreenUISD&SS_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 176
-        width: 15
-        height: 309
+        x: 791
+        y: 450
+        width: 339
+        height: 129
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,30 +138,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 882deeb92ccf34c439982da0cdf4f436
-      internalID: -1154419295
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PauseMenuSDSS_1
-      rect:
-        serializedVersion: 2
-        x: 641
-        y: 119
-        width: 637
-        height: 871
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c9041a90ac76d8c4488b953e79824c34
-      internalID: -1812042507
+      spriteID: b546460f2ec64b243aee9e1d54d6ec51
+      internalID: -1462928393
       vertices: []
       indices: 
       edges: []
@@ -157,7 +148,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: cec67210b139e0f43aaf58de108f103e
+    spriteID: f76cbca5447d1714baaa9af9c9ec2194
     internalID: 0
     vertices: []
     indices: 
@@ -167,8 +158,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PauseMenuSDSS_0: -1154419295
-      PauseMenuSDSS_1: -1812042507
+      TitleScreenUISD&SS_0: -1462928393
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
