@@ -8,14 +8,13 @@ public class PlayerHealth : MonoBehaviour
 {
     public int playerHealth; // current player health, DO NOT TOUCH unless via the TakeDamage function below!
     public int playerMaxHealth = 4; // maximum player health, dont tweak during runtime
-    public bool playerDead = false; // If true, player goes to GameOver scene
+    public int invulnTimeInSeconds = 1; // How long invulnerability should last, as an int
     public bool playerInvulnerable = false; // Used for invulnerability after taking damage, DO NOT TOUCH
+    public bool playerDead = false; // If true, player goes to GameOver scene
 
-    private void Start() 
+    private void Start() // Set playerHealth = playerMaxHealth on start 
     {
-        
-
-        if (playerHealth > playerMaxHealth) // Making sure that playerHealth never goes above playerMaxHealth
+        if (playerHealth > playerMaxHealth) 
         {
             playerHealth = playerMaxHealth;
         }
@@ -55,7 +54,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (playerInvulnerable)
         {
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(invulnTimeInSeconds);
             playerInvulnerable = false;
             Debug.Log("Player now vulnerable.");
         }
