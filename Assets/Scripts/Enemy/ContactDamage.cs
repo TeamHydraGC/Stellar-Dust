@@ -1,4 +1,5 @@
 // Authored by Nate
+using System.Collections;
 using System.Threading.Tasks;
 using UnityEngine;
 
@@ -15,7 +16,7 @@ public class ContactDamage : MonoBehaviour
         {
             playerHealth.playerTakeDamage(damageValue);
             Debug.Log("Dealt " + damageValue + " to player.");
-            Task.Delay(250); // This is a hack, replace this with a real solution. Pause the execution of this script for 0.250 seconds (effectively a cooldown on taking damage)
+            //Task.Delay(250); // This is a hack, being replaced by the InvulnAfterDamageTaken coroutine in PlayerHealth.cs. Re-enable only if shit really goes sideways.
         }
     }
 
