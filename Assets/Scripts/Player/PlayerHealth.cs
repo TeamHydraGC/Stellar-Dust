@@ -13,7 +13,9 @@ public class PlayerHealth : MonoBehaviour
 
     private void Start() 
     {
-        if (playerHealth > playerMaxHealth)// Making sure that playerHealth never goes above playerMaxHealth
+        
+
+        if (playerHealth > playerMaxHealth) // Making sure that playerHealth never goes above playerMaxHealth
         {
             playerHealth = playerMaxHealth;
         }
@@ -21,8 +23,14 @@ public class PlayerHealth : MonoBehaviour
 
     public void playerTakeDamage(int amount) // Method to deal damage to the player
     {
-        playerHealth -= amount; // Decreases playerHealth by an int given by playerTakeDamage
-        
+        if (!playerInvulnerable) // if not invulnerable, deal damage
+        {
+            playerHealth -= amount; // Decreases playerHealth by an int given by playerTakeDamage
+            playerInvulnerable = !playerInvulnerable;
+            StartCoroutine(InvulnAfterDamageTaken()); // Starting coroutine for i-frame timer
+            Debug.Log("Player now invulnerable.");
+        }
+
 
         if (playerHealth == 1) // Log a warning for player health being at 1
         {
@@ -43,12 +51,13 @@ public class PlayerHealth : MonoBehaviour
             playerDead = !playerDead;
         }
     }
-    IEnumerator InvulnAfterDamageTaken()
+    IEnumerator InvulnAfterDamageTaken() // i-frame shit 
     {
-        playerInvulnerable = !playerInvulnerable;
-        Debug.Log(playerInvulnerable);
-        yield return new WaitForSeconds(1f);
-        playerInvulnerable = !playerInvulnerable;
-        Debug.Log(playerInvulnerable);
+        if (playerInvulnerable)
+        {
+            yield return new WaitForSeconds(1);
+            playerInvulnerable = false;
+            Debug.Log("Player now vulnerable.");
+        }
     }
 }
