@@ -24,7 +24,7 @@ public class FallingSpikeTrap : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision) // Damages player and removes the spike from the scene
     {
         if (collision.collider.CompareTag("Player"))
         {

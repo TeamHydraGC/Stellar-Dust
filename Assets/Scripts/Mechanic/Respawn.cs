@@ -1,3 +1,5 @@
+// Authored by Vinny I think -- Nate
+
 using UnityEngine;
 
 public class Respawn : MonoBehaviour
