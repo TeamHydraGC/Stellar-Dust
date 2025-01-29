@@ -31,7 +31,7 @@ public class PlayerHealth : MonoBehaviour
         }
 
 
-        if (playerHealth == 1) // Log a warning for player health being at 1
+        if (playerHealth == 1) // If health at 1, log a warning, otherwise log current health normally
         {
             Debug.LogWarning("Player health is at 1! Taking any more damage will kill the player!");
         }
@@ -55,7 +55,7 @@ public class PlayerHealth : MonoBehaviour
         if (playerInvulnerable)
         {
             yield return new WaitForSeconds(invulnTimeInSeconds);
-            playerInvulnerable = false;
+            playerInvulnerable = !playerInvulnerable;
             Debug.Log("Player now vulnerable.");
         }
     }
