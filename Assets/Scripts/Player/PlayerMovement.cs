@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     [SerializeField] private int moveSpeed;
-    [SerializeField] private float jumpForce = 10f;
+    [SerializeField] private float jumpForce = 12f;
     public bool useTransformMovement;
     private bool isGrounded = false;
     public AudioSource audioSource;
@@ -46,17 +46,22 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
             isGrounded = false;
+            audioSource.PlayOneShot(jumpSound);
 
             if (!isGrounded)
             {
                 jumpForce = 0f;
+
+                
+
             }
             else
             {
                 jumpForce = 10f;
+
             }
 
-            audioSource.PlayOneShot(jumpSound);
+            
         }
     }
 
@@ -69,10 +74,10 @@ public class PlayerMovement : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         // Check if the player is grounded
-        if (collision.contacts[0].normal.y > 0.5f)
+        if (collision.contacts[0].normal.y > 0.1f)
         {
             isGrounded = true;
-            jumpForce = 10f;
+            jumpForce = 12f;
         }
     }
 
