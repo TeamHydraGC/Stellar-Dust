@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     [SerializeField] private int moveSpeed;
-    [SerializeField] private float jumpForce = 10f;
+    [SerializeField] private float jumpForce = 12f;
     public bool useTransformMovement;
     private bool isGrounded = false;
     public AudioSource audioSource;
@@ -77,7 +77,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.contacts[0].normal.y > 0.1f)
         {
             isGrounded = true;
-            jumpForce = 10f;
+            jumpForce = 12f;
         }
     }
 
