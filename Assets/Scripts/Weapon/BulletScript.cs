@@ -30,9 +30,9 @@ public class BulletScript : MonoBehaviour
 
     void OnCollisionEnter2D()
     {
-        if (GameObject.FindWithTag("Ground") == true) // if the bullet collides with the ground, DESTROY ITTTT
-        {
-            Destroy(gameObject); // poof
-        }
+
+        Destroy(gameObject); // poof
+
+        
     }
 }
