@@ -22,13 +22,14 @@ public class EnemyHealth : MonoBehaviour
         if (!enemyInvulnerable) // if not invulnerable, deal damage
         {
             enemyHealth -= amount; // Decreases enemyHealth by an int given by enemyTakeDamage
-            if (enemyHealth <= 0) ;
-            {
-                Destroy(gameObject); // destroy the object this script is attached to if health is equal or less than zero
-            }
+
             enemyInvulnerable = !enemyInvulnerable;
             StartCoroutine(InvulnAfterDamageTaken()); // Starting coroutine for i-frame timer
             Debug.Log("This enemy is now invulnerable.");
+        }
+        else if (enemyHealth <= 0)
+        {
+            Destroy(gameObject); // destroy the object this script is attached to if health is equal or less than 
         }
 
         if (enemyHealth == 1) // If health at 1, log a warning, otherwise log current health normally
@@ -39,11 +40,12 @@ public class EnemyHealth : MonoBehaviour
         {
             Debug.Log("Enemy health is currently " + enemyHealth);
         }
-        
+
         IEnumerator InvulnAfterDamageTaken() // i-frame shit SPECIFIC TO THE ENEMY THIS SCRIPT IS ATTACHED TO 
-    {
-        yield return new WaitForSeconds(enemyInvulnTime);
-        enemyInvulnerable = !enemyInvulnerable;
-        Debug.Log("Player now vulnerable.");
+        {
+            yield return new WaitForSeconds(enemyInvulnTime);
+            enemyInvulnerable = !enemyInvulnerable;
+            Debug.Log("Player now vulnerable.");
+        }
     }
 }
