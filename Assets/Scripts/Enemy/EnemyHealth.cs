@@ -4,11 +4,12 @@ using System.Collections;
 
 public class EnemyHealth : MonoBehaviour
 {
+    // Declaring variables
     public int enemyHealth; // current enemy health, DO NOT TOUCH UNLESS VIA TakeDamage
     public int enemyMaxHealth; // maximum enemy health, dont tweak during runtime
     public float enemyInvulnTime = 0.016f; // How long invulnerability should last, as a float
     public bool enemyInvulnerable = false; // Used for invulnerability after taking damage, DO NOT TOUCH UNLESS VIA InvulnAfterDamageTaken COROUTINE
-    public bool enemyDead = false; // used for deleting 
+    public bool enemyDead = false; // unused for now, will be used to handle death animations in the future
 
     private void Start() // Set enemyHealth to enemyMaxHealth on script start 
     {
@@ -25,7 +26,7 @@ public class EnemyHealth : MonoBehaviour
 
             enemyInvulnerable = !enemyInvulnerable;
             StartCoroutine(InvulnAfterDamageTaken()); // Starting coroutine for i-frame timer
-            Debug.Log("This enemy is now invulnerable.");
+            Debug.Log(gameObject.name + " is now invulnerable.");
         }
         else if (enemyHealth <= 0)
         {
@@ -34,18 +35,18 @@ public class EnemyHealth : MonoBehaviour
 
         if (enemyHealth == 1) // If health at 1, log a warning, otherwise log current health normally
         {
-            Debug.LogWarning("This enemy is at 1 health!");
+            Debug.LogWarning(gameObject.name + " is at 1 health!");
         }
         else
         {
-            Debug.Log("Enemy health is currently " + enemyHealth);
+            Debug.Log(gameObject.name + " health is currently " + enemyHealth);
         }
 
         IEnumerator InvulnAfterDamageTaken() // i-frame shit SPECIFIC TO THE ENEMY THIS SCRIPT IS ATTACHED TO 
         {
             yield return new WaitForSeconds(enemyInvulnTime);
             enemyInvulnerable = !enemyInvulnerable;
-            Debug.Log("Player now vulnerable.");
+            Debug.Log(gameObject.name + " now vulnerable.");
         }
     }
 }
