@@ -1,14 +1,12 @@
 using UnityEngine;
+using System.Collections;
 
-public class DestroyOnCollision : MonoBehaviour
+public class DestroyBall : MonoBehaviour
 {
-    // This method is called when the collider enters the collision
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Check if it collided with a specific object
         if (collision.gameObject.CompareTag("Bullet"))
         {
-            // Destroy the current game object (the one this script is attached to)
             Destroy(gameObject);
         }
     }
