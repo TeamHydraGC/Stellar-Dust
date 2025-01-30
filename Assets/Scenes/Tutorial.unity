@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7393978649137913212, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 28.829998
@@ -227,6 +231,10 @@ PrefabInstance:
     - target: {fileID: 2845348424840919790, guid: 6ed9059ec8630004bb1b1fe8f79df7bd, type: 3}
       propertyPath: m_Name
       value: Cave_Timber (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845348424840919790, guid: 6ed9059ec8630004bb1b1fe8f79df7bd, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8950345342865332243, guid: 6ed9059ec8630004bb1b1fe8f79df7bd, type: 3}
       propertyPath: m_LocalScale.y
@@ -298,6 +306,10 @@ PrefabInstance:
     - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_Name
       value: Cave_Spike (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2561415857421549101, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_SortingOrder
@@ -497,6 +509,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackgroundCave_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6642656668979616920, guid: 63fb4b2da5bb0db45a3b3b13ae8dd248, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -518,6 +534,10 @@ PrefabInstance:
     - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_Name
       value: Cave_Spike (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7393978649137913212, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -580,6 +600,10 @@ PrefabInstance:
     - target: {fileID: 897258130021956248, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
       propertyPath: m_Name
       value: BackgroundCave_2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 897258130021956248, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1344095965390924857, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
       propertyPath: m_LocalScale.x
@@ -685,6 +709,10 @@ PrefabInstance:
     - target: {fileID: 6508655924948328459, guid: cea8e1391315e374087b3b5d0d975b3b, type: 3}
       propertyPath: m_Name
       value: RespawnPoint (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6508655924948328459, guid: cea8e1391315e374087b3b5d0d975b3b, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7412024806102722637, guid: cea8e1391315e374087b3b5d0d975b3b, type: 3}
       propertyPath: audioSource
@@ -909,6 +937,10 @@ PrefabInstance:
       value: Cave_Rail (11)
       objectReference: {fileID: 0}
     - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -1059,6 +1091,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike_Size4 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 6931851152572197445, guid: 1dda7f5ec0bec1a42977f0f287bd21fd, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1085,6 +1121,10 @@ PrefabInstance:
     - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_Name
       value: Cave_Spike (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7393978649137913212, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1196,6 +1236,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike_Size4 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6931851152572197445, guid: 1dda7f5ec0bec1a42977f0f287bd21fd, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1280,6 +1324,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike_Size4 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6931851152572197445, guid: 1dda7f5ec0bec1a42977f0f287bd21fd, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1296,6 +1344,10 @@ PrefabInstance:
     - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
       propertyPath: m_Name
       value: Cave_Rail (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
       propertyPath: m_TagString
@@ -1357,6 +1409,10 @@ PrefabInstance:
     - target: {fileID: 897258130021956248, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
       propertyPath: m_Name
       value: BackgroundCave_2 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 897258130021956248, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1344095965390924857, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
       propertyPath: m_LocalScale.x
@@ -1427,6 +1483,10 @@ PrefabInstance:
     - target: {fileID: 2845348424840919790, guid: 6ed9059ec8630004bb1b1fe8f79df7bd, type: 3}
       propertyPath: m_Name
       value: Cave_Timber (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845348424840919790, guid: 6ed9059ec8630004bb1b1fe8f79df7bd, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6348861813838183049, guid: 6ed9059ec8630004bb1b1fe8f79df7bd, type: 3}
       propertyPath: m_SortingOrder
@@ -1721,6 +1781,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike_Size2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5350876105390352004, guid: 347138b0646545c45ae2c43836405493, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1737,6 +1801,10 @@ PrefabInstance:
     - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
       propertyPath: m_Name
       value: Cave_Rail (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
       propertyPath: m_TagString
@@ -1832,6 +1900,10 @@ PrefabInstance:
     - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_Name
       value: Cave_Spike (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7393978649137913212, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1932,6 +2004,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7393978649137913212, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 145.774
@@ -1994,6 +2070,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Lamp (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4362371732250164560, guid: 50302f1edb1d1d64bbabb6f900818f39, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5442602096814571694, guid: 50302f1edb1d1d64bbabb6f900818f39, type: 3}
       propertyPath: m_LocalPosition.x
       value: 112.453
@@ -2055,6 +2135,10 @@ PrefabInstance:
     - target: {fileID: 1431942687760887416, guid: 058cccb5a2c474d4db511ad56a1d5b90, type: 3}
       propertyPath: m_Name
       value: PushableCrate
+      objectReference: {fileID: 0}
+    - target: {fileID: 1431942687760887416, guid: 058cccb5a2c474d4db511ad56a1d5b90, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3121991981281329368, guid: 058cccb5a2c474d4db511ad56a1d5b90, type: 3}
       propertyPath: m_LocalScale.x
@@ -2164,6 +2248,10 @@ PrefabInstance:
     - target: {fileID: 4362371732250164560, guid: 50302f1edb1d1d64bbabb6f900818f39, type: 3}
       propertyPath: m_Name
       value: Cave_Lamp (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4362371732250164560, guid: 50302f1edb1d1d64bbabb6f900818f39, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5442602096814571694, guid: 50302f1edb1d1d64bbabb6f900818f39, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2410,6 +2498,10 @@ PrefabInstance:
     - target: {fileID: 6931851152572197445, guid: 1dda7f5ec0bec1a42977f0f287bd21fd, type: 3}
       propertyPath: m_Name
       value: Cave_Spike_Size4 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6931851152572197445, guid: 1dda7f5ec0bec1a42977f0f287bd21fd, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -137767,6 +137859,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7393978649137913212, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 147.288
@@ -137883,6 +137979,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike_Size4 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 6931851152572197445, guid: 1dda7f5ec0bec1a42977f0f287bd21fd, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -137904,6 +138004,10 @@ PrefabInstance:
     - target: {fileID: 4362371732250164560, guid: 50302f1edb1d1d64bbabb6f900818f39, type: 3}
       propertyPath: m_Name
       value: Cave_Lamp (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4362371732250164560, guid: 50302f1edb1d1d64bbabb6f900818f39, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5442602096814571694, guid: 50302f1edb1d1d64bbabb6f900818f39, type: 3}
       propertyPath: m_LocalPosition.x
@@ -138051,6 +138155,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike_Size4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6931851152572197445, guid: 1dda7f5ec0bec1a42977f0f287bd21fd, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -138067,6 +138175,10 @@ PrefabInstance:
     - target: {fileID: 897258130021956248, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
       propertyPath: m_Name
       value: BackgroundCave_2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 897258130021956248, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1344095965390924857, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -138144,6 +138256,10 @@ PrefabInstance:
     - target: {fileID: 897258130021956248, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
       propertyPath: m_Name
       value: BackgroundCave_2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 897258130021956248, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1344095965390924857, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -138264,6 +138380,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike_Size4 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 6931851152572197445, guid: 1dda7f5ec0bec1a42977f0f287bd21fd, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -138280,6 +138400,10 @@ PrefabInstance:
     - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_Name
       value: Cave_Spike (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7393978649137913212, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -138344,6 +138468,10 @@ PrefabInstance:
       value: Cave_Rail (5)
       objectReference: {fileID: 0}
     - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -138403,6 +138531,10 @@ PrefabInstance:
     - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_Name
       value: Cave_Spike (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7393978649137913212, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -138507,9 +138639,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7034674082099876212, guid: 9e3cd4fc578280d4685a7cebd347cfe2, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8076522769765669472, guid: 9e3cd4fc578280d4685a7cebd347cfe2, type: 3}
       propertyPath: m_Name
       value: SpikeTrap2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8076522769765669472, guid: 9e3cd4fc578280d4685a7cebd347cfe2, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -138532,6 +138672,10 @@ PrefabInstance:
     - target: {fileID: 2845348424840919790, guid: 6ed9059ec8630004bb1b1fe8f79df7bd, type: 3}
       propertyPath: m_Name
       value: Cave_Timber (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845348424840919790, guid: 6ed9059ec8630004bb1b1fe8f79df7bd, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8950345342865332243, guid: 6ed9059ec8630004bb1b1fe8f79df7bd, type: 3}
       propertyPath: m_LocalScale.y
@@ -138637,6 +138781,10 @@ PrefabInstance:
     - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
       propertyPath: m_Name
       value: Cave_Rail (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
       propertyPath: m_TagString
@@ -138770,6 +138918,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RespawnPoint (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6508655924948328459, guid: cea8e1391315e374087b3b5d0d975b3b, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7412024806102722637, guid: cea8e1391315e374087b3b5d0d975b3b, type: 3}
       propertyPath: audioSource
       value: 
@@ -138815,6 +138967,10 @@ PrefabInstance:
     - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
       propertyPath: m_Name
       value: Cave_Rail (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
       propertyPath: m_TagString
@@ -138881,6 +139037,10 @@ PrefabInstance:
     - target: {fileID: 2845348424840919790, guid: 6ed9059ec8630004bb1b1fe8f79df7bd, type: 3}
       propertyPath: m_Name
       value: Cave_Timber (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845348424840919790, guid: 6ed9059ec8630004bb1b1fe8f79df7bd, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8950345342865332243, guid: 6ed9059ec8630004bb1b1fe8f79df7bd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -138988,6 +139148,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike_Size4 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 6931851152572197445, guid: 1dda7f5ec0bec1a42977f0f287bd21fd, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -139053,6 +139217,10 @@ PrefabInstance:
     - target: {fileID: 6931851152572197445, guid: 1dda7f5ec0bec1a42977f0f287bd21fd, type: 3}
       propertyPath: m_Name
       value: Cave_Spike_Size4 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6931851152572197445, guid: 1dda7f5ec0bec1a42977f0f287bd21fd, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -139176,6 +139344,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike_Size4 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6931851152572197445, guid: 1dda7f5ec0bec1a42977f0f287bd21fd, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -139192,6 +139364,10 @@ PrefabInstance:
     - target: {fileID: 4362371732250164560, guid: 50302f1edb1d1d64bbabb6f900818f39, type: 3}
       propertyPath: m_Name
       value: Cave_Lamp (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4362371732250164560, guid: 50302f1edb1d1d64bbabb6f900818f39, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5442602096814571694, guid: 50302f1edb1d1d64bbabb6f900818f39, type: 3}
       propertyPath: m_LocalPosition.x
@@ -139254,6 +139430,10 @@ PrefabInstance:
     - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
       propertyPath: m_Name
       value: Cave_Rail (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
       propertyPath: m_TagString
@@ -139325,6 +139505,10 @@ PrefabInstance:
     - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_Name
       value: Cave_Spike (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7393978649137913212, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -139830,43 +140014,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike_Size4 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 6931851152572197445, guid: 1dda7f5ec0bec1a42977f0f287bd21fd, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dda7f5ec0bec1a42977f0f287bd21fd, type: 3}
---- !u!1 &1026161593
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1026161594}
-  m_Layer: 0
-  m_Name: Rats
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1026161594
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1026161593}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1188521384}
-  m_Father: {fileID: 1388034597}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1065435658
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -139930,6 +140086,10 @@ PrefabInstance:
     - target: {fileID: 6931851152572197445, guid: 1dda7f5ec0bec1a42977f0f287bd21fd, type: 3}
       propertyPath: m_Name
       value: Cave_Spike_Size4 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6931851152572197445, guid: 1dda7f5ec0bec1a42977f0f287bd21fd, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -140074,6 +140234,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovingDoor
       objectReference: {fileID: 0}
+    - target: {fileID: 612869190844259164, guid: 0efaf0aeae543ed4284f03084d963678, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8446170469057156428, guid: 0efaf0aeae543ed4284f03084d963678, type: 3}
       propertyPath: m_LocalScale.x
       value: 6.2345195
@@ -140136,11 +140300,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8446170469057156428, guid: 0efaf0aeae543ed4284f03084d963678, type: 3}
   m_PrefabInstance: {fileID: 1083967969}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1115513929 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5289744473616406117, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
-  m_PrefabInstance: {fileID: 8416886665089671056}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1137472059 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 393322614450894843, guid: 6b86712c1d9fb5348893939c4c1ec51c, type: 3}
@@ -140201,6 +140360,10 @@ PrefabInstance:
     - target: {fileID: 6931851152572197445, guid: 1dda7f5ec0bec1a42977f0f287bd21fd, type: 3}
       propertyPath: m_Name
       value: Cave_Spike_Size4 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6931851152572197445, guid: 1dda7f5ec0bec1a42977f0f287bd21fd, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -140274,6 +140437,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7393978649137913212, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20
@@ -140342,6 +140509,10 @@ PrefabInstance:
       value: Cave_Rail (4)
       objectReference: {fileID: 0}
     - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -140390,23 +140561,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
---- !u!4 &1188521384 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 936491610274676984, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
-  m_PrefabInstance: {fileID: 8416886665089671056}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1188521390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115513929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2464940a189c6b24d9a35b4ace50790f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1216582284 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1838280820673395615, guid: cea8e1391315e374087b3b5d0d975b3b, type: 3}
@@ -140547,6 +140701,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7393978649137913212, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 147.793
@@ -140608,6 +140766,10 @@ PrefabInstance:
     - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_Name
       value: Cave_Spike (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7393978649137913212, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -140791,55 +140953,6 @@ Transform:
   - {fileID: 1248908476}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1388034595
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1388034597}
-  - component: {fileID: 1388034599}
-  m_Layer: 0
-  m_Name: EnemyDetector
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1388034597
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1388034595}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 95.44, y: -3.3999996, z: -19.472036}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1026161594}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1388034599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1388034595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db571e0540a85846a01774d69df1346, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  detectionRange: 5
-  avoidanceStrength: 5
-  detectionAngle: 45
 --- !u!1001 &1399895553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -140851,6 +140964,10 @@ PrefabInstance:
     - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_Name
       value: Cave_Spike (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7393978649137913212, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -140966,6 +141083,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike_Size4 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6931851152572197445, guid: 1dda7f5ec0bec1a42977f0f287bd21fd, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -140982,6 +141103,10 @@ PrefabInstance:
     - target: {fileID: 2845348424840919790, guid: 6ed9059ec8630004bb1b1fe8f79df7bd, type: 3}
       propertyPath: m_Name
       value: Cave_Timber (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845348424840919790, guid: 6ed9059ec8630004bb1b1fe8f79df7bd, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8950345342865332243, guid: 6ed9059ec8630004bb1b1fe8f79df7bd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -141049,6 +141174,10 @@ PrefabInstance:
     - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_Name
       value: Cave_Spike (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7393978649137913212, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -141185,9 +141314,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7034674082099876212, guid: 9e3cd4fc578280d4685a7cebd347cfe2, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8076522769765669472, guid: 9e3cd4fc578280d4685a7cebd347cfe2, type: 3}
       propertyPath: m_Name
       value: SpikeTrap3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8076522769765669472, guid: 9e3cd4fc578280d4685a7cebd347cfe2, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -141215,6 +141352,10 @@ PrefabInstance:
     - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_Name
       value: Cave_Spike (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7393978649137913212, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -141286,6 +141427,10 @@ PrefabInstance:
     - target: {fileID: 2529998465546257056, guid: df22eb7ba96690a43b8d71b1ac497c2e, type: 3}
       propertyPath: m_Name
       value: PressurePlate
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529998465546257056, guid: df22eb7ba96690a43b8d71b1ac497c2e, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7238806111500924485, guid: df22eb7ba96690a43b8d71b1ac497c2e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -141552,6 +141697,10 @@ PrefabInstance:
       value: Cave_Rail (7)
       objectReference: {fileID: 0}
     - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
@@ -141674,6 +141823,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike_Size4 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6931851152572197445, guid: 1dda7f5ec0bec1a42977f0f287bd21fd, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -141743,6 +141896,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike_Size4 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6931851152572197445, guid: 1dda7f5ec0bec1a42977f0f287bd21fd, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -141759,6 +141916,10 @@ PrefabInstance:
     - target: {fileID: 897258130021956248, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
       propertyPath: m_Name
       value: BackgroundCave_2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 897258130021956248, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1344095965390924857, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
       propertyPath: m_LocalScale.y
@@ -141820,6 +141981,10 @@ PrefabInstance:
     - target: {fileID: 897258130021956248, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
       propertyPath: m_Name
       value: BackgroundCave_2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 897258130021956248, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1344095965390924857, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -142152,6 +142317,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike_Size4 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6931851152572197445, guid: 1dda7f5ec0bec1a42977f0f287bd21fd, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -142173,6 +142342,10 @@ PrefabInstance:
     - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_Name
       value: Cave_Spike (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7393978649137913212, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -142271,6 +142444,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike_Size3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2587370749654423297, guid: 6b86712c1d9fb5348893939c4c1ec51c, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -142292,6 +142469,10 @@ PrefabInstance:
     - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_Name
       value: Cave_Spike (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7393978649137913212, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -142585,6 +142766,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RespawnPoint (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6508655924948328459, guid: cea8e1391315e374087b3b5d0d975b3b, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7412024806102722637, guid: cea8e1391315e374087b3b5d0d975b3b, type: 3}
       propertyPath: audioSource
       value: 
@@ -142681,6 +142866,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike_Size2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5350876105390352004, guid: 347138b0646545c45ae2c43836405493, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -142738,6 +142927,10 @@ PrefabInstance:
     - target: {fileID: 4362371732250164560, guid: 50302f1edb1d1d64bbabb6f900818f39, type: 3}
       propertyPath: m_Name
       value: Cave_Lamp (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4362371732250164560, guid: 50302f1edb1d1d64bbabb6f900818f39, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5442602096814571694, guid: 50302f1edb1d1d64bbabb6f900818f39, type: 3}
       propertyPath: m_LocalPosition.x
@@ -142801,6 +142994,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Timber (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2845348424840919790, guid: 6ed9059ec8630004bb1b1fe8f79df7bd, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8950345342865332243, guid: 6ed9059ec8630004bb1b1fe8f79df7bd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 160.75
@@ -142862,6 +143059,10 @@ PrefabInstance:
     - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_Name
       value: Cave_Spike (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7393978649137913212, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -142965,6 +143166,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike_Size3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2587370749654423297, guid: 6b86712c1d9fb5348893939c4c1ec51c, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -143021,6 +143226,10 @@ PrefabInstance:
     - target: {fileID: 2587370749654423297, guid: 6b86712c1d9fb5348893939c4c1ec51c, type: 3}
       propertyPath: m_Name
       value: Cave_Spike_Size3 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2587370749654423297, guid: 6b86712c1d9fb5348893939c4c1ec51c, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -143091,6 +143300,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike_Size4 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6931851152572197445, guid: 1dda7f5ec0bec1a42977f0f287bd21fd, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -143138,6 +143351,10 @@ PrefabInstance:
     - target: {fileID: 897258130021956248, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
       propertyPath: m_Name
       value: BackgroundCave_2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 897258130021956248, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1344095965390924857, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -143195,6 +143412,10 @@ PrefabInstance:
     - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
       propertyPath: m_Name
       value: Cave_Rail (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
       propertyPath: m_TagString
@@ -143256,6 +143477,10 @@ PrefabInstance:
     - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_Name
       value: Cave_Spike (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7393978649137913212, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -143371,6 +143596,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike_Size4 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6931851152572197445, guid: 1dda7f5ec0bec1a42977f0f287bd21fd, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -143422,6 +143651,10 @@ PrefabInstance:
     - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_Name
       value: Cave_Spike (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7393978649137913212, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -143529,6 +143762,10 @@ PrefabInstance:
     - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
       propertyPath: m_Name
       value: Cave_Rail (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
       propertyPath: m_TagString
@@ -143719,6 +143956,10 @@ PrefabInstance:
     - target: {fileID: 897258130021956248, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
       propertyPath: m_Name
       value: BackgroundCave_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 897258130021956248, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1344095965390924857, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -143961,6 +144202,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Lamp (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4362371732250164560, guid: 50302f1edb1d1d64bbabb6f900818f39, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5442602096814571694, guid: 50302f1edb1d1d64bbabb6f900818f39, type: 3}
       propertyPath: m_LocalPosition.x
       value: 73.16
@@ -144022,6 +144267,10 @@ PrefabInstance:
     - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_Name
       value: Cave_Spike (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7393978649137913212, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -144182,6 +144431,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7393978649137913212, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -16.93
@@ -144293,6 +144546,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 78950331029434389, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 192041327839069731, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 379082928235484843, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 508752223196910409, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1118365551460277210, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1678634257654150354, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2677739592790452877, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2943153370216054786, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3697349936003473296, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -144373,6 +144658,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5318111277637833520, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5829967776724040629, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7677445563167902678, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8151984407133499621, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -144389,6 +144690,10 @@ PrefabInstance:
     - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
       propertyPath: m_Name
       value: Cave_Rail
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9116025333195669595, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
       propertyPath: m_TagString
@@ -144495,6 +144800,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RespawnPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 6508655924948328459, guid: cea8e1391315e374087b3b5d0d975b3b, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7412024806102722637, guid: cea8e1391315e374087b3b5d0d975b3b, type: 3}
       propertyPath: audioSource
       value: 
@@ -144564,6 +144873,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackgroundCaveBig
       objectReference: {fileID: 0}
+    - target: {fileID: 7931936926277577360, guid: b9a21df35a565154590e4da72c1e2432, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -144620,6 +144933,10 @@ PrefabInstance:
     - target: {fileID: 6642656668979616920, guid: 63fb4b2da5bb0db45a3b3b13ae8dd248, type: 3}
       propertyPath: m_Name
       value: BackgroundCave_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6642656668979616920, guid: 63fb4b2da5bb0db45a3b3b13ae8dd248, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -144678,6 +144995,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike_Size4
       objectReference: {fileID: 0}
+    - target: {fileID: 6931851152572197445, guid: 1dda7f5ec0bec1a42977f0f287bd21fd, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -144694,6 +145015,10 @@ PrefabInstance:
     - target: {fileID: 897258130021956248, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
       propertyPath: m_Name
       value: BackgroundCave_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 897258130021956248, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1344095965390924857, guid: c5fdf6c324e1a414bb92f6da9dffe3f5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -144752,6 +145077,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Timber
       objectReference: {fileID: 0}
+    - target: {fileID: 2845348424840919790, guid: 6ed9059ec8630004bb1b1fe8f79df7bd, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8950345342865332243, guid: 6ed9059ec8630004bb1b1fe8f79df7bd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.8729515
@@ -144808,6 +145137,10 @@ PrefabInstance:
     - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_Name
       value: Cave_Spike
+      objectReference: {fileID: 0}
+    - target: {fileID: 51005214169800388, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7393978649137913212, guid: 790df7005594d244ebb4aab0bcfe049d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -144906,6 +145239,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike_Size2
       objectReference: {fileID: 0}
+    - target: {fileID: 5350876105390352004, guid: 347138b0646545c45ae2c43836405493, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -144919,17 +145256,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2278232317042654261, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3928096357643424343, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3928096357643424343, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5330258066485304335, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 129.27
+      value: 99.19
       objectReference: {fileID: 0}
     - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.9
+      value: -3.57
       objectReference: {fileID: 0}
     - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -144961,6 +145310,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7662854186699847962, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808587137378627456, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -145035,6 +145392,10 @@ PrefabInstance:
       propertyPath: m_BodyType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7034674082099876212, guid: 9e3cd4fc578280d4685a7cebd347cfe2, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8072805260640822923, guid: 9e3cd4fc578280d4685a7cebd347cfe2, type: 3}
       propertyPath: damageAmount
       value: 17
@@ -145042,6 +145403,10 @@ PrefabInstance:
     - target: {fileID: 8076522769765669472, guid: 9e3cd4fc578280d4685a7cebd347cfe2, type: 3}
       propertyPath: m_Name
       value: SpikeTrap1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8076522769765669472, guid: 9e3cd4fc578280d4685a7cebd347cfe2, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -145063,6 +145428,10 @@ PrefabInstance:
     - target: {fileID: 4362371732250164560, guid: 50302f1edb1d1d64bbabb6f900818f39, type: 3}
       propertyPath: m_Name
       value: Cave_Lamp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4362371732250164560, guid: 50302f1edb1d1d64bbabb6f900818f39, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5442602096814571694, guid: 50302f1edb1d1d64bbabb6f900818f39, type: 3}
       propertyPath: m_LocalPosition.x
@@ -145161,6 +145530,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave_Spike_Size3
       objectReference: {fileID: 0}
+    - target: {fileID: 2587370749654423297, guid: 6b86712c1d9fb5348893939c4c1ec51c, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -145172,23 +145545,19 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1026161594}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 280776489046588819, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
-      propertyPath: playerHealth
-      value: 
-      objectReference: {fileID: 4943413118867981124}
     - target: {fileID: 936491610274676984, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.88
+      value: 105.32
       objectReference: {fileID: 0}
     - target: {fileID: 936491610274676984, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.1
+      value: -4.4999995
       objectReference: {fileID: 0}
     - target: {fileID: 936491610274676984, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 19.472036
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 936491610274676984, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
       propertyPath: m_LocalRotation.w
@@ -145218,30 +145587,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1817984773710373007, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
+      propertyPath: distance
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1817984773710373007, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
+      propertyPath: 'Objects.Array.data[0]'
+      value: 
+      objectReference: {fileID: 3928096357643424343, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
     - target: {fileID: 5289744473616406117, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
       propertyPath: m_Name
       value: StellarRat_0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5289744473616406117, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 5289744473616406117, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9216887432559390924, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4703120145330716334, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5289744473616406117, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1188521390}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -145250,8 +145612,8 @@ SceneRoots:
   - {fileID: 1673851286}
   - {fileID: 2017962790}
   - {fileID: 4943413118867981123}
+  - {fileID: 8416886665089671056}
   - {fileID: 1142989680}
-  - {fileID: 1388034597}
   - {fileID: 2146882732}
   - {fileID: 1083757488}
   - {fileID: 1386652021}

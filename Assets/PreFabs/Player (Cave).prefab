@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 5791078525129919291}
   - component: {fileID: 8455625105314446540}
   - component: {fileID: 7570983564878976095}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player (Cave)
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -606,6 +606,14 @@ PrefabInstance:
     - target: {fileID: 1980749768303608922, guid: 2ab6f261805060e439d709275c78d057, type: 3}
       propertyPath: m_Name
       value: RotatePoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 1980749768303608922, guid: 2ab6f261805060e439d709275c78d057, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2123245475771732672, guid: 2ab6f261805060e439d709275c78d057, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3232283286496762184, guid: 2ab6f261805060e439d709275c78d057, type: 3}
       propertyPath: m_LocalPosition.x
