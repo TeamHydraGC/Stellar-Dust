@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 936491610274676984}
   - component: {fileID: 7745297151379566413}
   - component: {fileID: 9216887432559390924}
+  - component: {fileID: 1817984773710373007}
   - component: {fileID: 7282899359218679049}
   - component: {fileID: 4703120145330716334}
   - component: {fileID: 280776489046588819}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: StellarRat_0
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -137,6 +138,32 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.23, y: 0.08}
   m_EdgeRadius: 0
+--- !u!114 &1817984773710373007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5289744473616406117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5328a1161cfd99418c1858f0d31858d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 10
+  angle: 125
+  height: 3.71
+  moveSpeed: 5
+  meshColor: {r: 1, g: 0, b: 0, a: 1}
+  scanfrequency: 30
+  layers:
+    serializedVersion: 2
+    m_Bits: 8
+  occlusionlayers:
+    serializedVersion: 2
+    m_Bits: 16
+  Objects:
+  - {fileID: 0}
 --- !u!50 &7282899359218679049
 Rigidbody2D:
   serializedVersion: 5

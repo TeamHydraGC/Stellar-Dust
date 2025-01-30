@@ -626,10 +626,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distance: 6.91
-  angle: 180
+  angle: 31.4
   height: 1
   moveSpeed: 5
-  meshColor: {r: 1, g: 0, b: 0, a: 1}
+  meshColor: {r: 1, g: 0, b: 0, a: 0.4392157}
   scanfrequency: 30
   layers:
     serializedVersion: 2
