@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class JAPANmovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     [SerializeField] private int moveSpeed;
-    [SerializeField] private float jumpForce = 10f;
+    [SerializeField] private float jumpForce = 4f;
     public bool useTransformMovement;
     private bool isGrounded = false;
     public AudioSource audioSource;
@@ -52,16 +50,16 @@ public class PlayerMovement : MonoBehaviour
             {
                 jumpForce = 0f;
 
-                
+
 
             }
             else
             {
-                jumpForce = 10f;
+                jumpForce = 4f;
 
             }
 
-            
+
         }
     }
 
@@ -74,10 +72,10 @@ public class PlayerMovement : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         // Check if the player is grounded
-        if (collision.contacts[0].normal.y > 0.1f)
+        if (collision.contacts[0].normal.y > 0.01f)
         {
             isGrounded = true;
-            jumpForce = 10f;
+            jumpForce = 4f;
         }
     }
 
