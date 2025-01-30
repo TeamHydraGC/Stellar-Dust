@@ -93,6 +93,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -104,8 +117,8 @@ TextureImporter:
         y: 288
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -126,8 +139,8 @@ TextureImporter:
         y: 288
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -148,8 +161,8 @@ TextureImporter:
         y: 288
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -168,10 +181,10 @@ TextureImporter:
         serializedVersion: 2
         x: 192
         y: 288
-        width: 96
+        width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -189,11 +202,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 256
+        y: 288
         width: 32
-        height: 64
-      alignment: 9
-      pivot: {x: 32, y: 32}
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -207,22 +220,66 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: japan_Tiles_7
+      name: japan_Tiles_4
       rect:
         serializedVersion: 2
-        x: 416
-        y: 256
+        x: 224
+        y: 288
         width: 32
-        height: 64
-      alignment: 9
-      pivot: {x: 32, y: 32}
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd8f5b0d1ba283e44b5fa0d0fbec1135
+      spriteID: bc6aa3ca1dbdc8a498fe3d808c86be1f
+      internalID: -1979820481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japan_Tiles_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25fa5ba657d8e044fac1bc977ba616d6
+      internalID: -126819404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japan_Tiles_7
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71e47d93276350446898b26cc8244d92
       internalID: 1623492755
       vertices: []
       indices: 
@@ -233,18 +290,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 448
-        y: 256
+        y: 288
         width: 32
-        height: 64
-      alignment: 9
-      pivot: {x: 32, y: 32}
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e51e890c03153754eba9ec180766b907
+      spriteID: 8c6558899d3bcb249ab529ffea47fe9c
       internalID: 643415472
       vertices: []
       indices: 
@@ -258,15 +315,15 @@ TextureImporter:
         y: 256
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0757d06c1b9c17741b4bdb3c37694a9a
+      spriteID: 2782b0cfe89600d4193a3b7310111434
       internalID: -453917825
       vertices: []
       indices: 
@@ -280,15 +337,15 @@ TextureImporter:
         y: 256
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c06882ba7a37df040ba00256a2d62691
+      spriteID: a8a8bffc1aaa27d49b3f28b0f66aa852
       internalID: -938093527
       vertices: []
       indices: 
@@ -302,15 +359,15 @@ TextureImporter:
         y: 256
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 072f1d4d771c8734d98deea38ab879f5
+      spriteID: 99a023f816e243d47be82ef898fd49f0
       internalID: -143613722
       vertices: []
       indices: 
@@ -324,15 +381,15 @@ TextureImporter:
         y: 256
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ceb0925a14379f438cc0cfe59bd2563
+      spriteID: afe35ccd9a77e6041848a99ac29a2c0b
       internalID: 666475890
       vertices: []
       indices: 
@@ -346,16 +403,82 @@ TextureImporter:
         y: 256
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d97482754d01494583d871c865a9545
+      spriteID: 2c3ec5620406e0941a424ec50c202c77
       internalID: 870592049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japan_Tiles_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16805a27e44a6f840be2f99be7d181e0
+      internalID: 39316792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japan_Tiles_15
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99c5e378627cfa44a1043e9054653fa
+      internalID: -434395218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japan_Tiles_16
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dcc29232da6a5146b82aa8bf54d1a72
+      internalID: -2096191844
       vertices: []
       indices: 
       edges: []
@@ -368,15 +491,15 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1adfc1b58e25aff4f9430f9a97c2f19b
+      spriteID: 0d37152e6ec8a9a45aab9f72afe4ef4b
       internalID: 691299455
       vertices: []
       indices: 
@@ -390,15 +513,15 @@ TextureImporter:
         y: 224
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7394b173b29059042bd335bcb52b7abf
+      spriteID: a2234de14a75f8e4d9d89a31d9ba818b
       internalID: 1128595313
       vertices: []
       indices: 
@@ -412,15 +535,15 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f12700b0e50b6734c932c5024ad47196
+      spriteID: 4ef5226516ad66a40a48f05d53bbfead
       internalID: 1358266453
       vertices: []
       indices: 
@@ -434,15 +557,15 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eaf015cfc969b7c40b48143f5acdcdae
+      spriteID: e590e0133e639f54ca6c91aafd1d30af
       internalID: 1527920751
       vertices: []
       indices: 
@@ -456,15 +579,15 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 423440aa3fafbf640abc22aedf22dc5d
+      spriteID: 2d2d6bb39dd775e49af5bb7d9f214c6a
       internalID: 1285296226
       vertices: []
       indices: 
@@ -475,18 +598,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 160
+        y: 192
         width: 32
-        height: 64
-      alignment: 9
-      pivot: {x: 32, y: 32}
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3212cc2e0245e5b40923e449bdc2756d
+      spriteID: 04a51248b633511448099e8821b553bd
       internalID: -2062805388
       vertices: []
       indices: 
@@ -500,15 +623,15 @@ TextureImporter:
         y: 192
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d45c6bd1c3e4ab342bde5fbf24ad02a4
+      spriteID: dd05189fc989cb84fa4c926f9ca465f5
       internalID: -1804988475
       vertices: []
       indices: 
@@ -522,15 +645,15 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59501a6d5d938e54e899aee569953b9b
+      spriteID: 7ad145c4b5a07064999bc92a562e7268
       internalID: -300443740
       vertices: []
       indices: 
@@ -544,15 +667,15 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86f3787b15c483c4b97b2dbad704dd98
+      spriteID: 35b18f2b2da4a2e43b437be8b909aad9
       internalID: -2142198085
       vertices: []
       indices: 
@@ -566,16 +689,38 @@ TextureImporter:
         y: 160
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98087fef0c7d8c241a37e229d6602291
+      spriteID: aa9fc92150bc9424193011755d0e90c9
       internalID: 298316477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japan_Tiles_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3d6df0a659325459ac1d0c6303987d
+      internalID: 1984059596
       vertices: []
       indices: 
       edges: []
@@ -588,15 +733,15 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dca92b5f82b74ca43b8c053c7c63da00
+      spriteID: 7233d42ae7e4cd741b11ad0d35d7706b
       internalID: 2020086305
       vertices: []
       indices: 
@@ -610,15 +755,15 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0f252e0d89babb4eb9cbfdff31f8645
+      spriteID: 21513f31b261582478162a6ccfa60ba7
       internalID: 342286904
       vertices: []
       indices: 
@@ -632,15 +777,15 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4847a2e5fd015394c9fbcdfe357ff9f8
+      spriteID: b942fded36084284fb650579408e8f65
       internalID: -1818553596
       vertices: []
       indices: 
@@ -654,15 +799,15 @@ TextureImporter:
         y: 128
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16ff2bb694fdda447bbbd6f519ee33be
+      spriteID: e6bf3e8135f45324c985cf51b5927d0f
       internalID: -2108718826
       vertices: []
       indices: 
@@ -676,15 +821,15 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7857758c991308c42834774701e3480d
+      spriteID: f2a1f08c444912e458c53db7246fcc97
       internalID: 835810920
       vertices: []
       indices: 
@@ -698,15 +843,15 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bdf7cc4397f113e4ead9060609154748
+      spriteID: e5c9c5d1f719bb44594cc00aaa687772
       internalID: 33568144
       vertices: []
       indices: 
@@ -720,16 +865,38 @@ TextureImporter:
         y: 96
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43b058e9ac43482499c18d2ed089f771
+      spriteID: 520c745fdd42e9e44a3b48e22ed95fec
       internalID: -536494002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japan_Tiles_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022964b4cb065ac46ad089f250cd657a
+      internalID: -1125106234
       vertices: []
       indices: 
       edges: []
@@ -738,19 +905,19 @@ TextureImporter:
       name: japan_Tiles_36
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 96
-      alignment: 9
-      pivot: {x: 32, y: 32}
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76a2e2357a77cd94a8011bc7e9c86fdf
+      spriteID: 72948d0bbcb0cda458a5bbef93b251bf
       internalID: -1505524432
       vertices: []
       indices: 
@@ -761,18 +928,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 64
         width: 32
-        height: 96
-      alignment: 9
-      pivot: {x: 32, y: 32}
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36b44255ae1ba5449980a9035d040253
+      spriteID: 3dc9bf9e9076f6c45aa6ecb4f01823c6
       internalID: 372772229
       vertices: []
       indices: 
@@ -783,19 +950,41 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 0
-        width: 64
-        height: 96
-      alignment: 9
-      pivot: {x: 32, y: 32}
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 024f855e65a0f9c4b8c0eb6d6aed9837
+      spriteID: db2dd3756b946f84ca1998d8f7ed35d4
       internalID: 769014103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japan_Tiles_39
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86333402bf2de0f46919a60f91db0557
+      internalID: 1281217745
       vertices: []
       indices: 
       edges: []
@@ -805,19 +994,41 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 0
-        width: 64
-        height: 96
-      alignment: 9
-      pivot: {x: 32, y: 32}
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7dbc74f74e80e6d4b9192c9935ccd8ac
+      spriteID: 90f32b2c254170c4eb73e04be721ef78
       internalID: 1840378923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japan_Tiles_41
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc13846af5e9f0428e5c1a7c7dae117
+      internalID: 1132056604
       vertices: []
       indices: 
       edges: []
@@ -830,15 +1041,15 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5747a95ad3ac0e4b9b206928dcd81c9
+      spriteID: 687f8e61491191147ad4a166ef6da68e
       internalID: 1925565322
       vertices: []
       indices: 
@@ -849,19 +1060,41 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 0
-        width: 64
-        height: 96
-      alignment: 9
-      pivot: {x: 32, y: 32}
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 997f92881aaa3374b9a2801204a59533
+      spriteID: 43b44d4f0d40fc242a471fe700bc08ad
       internalID: 1669963267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japan_Tiles_44
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70603d44659eab54cb0ce939cc5feb63
+      internalID: 363371353
       vertices: []
       indices: 
       edges: []
@@ -874,16 +1107,126 @@ TextureImporter:
         y: 64
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af3289a13ebb81e479b02b28d6877d3c
+      spriteID: 973fa515a6dce6643b28f06939ac5420
       internalID: -1834093329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japan_Tiles_46
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b583ae85fcb3a40a2eaec268e58932
+      internalID: -469515564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japan_Tiles_47
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af1aeb0dd263d642a84c528511a2962
+      internalID: 211193213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japan_Tiles_48
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 142473cf88a2b8f458fb6c6c6349c265
+      internalID: -986427542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japan_Tiles_49
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1403ce503663c87429cba660ea65c021
+      internalID: -680848562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japan_Tiles_50
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823a7bffa0101bb4b9ea3ee8ab3d2dbe
+      internalID: -1451017458
       vertices: []
       indices: 
       edges: []
@@ -896,15 +1239,15 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f55dc989754d444589252d9ce179fda
+      spriteID: 38a5d28b267887a43ba760166b676a56
       internalID: 2107134929
       vertices: []
       indices: 
@@ -918,16 +1261,170 @@ TextureImporter:
         y: 32
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a47871ea8f384b47a3aca8b1d211546
+      spriteID: 3389b0c39c70b4b4e9af6aa79347581a
       internalID: -615909771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japan_Tiles_53
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a241ed76d8b3b6c4ebc7ab33aaf2f520
+      internalID: -1635995035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japan_Tiles_54
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4166dcec3ac8442b28d34888036b32
+      internalID: 1071325704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japan_Tiles_55
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6208b5c0ee81b014cbc6ee90eac760af
+      internalID: 1276978831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japan_Tiles_56
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5818ced04ef78194cb43df4515eefb11
+      internalID: 172887153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japan_Tiles_57
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358ce4d13d930914fbd9725a516afeab
+      internalID: 389682882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japan_Tiles_58
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a9591672b56cd468046a0e0638296e
+      internalID: 2081492410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japan_Tiles_59
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5351a40b9fec14eafbde79bb557fa3
+      internalID: 664412819
       vertices: []
       indices: 
       edges: []
@@ -940,15 +1437,15 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2ef73bb852f03743a2d22f2b5aa2303
+      spriteID: 00709929e8232534d819b837ef8a227b
       internalID: -679565690
       vertices: []
       indices: 
@@ -962,15 +1459,15 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da5aac4dfbfb45a4eaa9ee0115d9e06b
+      spriteID: cdb24b6151965e14689d58ca1d2450d4
       internalID: -1174321471
       vertices: []
       indices: 
@@ -984,16 +1481,60 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12ea48bc628cc4c4cb84e103aa1cd7d5
+      spriteID: 37bd57fbe46be4c4b9c25df298cc2bd1
       internalID: -1553206723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japan_Tiles_63
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d1a65796fc93746b7ad99dda7c70fe
+      internalID: 855760029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: japan_Tiles_64
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e86c1210f6331b469468aef5ae56cfd
+      internalID: 228042816
       vertices: []
       indices: 
       edges: []
@@ -1006,15 +1547,15 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0533c18499633c143b6f8f23e60794ae
+      spriteID: d2c388149d321574e9aa3a00e38b25de
       internalID: -327128480
       vertices: []
       indices: 
@@ -1028,15 +1569,15 @@ TextureImporter:
         y: 0
         width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 32, y: 32}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a943bacbe554d54b8de75ee28eeb187
+      spriteID: 32b0102063373604eafef60afa8c4c9b
       internalID: -2012349629
       vertices: []
       indices: 
