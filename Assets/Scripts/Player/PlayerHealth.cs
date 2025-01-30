@@ -6,13 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int playerHealth; // current player health, DO NOT TOUCH unless via the TakeDamage function below!
+    public int playerHealth; // current player health, DO NOT TOUCH unless via the playerTakeDamage function below!
     public int playerMaxHealth = 4; // maximum player health, dont tweak during runtime
     public int invulnTimeInSeconds = 1; // How long invulnerability should last, as an int
     public bool playerInvulnerable = false; // Used for invulnerability after taking damage, DO NOT TOUCH
     public bool playerDead = false; // If true, player goes to GameOver scene
 
-    private void Start() // Set playerHealth = playerMaxHealth on start 
+    private void Start() // Set playerHealth to playerMaxHealth on start 
     {
         if (playerHealth > playerMaxHealth) 
         {
@@ -30,7 +30,6 @@ public class PlayerHealth : MonoBehaviour
             Debug.Log("Player now invulnerable.");
         }
 
-
         if (playerHealth == 1) // If health at 1, log a warning, otherwise log current health normally
         {
             Debug.LogWarning("Player health is at 1! Taking any more damage will kill the player!");
@@ -39,7 +38,6 @@ public class PlayerHealth : MonoBehaviour
         {
             Debug.Log("Player health is currently " + playerHealth);
         }
-
 
         // Player death management
         if (playerHealth <= 0) // if player is dead, set playerDead to true, and load the GameOver scene
@@ -50,7 +48,7 @@ public class PlayerHealth : MonoBehaviour
             playerDead = !playerDead;
         }
     }
-    IEnumerator InvulnAfterDamageTaken() // i-frame shit 
+    IEnumerator InvulnAfterDamageTaken() // i-frame shit SPECIFIC TO THE PLAYER 
     {
         yield return new WaitForSeconds(invulnTimeInSeconds);
         playerInvulnerable = !playerInvulnerable;

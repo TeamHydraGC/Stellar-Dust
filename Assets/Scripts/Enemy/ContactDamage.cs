@@ -5,10 +5,8 @@ using UnityEngine;
 
 public class ContactDamage : MonoBehaviour
 {
-
-    public PlayerHealth playerHealth;
-
-    public int damageValue = 1;
+    public PlayerHealth playerHealth; // import playerHealth, ATTACH PLAYERHEALTH TO OBJECT IN EDITOR
+    public int damageValue = 1; // how much damage the object this script is attached to deals, can be tweaked in-editor
 
     private void OnTriggerEnter2D(Collider2D other) // detecting collission
     {

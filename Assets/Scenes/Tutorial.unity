@@ -706,6 +706,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3366695677134323786, guid: cea8e1391315e374087b3b5d0d975b3b, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 4943413118867981124}
     - target: {fileID: 6508655924948328459, guid: cea8e1391315e374087b3b5d0d975b3b, type: 3}
       propertyPath: m_Name
       value: RespawnPoint (5)
@@ -138914,6 +138918,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3366695677134323786, guid: cea8e1391315e374087b3b5d0d975b3b, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 4943413118867981124}
     - target: {fileID: 6508655924948328459, guid: cea8e1391315e374087b3b5d0d975b3b, type: 3}
       propertyPath: m_Name
       value: RespawnPoint (6)
@@ -145590,6 +145598,10 @@ PrefabInstance:
     - target: {fileID: 1817984773710373007, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
       propertyPath: distance
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1817984773710373007, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
+      propertyPath: meshColor.a
+      value: 0.1254902
       objectReference: {fileID: 0}
     - target: {fileID: 1817984773710373007, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
       propertyPath: 'Objects.Array.data[0]'
