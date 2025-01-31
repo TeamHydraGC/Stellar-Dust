@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 7745297151379566413}
   - component: {fileID: 9216887432559390924}
   - component: {fileID: 7282899359218679049}
-  - component: {fileID: 1817984773710373007}
-  - component: {fileID: 4703120145330716334}
   - component: {fileID: 280776489046588819}
   - component: {fileID: 8492979603935470778}
   m_Layer: 3
@@ -166,48 +164,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1817984773710373007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5289744473616406117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5328a1161cfd99418c1858f0d31858d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 10
-  angle: 125
-  height: 3.71
-  moveSpeed: 5
-  meshColor: {r: 1, g: 0, b: 0, a: 1}
-  scanfrequency: 30
-  layers:
-    serializedVersion: 2
-    m_Bits: 8
-  occlusionlayers:
-    serializedVersion: 2
-    m_Bits: 16
-  Objects:
-  - {fileID: 0}
---- !u!114 &4703120145330716334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5289744473616406117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db571e0540a85846a01774d69df1346, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
-  detectionRange: 5
-  avoidanceStrength: 5
-  detectionAngle: 45
 --- !u!114 &280776489046588819
 MonoBehaviour:
   m_ObjectHideFlags: 0
