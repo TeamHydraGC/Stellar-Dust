@@ -321,7 +321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  jumpForce: 10
+  jumpForce: 12
   useTransformMovement: 1
   audioSource: {fileID: 7570983564878976095}
   jumpSound: {fileID: 8300000, guid: 8d26b46beabed8c409c0f3ab23e136e4, type: 3}
