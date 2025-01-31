@@ -33,7 +33,7 @@ public class EnemyHealth : MonoBehaviour
         }
         else if (enemyHealth <= 0)
         {
-            //Scoring.addScore(scoreValue); //doesnt worky, ill make it work tmrw after class
+            Object.FindAnyObjectByType<Scoring>().addScore(scoreValue);
             Destroy(gameObject); // destroy the object this script is attached to if health is equal or less than 
         }
 
@@ -53,4 +53,13 @@ public class EnemyHealth : MonoBehaviour
             Debug.Log(gameObject.name + " now vulnerable.");
         }
     }
+
+    public void Update()
+    {
+        if (enemyHealth <= 0)
+        {
+            
+        }
+    }
+
 }
