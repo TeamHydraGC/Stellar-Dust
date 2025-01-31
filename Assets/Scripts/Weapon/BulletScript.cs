@@ -1,3 +1,4 @@
+// Authored by AJ, damage portion authored by Nate
 using UnityEngine;
 
 public class BulletScript : MonoBehaviour
@@ -5,7 +6,9 @@ public class BulletScript : MonoBehaviour
     private Vector3 mousepos;
     private Camera maincam;
     private Rigidbody2D rb;
+    public EnemyHealth enemyHealth;
     public float force; // effectively the bullet's speed
+    public int damageValue = 1;
 
     void Start()
     {
@@ -25,14 +28,12 @@ public class BulletScript : MonoBehaviour
 
     void Update()
     {
-        
+        //why is this here
     }
 
     void OnCollisionEnter2D()
     {
-
-        Destroy(gameObject); // poof
-
-        
+        enemyHealth.enemyTakeDamage(damageValue);
+        Debug.Log("Dealt " + damageValue + " to " + gameObject.name);
     }
 }
