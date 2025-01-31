@@ -13,7 +13,7 @@ public class EnemyHealth : MonoBehaviour
 
     private void Start() // Set enemyHealth to enemyMaxHealth on script start 
     {
-        if (enemyHealth > enemyMaxHealth)
+        if (enemyHealth != enemyMaxHealth)
         {
             enemyHealth = enemyMaxHealth;
         }
@@ -30,6 +30,7 @@ public class EnemyHealth : MonoBehaviour
         }
         else if (enemyHealth <= 0)
         {
+            
             Destroy(gameObject); // destroy the object this script is attached to if health is equal or less than 
         }
 
