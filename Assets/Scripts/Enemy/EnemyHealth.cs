@@ -7,7 +7,7 @@ public class EnemyHealth : MonoBehaviour
     // Declaring variables
     public int enemyHealth; // current enemy health, DO NOT TOUCH UNLESS VIA TakeDamage
     public int enemyMaxHealth; // maximum enemy health, dont tweak during runtime
-    public int scoreValue; // Amount of score eliminating the object this script is attached to will award
+    public int scoreValue = 1; // Amount of score eliminating the object this script is attached to will award
     public float enemyInvulnTime = 0.016f; // How long invulnerability should last, as a float
     public bool enemyInvulnerable = false; // Used for invulnerability after taking damage, DO NOT TOUCH UNLESS VIA InvulnAfterDamageTaken COROUTINE
     public bool enemyDead = false; // unused for now, will be used to handle death animations in the future

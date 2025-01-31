@@ -1,5 +1,6 @@
 // Authored by AJ, damage portion authored by Nate
 using UnityEngine;
+using System.Collections;
 
 public class BulletScript : MonoBehaviour
 {
@@ -31,9 +32,13 @@ public class BulletScript : MonoBehaviour
         //why is this here
     }
 
-    void OnCollisionEnter2D()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        enemyHealth.enemyTakeDamage(damageValue);
-        Debug.Log("Dealt " + damageValue + " to " + gameObject.name);
+        if (other.gameObject.tag == "Enemy")
+        {
+            enemyHealth.enemyTakeDamage(damageValue);
+            Debug.Log("Dealt " + damageValue + " to " + gameObject.name);
+        }
+        
     }
 }
