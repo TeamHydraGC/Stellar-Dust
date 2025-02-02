@@ -2076,7 +2076,7 @@ GameObject:
   - component: {fileID: 356549381}
   - component: {fileID: 356549380}
   m_Layer: 0
-  m_Name: ScoreFountain
+  m_Name: ScoreTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2205,7 +2205,7 @@ Transform:
   m_GameObject: {fileID: 356549379}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 89.24, y: -2.88, z: 1}
+  m_LocalPosition: {x: 89.24, y: -23.77, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -145149,18 +145149,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
---- !u!114 &1701456732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1701456723}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2464940a189c6b24d9a35b4ace50790f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1708592434
 GameObject:
   m_ObjectHideFlags: 0
@@ -148363,9 +148351,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5289744473616406117, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
-      insertIndex: 4
-      addedObject: {fileID: 1701456732}
     - targetCorrespondingSourceObject: {fileID: 5289744473616406117, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1701456731}
