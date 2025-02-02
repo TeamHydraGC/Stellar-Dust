@@ -16,4 +16,9 @@ public class Respawn : MonoBehaviour
             audioSource.PlayOneShot(respawnSound);
         }
     }
+
+    private void Start()
+    {
+
+    }
 }
