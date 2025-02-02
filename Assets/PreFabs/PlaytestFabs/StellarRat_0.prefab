@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7282899359218679049}
   - component: {fileID: 280776489046588819}
   - component: {fileID: 8492979603935470778}
+  - component: {fileID: 8117838216404759467}
   m_Layer: 3
   m_Name: StellarRat_0
   m_TagString: Enemy
@@ -195,3 +196,16 @@ MonoBehaviour:
   enemyInvulnTime: 0.016
   enemyInvulnerable: 0
   enemyDead: 0
+--- !u!114 &8117838216404759467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5289744473616406117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a2cec62e1ad4044e923fa0b835a31b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 1

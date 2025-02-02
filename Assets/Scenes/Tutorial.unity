@@ -1576,11 +1576,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4023786157434142163, guid: 420f1ddc9718f124e91ec16e46589552, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 83.98
+      value: 94.76
       objectReference: {fileID: 0}
     - target: {fileID: 4023786157434142163, guid: 420f1ddc9718f124e91ec16e46589552, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.95
+      value: -4.15
       objectReference: {fileID: 0}
     - target: {fileID: 4023786157434142163, guid: 420f1ddc9718f124e91ec16e46589552, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2184,7 +2184,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 194
+  m_SortingOrder: 7036
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2205,7 +2205,7 @@ Transform:
   m_GameObject: {fileID: 356549379}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 89.24, y: -2.88, z: -0.060720466}
+  m_LocalPosition: {x: 89.24, y: -2.88, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -148353,11 +148353,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8492979603935470778, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
       propertyPath: enemyHealth
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8492979603935470778, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
       propertyPath: enemyMaxHealth
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
