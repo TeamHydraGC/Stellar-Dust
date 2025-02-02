@@ -12,8 +12,6 @@ public class EnemyHealth : MonoBehaviour
     public bool enemyInvulnerable = false; // Used for invulnerability after taking damage, DO NOT TOUCH UNLESS VIA InvulnAfterDamageTaken COROUTINE
     public bool enemyDead = false; // unused for now, will be used to handle death animations in the future
 
-    public Scoring addScore;
-
     private void Start() // Set enemyHealth to enemyMaxHealth on script start 
     {
         if (enemyHealth != enemyMaxHealth)
@@ -26,20 +24,19 @@ public class EnemyHealth : MonoBehaviour
         if (!enemyInvulnerable) // if not invulnerable, deal damage
         {
             enemyHealth -= amount; // Decreases enemyHealth by an int given by enemyTakeDamage
-
             enemyInvulnerable = !enemyInvulnerable;
             StartCoroutine(InvulnAfterDamageTaken()); // Starting coroutine for i-frame timer
             Debug.Log(gameObject.name + " is now invulnerable.");
-        }
-        else if (enemyHealth <= 0)
-        {
-            Object.FindAnyObjectByType<Scoring>().addScore(scoreValue);
-            Destroy(gameObject); // destroy the object this script is attached to if health is equal or less than 
         }
 
         if (enemyHealth == 1) // If health at 1, log a warning, otherwise log current health normally
         {
             Debug.LogWarning(gameObject.name + " is at 1 health!");
+        }
+        else if (enemyHealth <= 0) // if health reaches zero, add score and destroy the object
+        {
+            PlayerScore.Instance.IncreaseScore(scoreValue); // please fucking work
+            Object.Destroy(gameObject); // DIEEEEE
         }
         else
         {
@@ -48,18 +45,12 @@ public class EnemyHealth : MonoBehaviour
 
         IEnumerator InvulnAfterDamageTaken() // i-frame shit SPECIFIC TO THE ENEMY THIS SCRIPT IS ATTACHED TO 
         {
-            yield return new WaitForSeconds(enemyInvulnTime);
-            enemyInvulnerable = !enemyInvulnerable;
-            Debug.Log(gameObject.name + " now vulnerable.");
+            if (enemyHealth >= 0)
+            {
+                yield return new WaitForSeconds(enemyInvulnTime);
+                enemyInvulnerable = !enemyInvulnerable;
+                Debug.Log(gameObject.name + " now vulnerable.");
+            }
         }
     }
-
-    public void Update()
-    {
-        if (enemyHealth <= 0)
-        {
-            
-        }
-    }
-
 }
