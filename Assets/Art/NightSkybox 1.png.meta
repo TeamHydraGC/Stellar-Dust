@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 24255ea68471a3844b6b329274ee56fb
+guid: bb385c13952ea024881712ef33667e46
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,34 +95,12 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: backgroundlab4nosun_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1907
-        height: 801
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aea8f37f33bbd454fa807dd20155c58f
-      internalID: -914990566
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 187e8174510f98b4093972691c939516
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -131,8 +109,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      backgroundlab4nosun_0: -914990566
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
