@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 5791078525129919291}
   - component: {fileID: 8455625105314446540}
   - component: {fileID: 7570983564878976095}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Player (Cave)
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -203,7 +203,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -321,10 +321,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  jumpForce: 12
+  jumpForce: 8
   useTransformMovement: 1
   audioSource: {fileID: 7570983564878976095}
-  jumpSound: {fileID: 8300000, guid: 8d26b46beabed8c409c0f3ab23e136e4, type: 3}
+  jumpSound: {fileID: 8300000, guid: 61b2bef7fc7274c4a850914fd3764110, type: 3}
 --- !u!114 &5082446756076488757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -354,7 +354,7 @@ MonoBehaviour:
   movementSpeed: 1
   jumpForce: 10
   audioSource: {fileID: 7570983564878976095}
-  jumpSound: {fileID: 8300000, guid: 8d26b46beabed8c409c0f3ab23e136e4, type: 3}
+  jumpSound: {fileID: 8300000, guid: 61b2bef7fc7274c4a850914fd3764110, type: 3}
   inputActions: {fileID: -944628639613478452, guid: fb5cf4f7496cced4496a18bbcc9e553c, type: 3}
 --- !u!114 &5791078525129919291
 MonoBehaviour:
