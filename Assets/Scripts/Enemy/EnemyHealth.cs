@@ -21,13 +21,13 @@ public class EnemyHealth : MonoBehaviour
     }
     public void enemyTakeDamage(int amount) // Method to deal damage to the enemy this script is attached to
     {
-        if (!enemyInvulnerable) // if not invulnerable, deal damage
-        {
-            enemyHealth -= amount; // Decreases enemyHealth by an int given by enemyTakeDamage
-            enemyInvulnerable = !enemyInvulnerable;
-            StartCoroutine(InvulnAfterDamageTaken()); // Starting coroutine for i-frame timer
-            Debug.Log(gameObject.name + " is now invulnerable.");
-        }
+        //if (!enemyInvulnerable) // if not invulnerable, deal damage
+        //{
+        //    enemyHealth -= amount; // Decreases enemyHealth by an int given by enemyTakeDamage
+        //    enemyInvulnerable = !enemyInvulnerable;
+        //    StartCoroutine(InvulnAfterDamageTaken()); // Starting coroutine for i-frame timer
+        //    Debug.Log(gameObject.name + " is now invulnerable.");
+        //}
 
         if (enemyHealth == 1) // If health at 1, log a warning, otherwise log current health normally
         {
@@ -43,14 +43,14 @@ public class EnemyHealth : MonoBehaviour
             Debug.Log(gameObject.name + " health is currently " + enemyHealth);
         }
 
-        IEnumerator InvulnAfterDamageTaken() // i-frame shit SPECIFIC TO THE ENEMY THIS SCRIPT IS ATTACHED TO 
-        {
-            if (enemyHealth >= 0)
-            {
-                yield return new WaitForSeconds(enemyInvulnTime);
-                enemyInvulnerable = !enemyInvulnerable;
-                Debug.Log(gameObject.name + " now vulnerable.");
-            }
-        }
+        //IEnumerator InvulnAfterDamageTaken() // i-frame shit SPECIFIC TO THE ENEMY THIS SCRIPT IS ATTACHED TO 
+        //{
+        //    if (enemyHealth >= 0)
+        //    {
+        //        yield return new WaitForSeconds(enemyInvulnTime);
+        //        enemyInvulnerable = !enemyInvulnerable;
+        //        Debug.Log(gameObject.name + " now vulnerable.");
+        //    }
+        //}
     }
 }
