@@ -33,14 +33,12 @@ public class EnemyHealth : MonoBehaviour
         if (enemyInvulnerable == false) // if not invulnerable, deal damage
         {
             enemyHealth -= amount; // Decreases enemyHealth by an int given by enemyTakeDamage
+            Debug.Log(gameObject.name + " health is currently " + enemyHealth);
             //enemyInvulnerable = !enemyInvulnerable;
             //StartCoroutine(InvulnAfterDamageTaken()); // Starting coroutine for i-frame timer
             //Debug.Log(gameObject.name + " is now invulnerable.");
         }
-        else
-        {
-            Debug.Log(gameObject.name + " health is currently " + enemyHealth);
-        }
+
         if (enemyHealth <= 0) // if health reaches zero, destroy the object
         {
             Debug.Log(gameObject.name + " has died, destroying object.");

@@ -33,7 +33,6 @@ public class BulletScript : MonoBehaviour
         if (collision.gameObject.GetComponent<EnemyHealth>())
         {
             EnemyHealth hp = collision.gameObject.GetComponent<EnemyHealth>();
-
             hp.enemyTakeDamage(damageValue);
             Debug.Log("Dealt " + damageValue + " to " + collision.gameObject.name);
         }
