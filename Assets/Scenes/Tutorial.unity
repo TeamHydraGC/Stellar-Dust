@@ -148433,11 +148433,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8492979603935470778, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
       propertyPath: enemyHealth
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8492979603935470778, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
       propertyPath: enemyMaxHealth
-      value: 5
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8492979603935470778, guid: 05778f7452131be4397d79b14bbd8485, type: 3}
+      propertyPath: enemyInvulnTime
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
