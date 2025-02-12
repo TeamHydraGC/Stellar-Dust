@@ -146140,6 +146140,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0982c7c1708f7bd4ea2c25c5f059c898, type: 3}
+--- !u!114 &1931770434 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7583897004894254305, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+  m_PrefabInstance: {fileID: 300223499129716852}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c135db96fa47546ab752eb0fac5f50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1947464923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -147237,38 +147248,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 78950331029434389, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 192041327839069731, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 379082928235484843, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 508752223196910409, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1118365551460277210, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1678634257654150354, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2677739592790452877, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2943153370216054786, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3697349936003473296, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -147349,22 +147328,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5318111277637833520, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5829967776724040629, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7677445563167902678, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8151984407133499621, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 7583897004894254305, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 4943413118867981124}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -147947,6 +147914,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5791078525129919291, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1931770434}
     - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 183.5
@@ -148218,7 +148189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8072805260640822923, guid: 9e3cd4fc578280d4685a7cebd347cfe2, type: 3}
       propertyPath: damageAmount
-      value: 17
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8076522769765669472, guid: 9e3cd4fc578280d4685a7cebd347cfe2, type: 3}
       propertyPath: m_Name

@@ -197,6 +197,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0efaf0aeae543ed4284f03084d963678, type: 3}
+--- !u!114 &120304274 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5791078525129919291, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+  m_PrefabInstance: {fileID: 1715729495}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5562a8b3d135a1641b2cc5ef5054b5d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &174729925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56312,16 +56323,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 13, y: 4, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 48, y: 4, z: 0}
     second:
       serializedVersion: 2
@@ -58940,7 +58941,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 30aa9d9c45f39c74cbfecef0c5d03263, type: 2}
   - m_RefCount: 39
     m_Data: {fileID: 11400000, guid: 64d6848be9501814a8df9c11e2d55e8f, type: 2}
-  - m_RefCount: 42
+  - m_RefCount: 41
     m_Data: {fileID: 11400000, guid: 08f2b9afea106e94f8bc3cf5711b1300, type: 2}
   - m_RefCount: 45
     m_Data: {fileID: 11400000, guid: d4016b1461bfe38478356f415d7faaf3, type: 2}
@@ -58959,7 +58960,7 @@ Tilemap:
     m_Data: {fileID: 1844077923, guid: f0e11dd574873c24397dff360f7e81d6, type: 3}
   - m_RefCount: 39
     m_Data: {fileID: -1505373288, guid: f0e11dd574873c24397dff360f7e81d6, type: 3}
-  - m_RefCount: 42
+  - m_RefCount: 41
     m_Data: {fileID: 292009225, guid: f0e11dd574873c24397dff360f7e81d6, type: 3}
   - m_RefCount: 45
     m_Data: {fileID: 208254065, guid: f0e11dd574873c24397dff360f7e81d6, type: 3}
@@ -58972,7 +58973,7 @@ Tilemap:
   - m_RefCount: 17
     m_Data: {fileID: -1373243032, guid: f0e11dd574873c24397dff360f7e81d6, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 5486
+  - m_RefCount: 5485
     m_Data:
       e00: 1
       e01: 0
@@ -59027,7 +59028,7 @@ Tilemap:
       e32: 2.48e-43
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 5695
+  - m_RefCount: 5694
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -60203,6 +60204,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5108038045866821780, guid: 4ae8acb74ee3372408afe8218ac8847a, type: 3}
   m_PrefabInstance: {fileID: 1473837326}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1482154636 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7583897004894254305, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+  m_PrefabInstance: {fileID: 1543124024}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c135db96fa47546ab752eb0fac5f50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1516210487 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3840334905397333171, guid: 61b5653ba6b6ceb489213e5af7c4907d, type: 3}
@@ -60300,6 +60312,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7583897004894254305, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 120304274}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -60677,6 +60693,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player (Cave)
       objectReference: {fileID: 0}
+    - target: {fileID: 5791078525129919291, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1482154636}
     - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.6

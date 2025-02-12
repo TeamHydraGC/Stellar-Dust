@@ -12,6 +12,7 @@ public class PlayerHealth : MonoBehaviour
     public int invulnTimeInSeconds = 1; // How long invulnerability should last, as an int
     public bool playerInvulnerable = false; // Used for invulnerability after taking damage, DO NOT TOUCH
     public bool playerDead = false; // If true, player goes to GameOver scene
+    public HealthBar healthBar; // Reference to the HealthBar
 
     private void Start() // Set playerHealth to playerMaxHealth on start 
     {
@@ -19,6 +20,7 @@ public class PlayerHealth : MonoBehaviour
         {
             playerHealth = playerMaxHealth;
         }
+        healthBar.healthBarImage.fillAmount = (float)playerHealth / playerMaxHealth;
     }
 
     public void playerTakeDamage(int amount) // Method to deal damage to the player
@@ -30,6 +32,8 @@ public class PlayerHealth : MonoBehaviour
             StartCoroutine(InvulnAfterDamageTaken()); // Starting coroutine for i-frame timer
             Debug.Log(gameObject.name + " is now invulnerable.");
         }
+
+        healthBar.healthBarImage.fillAmount = (float)playerHealth / playerMaxHealth; // Update health bar
 
         if (playerHealth == 1) // If health at 1, log a warning, otherwise log current health normally
         {
