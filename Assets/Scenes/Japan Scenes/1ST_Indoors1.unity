@@ -194,7 +194,7 @@ MonoBehaviour:
   jumpForce: 4
   useTransformMovement: 1
   audioSource: {fileID: 295381710}
-  jumpSound: {fileID: 8300000, guid: 8d26b46beabed8c409c0f3ab23e136e4, type: 3}
+  jumpSound: {fileID: 8300000, guid: 61b2bef7fc7274c4a850914fd3764110, type: 3}
 --- !u!1 &427668798
 GameObject:
   m_ObjectHideFlags: 0
@@ -26139,6 +26139,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2113080808047443451, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: jumpSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 61b2bef7fc7274c4a850914fd3764110, type: 3}
+    - target: {fileID: 2113080808047443451, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
       propertyPath: movementSpeed
       value: 5
       objectReference: {fileID: 0}
@@ -26158,6 +26162,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 3600651940408492775, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 2e53a98a7d0049b44a35c61c630e6484, type: 2}
     - target: {fileID: 3928096357643424343, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
       propertyPath: m_Name
       value: Player (WildWest)
@@ -26218,6 +26226,10 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0.54
       objectReference: {fileID: 0}
+    - target: {fileID: 7570983564878976095, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 2e53a98a7d0049b44a35c61c630e6484, type: 2}
     - target: {fileID: 8990510676579953578, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
       propertyPath: orthographic size
       value: 3

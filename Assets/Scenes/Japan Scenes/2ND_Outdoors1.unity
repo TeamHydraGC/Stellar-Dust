@@ -84328,6 +84328,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 782469608044025329, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: jumpSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 61b2bef7fc7274c4a850914fd3764110, type: 3}
+    - target: {fileID: 2113080808047443451, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: jumpSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 61b2bef7fc7274c4a850914fd3764110, type: 3}
+    - target: {fileID: 3600651940408492775, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 2e53a98a7d0049b44a35c61c630e6484, type: 2}
     - target: {fileID: 3928096357643424343, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
       propertyPath: m_Name
       value: Player (WildWest)
@@ -84376,6 +84388,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7570983564878976095, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 2e53a98a7d0049b44a35c61c630e6484, type: 2}
     - target: {fileID: 8037815628193681946, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
       propertyPath: m_RendererIndex
       value: -1
