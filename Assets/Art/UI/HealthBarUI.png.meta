@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c5910ad5ff65b2e4e861a6b1d92e72b1
+guid: ede0e36a3d1e4394e85d29586117cd46
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -39,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 0
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TitleScreenUISD&SS_0
+      name: HealthBarUI_0
       rect:
         serializedVersion: 2
         x: 791
@@ -138,8 +138,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b546460f2ec64b243aee9e1d54d6ec51
-      internalID: -1462928393
+      spriteID: acb162943cbf74947a328babca8761cd
+      internalID: -1939637490
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f76cbca5447d1714baaa9af9c9ec2194
+    spriteID: 4ddeb848a9bdb8f49b39c2da3c34b525
     internalID: 0
     vertices: []
     indices: 
@@ -158,7 +158,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TitleScreenUISD&SS_0: -1462928393
+      HealthBarUI_0: -1939637490
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
