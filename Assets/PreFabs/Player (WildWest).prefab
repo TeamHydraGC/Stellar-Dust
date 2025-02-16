@@ -559,6 +559,7 @@ MonoBehaviour:
   invulnTimeInSeconds: 1
   playerInvulnerable: 0
   playerDead: 0
+  healthBar: {fileID: 0}
 --- !u!1001 &8584043177870076890
 PrefabInstance:
   m_ObjectHideFlags: 0
