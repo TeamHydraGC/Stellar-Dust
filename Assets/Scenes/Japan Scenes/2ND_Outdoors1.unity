@@ -382,7 +382,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 2.4696927
+  m_PointLightOuterRadius: 2.75
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -6964,6 +6964,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 687708103902694035, guid: 396bd384ace288c45961223e79331a3f, type: 3}
   m_PrefabInstance: {fileID: 235768464}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &238294540 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1566446853594032421, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+  m_PrefabInstance: {fileID: 1908339551}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &310925937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13074,6 +13079,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 687708103902694035, guid: 396bd384ace288c45961223e79331a3f, type: 3}
   m_PrefabInstance: {fileID: 619019406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &739791494 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3928096357643424343, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+  m_PrefabInstance: {fileID: 1908339551}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &828792913
 PrefabInstance:
@@ -25827,7 +25837,7 @@ GameObject:
   - component: {fileID: 1392273405}
   - component: {fileID: 1392273404}
   - component: {fileID: 1392273406}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84341,17 +84351,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 782469608044025329, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
-      propertyPath: jumpSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 61b2bef7fc7274c4a850914fd3764110, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 782469608044025329, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: whatIsGround.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1566446853594032421, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883493367002727761, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: m_GravityScale
+      value: 1.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2113080808047443451, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
-      propertyPath: jumpSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 61b2bef7fc7274c4a850914fd3764110, type: 3}
-    - target: {fileID: 3600651940408492775, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 24300002, guid: 2e53a98a7d0049b44a35c61c630e6484, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3928096357643424343, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
       propertyPath: m_Name
       value: Player (WildWest)
@@ -84362,7 +84380,7 @@ PrefabInstance:
       objectReference: {fileID: 828792914}
     - target: {fileID: 6349399957949673988, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.33
+      value: 216.2
       objectReference: {fileID: 0}
     - target: {fileID: 6349399957949673988, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
       propertyPath: m_LocalPosition.y
@@ -84400,30 +84418,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7570983564878976095, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 24300002, guid: 2e53a98a7d0049b44a35c61c630e6484, type: 2}
-    - target: {fileID: 8037815628193681946, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
-      propertyPath: m_RendererIndex
-      value: -1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5082446756076488757, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3928096357643424343, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1908339554}
   m_SourcePrefab: {fileID: 100100000, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
 --- !u!114 &1908339552 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5791078525129919291, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
   m_PrefabInstance: {fileID: 1908339551}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 739791494}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5562a8b3d135a1641b2cc5ef5054b5d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1908339554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 739791494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 552c265689d8d934a80a82aacada80c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 7
+  jumpForce: 10
+  groundCheckpoint: {fileID: 238294540}
+  groundCheckY: 0.2
+  groundCheckX: 0.5
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1001 &1999658247
 PrefabInstance:
   m_ObjectHideFlags: 0
