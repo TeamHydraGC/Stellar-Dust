@@ -325,12 +325,6 @@ MonoBehaviour:
   useTransformMovement: 1
   audioSource: {fileID: 7570983564878976095}
   jumpSound: {fileID: 8300000, guid: 61b2bef7fc7274c4a850914fd3764110, type: 3}
-  groundCheckY: 0.2
-  groundCheckX: 0.5
-  groundCheckpoint: {fileID: 1566446853594032421}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!114 &5082446756076488757
 MonoBehaviour:
   m_ObjectHideFlags: 0

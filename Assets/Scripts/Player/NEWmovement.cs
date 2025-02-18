@@ -31,14 +31,19 @@ public class NEWmovement : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
 
         GetInputs();
-        Move();
-        Jump();
+        
 
         // Flip Object
         if ((x > 0 && !isFacingRight) || (x < 0 && isFacingRight))
         {
             FlipObject();
         }
+    }
+
+    private void FixedUpdate()
+    {
+        Move();
+        Jump();
     }
 
     void GetInputs()
@@ -67,7 +72,10 @@ public class NEWmovement : MonoBehaviour
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
                 
             }
-            
+            else
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            }
         }
     }
 
