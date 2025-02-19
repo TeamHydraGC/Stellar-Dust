@@ -375,6 +375,7 @@ MonoBehaviour:
   invulnTimeInSeconds: 1
   playerInvulnerable: 0
   playerDead: 0
+  healthBar: {fileID: 0}
 --- !u!114 &5955117657088694760
 MonoBehaviour:
   m_ObjectHideFlags: 0
