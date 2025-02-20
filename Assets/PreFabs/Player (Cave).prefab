@@ -150,14 +150,13 @@ GameObject:
   - component: {fileID: 3125561803007935479}
   - component: {fileID: 2141673639466722160}
   - component: {fileID: 1883493367002727761}
-  - component: {fileID: 782469608044025329}
   - component: {fileID: 5082446756076488757}
-  - component: {fileID: 2113080808047443451}
   - component: {fileID: 5791078525129919291}
   - component: {fileID: 5955117657088694760}
   - component: {fileID: 7923769363428893510}
   - component: {fileID: 8455625105314446540}
   - component: {fileID: 7570983564878976095}
+  - component: {fileID: 93328654092451021}
   m_Layer: 0
   m_Name: Player (Cave)
   m_TagString: Player
@@ -180,6 +179,7 @@ Transform:
   m_Children:
   - {fileID: 5610522022074481700}
   - {fileID: 4250022232982044750}
+  - {fileID: 3361570908913016355}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3125561803007935479
@@ -225,7 +225,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -9
   m_Sprite: {fileID: 1625974008, guid: a2f70b016439af24ea7c6019c881c1c3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -271,7 +271,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.44833988, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -281,7 +281,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.16, y: 6.88}
+  m_Size: {x: 3.26332, y: 6.88}
   m_EdgeRadius: 0
 --- !u!50 &1883493367002727761
 Rigidbody2D:
@@ -310,23 +310,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &782469608044025329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3928096357643424343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ca27a6a9cbcc814cab7bb4fe7f74def, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 10
-  jumpForce: 10
-  useTransformMovement: 1
-  audioSource: {fileID: 7570983564878976095}
-  jumpSound: {fileID: 8300000, guid: 61b2bef7fc7274c4a850914fd3764110, type: 3}
 --- !u!114 &5082446756076488757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -341,23 +324,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   titleText: {fileID: 0}
   byLineText: {fileID: 0}
---- !u!114 &2113080808047443451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3928096357643424343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7d3ee2335329b24caebf2b7f84a9d72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 1
-  jumpForce: 10
-  audioSource: {fileID: 7570983564878976095}
-  jumpSound: {fileID: 8300000, guid: 61b2bef7fc7274c4a850914fd3764110, type: 3}
-  inputActions: {fileID: -944628639613478452, guid: fb5cf4f7496cced4496a18bbcc9e553c, type: 3}
 --- !u!114 &5791078525129919291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -430,7 +396,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2113080808047443451}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: OnMove
         m_Mode: 0
@@ -446,7 +412,7 @@ MonoBehaviour:
     m_ActionName: 'Controller/Movement[/DualSenseGamepadHID/leftStick/up,/DualSenseGamepadHID/leftStick/down,/DualSenseGamepadHID/leftStick/left,/DualSenseGamepadHID/leftStick/right,/DualSenseGamepadHID/dpad/up,/DualSenseGamepadHID/dpad/down,/DualSenseGamepadHID/dpad/left,/DualSenseGamepadHID/dpad/right]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2113080808047443451}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: OnJump
         m_Mode: 0
@@ -470,7 +436,7 @@ MonoBehaviour:
     m_ActionName: 'Keyboard/Jump[/Keyboard/space]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2113080808047443451}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: OnGrapple
         m_Mode: 0
@@ -502,7 +468,7 @@ AudioSource:
   m_GameObject: {fileID: 3928096357643424343}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 2e53a98a7d0049b44a35c61c630e6484, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
@@ -590,6 +556,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &93328654092451021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3928096357643424343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 552c265689d8d934a80a82aacada80c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 7
+  jumpForce: 10
+  groundCheckpoint: {fileID: 3361570908913016355}
+  groundCheckY: 0.2
+  groundCheckX: 0.5
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &5330258066485304335
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,9 +608,40 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 411.11215, y: 215.89355}
+  m_AnchoredPosition: {x: -0.2, y: -1.38}
   m_SizeDelta: {x: 931.3334, y: 495.6667}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &8351611445711976882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3361570908913016355}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3361570908913016355
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8351611445711976882}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -3.33, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6349399957949673988}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &8584043177870076890
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -732,7 +749,7 @@ AudioSource:
   m_GameObject: {fileID: 7808587137378627456}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 2e53a98a7d0049b44a35c61c630e6484, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0

@@ -1744,7 +1744,7 @@ Grid:
   m_GameObject: {fileID: 755452705}
   m_Enabled: 1
   m_CellSize: {x: 1, y: 1, z: 0}
-  m_CellGap: {x: 0, y: 0, z: 0}
+  m_CellGap: {x: -0.0000001, y: -0.0000001, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
 --- !u!4 &755452707
@@ -64438,6 +64438,18 @@ PrefabInstance:
     - target: {fileID: 8416347013568926363, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -1.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
