@@ -19,6 +19,8 @@ public class NEWmovement : MonoBehaviour
 
     private bool isFacingRight = true;
 
+    public Animator animator;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -38,6 +40,9 @@ public class NEWmovement : MonoBehaviour
         {
             FlipObject();
         }
+
+        animator.SetFloat("Speed", Mathf.Abs(x));
+
     }
 
     private void FixedUpdate()
@@ -67,10 +72,14 @@ public class NEWmovement : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump"))
         {
+            animator.SetBool("IsJumping", true);
+
             if (Grounded())
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-                
+
+                animator.SetBool("IsJumping", false);
+
             }
             else
             {
@@ -87,4 +96,6 @@ public class NEWmovement : MonoBehaviour
         transform.localScale = scale;
     }
     
+ 
+
 }
