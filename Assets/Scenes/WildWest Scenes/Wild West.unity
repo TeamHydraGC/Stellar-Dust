@@ -169,6 +169,11 @@ Transform:
   - {fileID: 115708735}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &43412702 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2677739592790452877, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+  m_PrefabInstance: {fileID: 1126393045}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &98836953
 GameObject:
   m_ObjectHideFlags: 0
@@ -78128,6 +78133,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2677739592790452877, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3697349936003473296, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -78987,6 +78996,24 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6cf89199276e82a4eae9d5b3ed022f08, type: 3}
+--- !u!1 &1472718758 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2278232317042654261, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+  m_PrefabInstance: {fileID: 1539007623}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1472718763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472718758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b5bc33be92f4c49a03fa2f0daf1ed6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 43412702}
 --- !u!1 &1476320317
 GameObject:
   m_ObjectHideFlags: 0
@@ -79255,7 +79282,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2278232317042654261, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1472718763}
   m_SourcePrefab: {fileID: 100100000, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
 --- !u!114 &1548760971 stripped
 MonoBehaviour:
