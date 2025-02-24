@@ -78133,10 +78133,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 2677739592790452877, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3697349936003473296, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -78996,24 +78992,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6cf89199276e82a4eae9d5b3ed022f08, type: 3}
---- !u!1 &1472718758 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2278232317042654261, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
-  m_PrefabInstance: {fileID: 1539007623}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1472718763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1472718758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6b5bc33be92f4c49a03fa2f0daf1ed6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 43412702}
 --- !u!1 &1476320317
 GameObject:
   m_ObjectHideFlags: 0
@@ -79207,18 +79185,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 782469608044025329, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
-      propertyPath: jumpForce
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3125561803007935479, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-    - target: {fileID: 3600651940408492775, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 24300002, guid: 2e53a98a7d0049b44a35c61c630e6484, type: 2}
     - target: {fileID: 3928096357643424343, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_Name
       value: Player
@@ -79267,25 +79233,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7570983564878976095, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
-      propertyPath: OutputAudioMixerGroup
+    - target: {fileID: 7099544720478348212, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: pauseMenu
       value: 
-      objectReference: {fileID: 24300002, guid: 2e53a98a7d0049b44a35c61c630e6484, type: 2}
-    - target: {fileID: 8416347013568926363, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.17
-      objectReference: {fileID: 0}
-    - target: {fileID: 8416347013568926363, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -1.41
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 43412702}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2278232317042654261, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1472718763}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
 --- !u!114 &1548760971 stripped
 MonoBehaviour:
