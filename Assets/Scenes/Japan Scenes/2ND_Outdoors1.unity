@@ -84433,6 +84433,10 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1910671373}
+    - target: {fileID: 8990510676579953578, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: orthographic size
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
