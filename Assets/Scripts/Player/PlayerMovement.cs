@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded = false;
     public AudioSource audioSource;
     public AudioClip jumpSound;
+    public Animator animator;
 
     private bool isFacingRight = true;
 
@@ -63,6 +64,7 @@ public class PlayerMovement : MonoBehaviour
 
             
         }
+        animator.SetFloat("Speed", Mathf.Abs(x));
     }
 
     void FixedUpdate()

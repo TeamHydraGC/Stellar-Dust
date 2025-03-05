@@ -150,7 +150,7 @@ Grid:
   m_GameObject: {fileID: 23189532}
   m_Enabled: 1
   m_CellSize: {x: 1, y: 1, z: 0}
-  m_CellGap: {x: -0.0000001, y: -0.0000001, z: 0}
+  m_CellGap: {x: -0.0001, y: -0.0001, z: -0}
   m_CellLayout: 0
   m_CellSwizzle: 0
 --- !u!4 &23189534
@@ -77703,6 +77703,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
   m_PrefabInstance: {fileID: 1539007623}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &906289224 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 743724715844512548, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+  m_PrefabInstance: {fileID: 1539007623}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &912485683
 GameObject:
   m_ObjectHideFlags: 0
@@ -79185,10 +79190,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1883493367002727761, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3928096357643424343, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4724995848165053228, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 906289224}
     - target: {fileID: 5791078525129919291, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: healthBar
       value: 
