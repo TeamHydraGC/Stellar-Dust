@@ -682,6 +682,7 @@ MonoBehaviour:
   useTransformMovement: 0
   audioSource: {fileID: 0}
   jumpSound: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!1 &5330258066485304335
 GameObject:
   m_ObjectHideFlags: 0
