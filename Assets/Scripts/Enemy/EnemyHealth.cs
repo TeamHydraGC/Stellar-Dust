@@ -9,11 +9,10 @@ public class EnemyHealth : MonoBehaviour
     // Declaring variables
     public int enemyHealth; // current enemy health, DO NOT TOUCH UNLESS VIA TakeDamage
     public int enemyMaxHealth; // maximum enemy health, dont tweak during runtime
-    public int scoreValue = 1; // Amount of score eliminating the object this script is attached to will award
+    public int scoreValue = 10; // Amount of score eliminating the object this script is attached to will award
     public float enemyInvulnTime = 0.0f; // How long invulnerability should last, as a float
     public bool enemyInvulnerable = false; // Used for invulnerability after taking damage, DO NOT TOUCH UNLESS VIA InvulnAfterDamageTaken COROUTINE
     public bool enemyDead = false; // unused for now, will be used to handle death animations in the future
-
 
     public static EnemyHealth Instance { get; private set; } // instantiating public variabels for use elsewhere
     private void Awake()
@@ -41,6 +40,7 @@ public class EnemyHealth : MonoBehaviour
 
         if (enemyHealth <= 0) // if health reaches zero, destroy the object
         {
+            FindFirstObjectByType<ScoreUI>().AddScore(scoreValue); // Update the ScoreUI
             Debug.Log(gameObject.name + " has died, destroying object.");
             Object.Destroy(gameObject);
         }

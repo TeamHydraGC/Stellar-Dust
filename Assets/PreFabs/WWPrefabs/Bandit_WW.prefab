@@ -247,7 +247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 3
   enemyMaxHealth: 3
-  scoreValue: 5
+  scoreValue: 10
   enemyInvulnTime: 0
   enemyInvulnerable: 0
   enemyDead: 0

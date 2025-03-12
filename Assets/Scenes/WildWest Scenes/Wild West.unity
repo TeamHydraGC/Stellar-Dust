@@ -79241,14 +79241,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 351110228053717424, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
-      propertyPath: reloadSound
-      value: 
-      objectReference: {fileID: 8300000, guid: e61169a4a46c47b48a19e1750187559a, type: 3}
-    - target: {fileID: 351110228053717424, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
-      propertyPath: revolver.reloadTime
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 351110228053717424, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: 'bulletImages.Array.data[0]'
       value: 
       objectReference: {fileID: 388376130}
@@ -80279,6 +80271,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2876532433318917162, guid: d06103358930d5b44ab813ca8d95520d, type: 3}
+      propertyPath: m_Volume
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 6471184028495085192, guid: d06103358930d5b44ab813ca8d95520d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 70.3
