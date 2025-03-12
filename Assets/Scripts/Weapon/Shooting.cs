@@ -1,6 +1,7 @@
 using UnityEngine;
+using UnityEngine.UI; 
 
-// Vinny - Implemented Revolver class with properties | ENUM from Smiley's Weapon Logic
+// Vinny - Implemented Revolver class with properties, & gun sounds | ENUM from Smiley's Weapon Logic
 public class Shooting : MonoBehaviour
 {
     private Camera maincam;
@@ -9,10 +10,13 @@ public class Shooting : MonoBehaviour
     public Transform bulletTransform;
     public AudioSource audioSource;
     public AudioClip fireSound;
+    public AudioClip reloadSound; // Reload sound added
 
     public bool canfire = true; // Start with canfire being true, so shooting can begin
     private float timer;
     public Revolver revolver = new Revolver(); // Instance of the Revolver class
+
+    public Image[] bulletImages; // Array to hold bullet UI images
 
     // Revolver enum and properties
     public enum RevolverState
@@ -37,6 +41,7 @@ public class Shooting : MonoBehaviour
     void Start()
     {
         maincam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        UpdateBulletUI(); // Ensure the UI starts in the correct state
     }
 
     // Update is called once per frame
@@ -57,11 +62,17 @@ public class Shooting : MonoBehaviour
         // Handle reloading logic
         if (revolver.state == RevolverState.Reloading)
         {
+            if (reloadTimer == 0) // Play reload sound only at the beginning of reloading
+            {
+                audioSource.PlayOneShot(reloadSound); // Play reload sound
+            }
             reloadTimer += Time.deltaTime; // Increment reload timer
+        
             if (reloadTimer >= revolver.reloadTime) // Check if reload time is complete
             {
                 revolver.currentAmmo = revolver.maxAmmo; // Refill ammo
                 revolver.state = RevolverState.ReadyToFire; // Return to ready state
+                UpdateBulletUI(); // Reset the UI after reloading
             }
             return; // Exit to prevent firing during reload
         }
@@ -85,12 +96,23 @@ public class Shooting : MonoBehaviour
             Instantiate(bullet, bulletTransform.position, Quaternion.identity); // Fire the bullet
 
             audioSource.PlayOneShot(fireSound); // Play fire sound
+            UpdateBulletUI(); // Update the UI after firing
 
             if (revolver.currentAmmo <= 0) // Check if ammo is depleted
             {
                 revolver.state = RevolverState.Reloading; // Change state to reloading
                 reloadTimer = 0; // Reset reload timer
             }
+        }
+    }
+
+    void UpdateBulletUI()
+    {
+        for (int i = 0; i < bulletImages.Length; i++)
+        {
+            Color color = bulletImages[i].color;
+            color.a = i < revolver.currentAmmo ? 1f : 0.2f; // Full opacity for remaining bullets
+            bulletImages[i].color = color;
         }
     }
 }

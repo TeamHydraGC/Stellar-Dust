@@ -682,7 +682,7 @@ MonoBehaviour:
   useTransformMovement: 0
   audioSource: {fileID: 0}
   jumpSound: {fileID: 0}
-  animator: {fileID: 0}
+  animator: {fileID: 743724715844512548}
 --- !u!1 &5330258066485304335
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,6 +829,18 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 3600651940408492775}
+    - target: {fileID: 8358611837367507562, guid: 2ab6f261805060e439d709275c78d057, type: 3}
+      propertyPath: reloadSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e61169a4a46c47b48a19e1750187559a, type: 3}
+    - target: {fileID: 8358611837367507562, guid: 2ab6f261805060e439d709275c78d057, type: 3}
+      propertyPath: revolver.reloadTime
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8358611837367507562, guid: 2ab6f261805060e439d709275c78d057, type: 3}
+      propertyPath: bulletImages.Array.size
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
