@@ -1,19 +1,19 @@
-//using UnityEngine;
-//using UnityEngine.SceneManagement;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
-//public class jptwoTOjpthree : MonoBehaviour
-//{
-//    private void OnCollisionEnter2D(Collision2D collision)
-//    {
+public class jpthreeTOjpfour : MonoBehaviour
+{
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
         //Change the scene to the outdoors
 
-//        if (collision.transform.name == "Player")
-//        {
-//            SceneManager.LoadScene(10);
-//        }
+        if (collision.transform.name == "Player")
+        {
+            SceneManager.LoadScene(9);
+        }
 
 
 
 
-//    }
-//}
+    }
+}

@@ -8,7 +8,7 @@ public class jponeTOjptwo : MonoBehaviour
         //Change the scene to the outdoors
         if (collision.transform.name == "Player")
         {
-            SceneManager.LoadScene(8);
+            SceneManager.LoadScene(7);
         }
 
 

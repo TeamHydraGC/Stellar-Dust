@@ -9,7 +9,7 @@ public class jptwoTOjpthree : MonoBehaviour
         
         if (collision.transform.name == "Player")
         {
-            SceneManager.LoadScene(9);
+            SceneManager.LoadScene(8);
         }
         
 
