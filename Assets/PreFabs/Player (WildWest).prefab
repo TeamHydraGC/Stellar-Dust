@@ -550,6 +550,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
+  animator: {fileID: 0}
 --- !u!70 &5679523307755229335
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
