@@ -202,7 +202,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5791078525129919291, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
   m_PrefabInstance: {fileID: 1715729495}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1088280254}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5562a8b3d135a1641b2cc5ef5054b5d4, type: 3}
@@ -1641,6 +1641,7 @@ GameObject:
   m_Component:
   - component: {fileID: 737299614}
   - component: {fileID: 737299615}
+  - component: {fileID: 737299616}
   m_Layer: 0
   m_Name: sandbreast
   m_TagString: Untagged
@@ -1718,6 +1719,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &737299616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737299613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee8ea8648ed894e4b90fcfa04e4cb410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 25
+  enemyMaxHealth: 25
+  scoreValue: 10
+  enemyInvulnTime: 5
+  enemyInvulnerable: 0
+  enemyDead: 0
 --- !u!1 &755452705
 GameObject:
   m_ObjectHideFlags: 0
@@ -2342,6 +2361,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a1c8bd806d0a254ebbee8c20b3ec7ef, type: 3}
+--- !u!1 &1088280254 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3928096357643424343, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+  m_PrefabInstance: {fileID: 1715729495}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1115584982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64454,13 +64478,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3928096357643424343, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1715729509}
   m_SourcePrefab: {fileID: 100100000, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
 --- !u!4 &1715729496 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
   m_PrefabInstance: {fileID: 1715729495}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1715729509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088280254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee8ea8648ed894e4b90fcfa04e4cb410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 0
+  enemyMaxHealth: 0
+  scoreValue: 10
+  enemyInvulnTime: 0
+  enemyInvulnerable: 0
+  enemyDead: 0
 --- !u!4 &1821869740 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3840334905397333171, guid: 61b5653ba6b6ceb489213e5af7c4907d, type: 3}

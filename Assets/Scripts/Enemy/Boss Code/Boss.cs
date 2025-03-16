@@ -42,9 +42,7 @@ public class Boss : MonoBehaviour
     {
         // Store the current position of the boss
         Vector3 startPos = transform.position;
-        // Calculate the distance between the start and target locations
         float journeyLength = Vector3.Distance(startPos, targetLocation);
-        // Record the starting time
         float startTime = Time.time;
 
         // Keep moving until the boss is close enough to the target position
