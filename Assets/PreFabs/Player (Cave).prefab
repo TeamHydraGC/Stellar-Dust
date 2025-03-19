@@ -834,6 +834,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: e61169a4a46c47b48a19e1750187559a, type: 3}
     - target: {fileID: 8358611837367507562, guid: 2ab6f261805060e439d709275c78d057, type: 3}
+      propertyPath: gunFanningUnlocked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8358611837367507562, guid: 2ab6f261805060e439d709275c78d057, type: 3}
       propertyPath: revolver.reloadTime
       value: 2.5
       objectReference: {fileID: 0}
