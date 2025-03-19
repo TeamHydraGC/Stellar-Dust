@@ -680,8 +680,8 @@ MonoBehaviour:
   moveSpeed: 10
   jumpForce: 10
   useTransformMovement: 0
-  audioSource: {fileID: 0}
-  jumpSound: {fileID: 0}
+  audioSource: {fileID: 7570983564878976095}
+  jumpSound: {fileID: 8300000, guid: 2c3655b2057355e4885367da15c09367, type: 3}
   animator: {fileID: 743724715844512548}
 --- !u!1 &5330258066485304335
 GameObject:
