@@ -1,4 +1,4 @@
-// Authored by Nate
+// Authored by Nate and some by Vinny
 // ENSURE EnemyScore.cs RUNS BEFORE EnemyHealth.cs IN UNITY'S SCRIPT EXECUCTION ORDER
 
 using UnityEngine;
@@ -13,7 +13,11 @@ public class EnemyHealth : MonoBehaviour
     public float enemyInvulnTime = 0.0f; // How long invulnerability should last, as a float
     public bool enemyInvulnerable = false; // Used for invulnerability after taking damage, DO NOT TOUCH UNLESS VIA InvulnAfterDamageTaken COROUTINE
     public bool enemyDead = false; // unused for now, will be used to handle death animations in the future
-    public GameObject blood; // Blood Particle System Prefab
+    public GameObject blood; // Blood Particle Prefab
+    public GameObject gold; // Gold Particle Prefab
+    public AudioClip bloodSound;
+    public AudioClip goldSound;
+    private AudioSource audioSource;
 
     public static EnemyHealth Instance { get; private set; } // instantiating public variabels for use elsewhere
     private void Awake()
@@ -27,6 +31,7 @@ public class EnemyHealth : MonoBehaviour
         {
             enemyHealth = enemyMaxHealth;
         }
+        audioSource = GetComponent<AudioSource>();
     }
     public void enemyTakeDamage(int amount) // Method to deal damage to the enemy this script is attached to
     {
@@ -42,8 +47,18 @@ public class EnemyHealth : MonoBehaviour
         if (enemyHealth <= 0) // if health reaches zero, destroy the object
         {
             FindFirstObjectByType<ScoreUI>().AddScore(scoreValue); // Update the ScoreUI
-            Instantiate (blood, transform.position, Quaternion.identity);
-            Debug.Log(gameObject.name + " has died, destroying object.");
+
+            if (GoreToggle.goreEnabled)
+            {
+                Instantiate(blood, transform.position, Quaternion.identity);
+                PlaySound(bloodSound);
+            }
+            else
+            {
+                Instantiate(gold, transform.position, Quaternion.identity);
+                PlaySound(goldSound);
+            }
+
             Object.Destroy(gameObject);
         }
 
@@ -61,5 +76,13 @@ public class EnemyHealth : MonoBehaviour
         //        Debug.Log(gameObject.name + " now vulnerable.");
         //    }
         //}
+    }
+
+    private void PlaySound(AudioClip clip)
+    {
+        if (clip != null)
+        {
+            audioSource.PlayOneShot(clip);
+        }
     }
 }
