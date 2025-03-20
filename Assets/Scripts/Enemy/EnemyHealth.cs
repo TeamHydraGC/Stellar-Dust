@@ -13,6 +13,7 @@ public class EnemyHealth : MonoBehaviour
     public float enemyInvulnTime = 0.0f; // How long invulnerability should last, as a float
     public bool enemyInvulnerable = false; // Used for invulnerability after taking damage, DO NOT TOUCH UNLESS VIA InvulnAfterDamageTaken COROUTINE
     public bool enemyDead = false; // unused for now, will be used to handle death animations in the future
+    public GameObject blood; // Blood Particle System Prefab
 
     public static EnemyHealth Instance { get; private set; } // instantiating public variabels for use elsewhere
     private void Awake()
@@ -41,6 +42,7 @@ public class EnemyHealth : MonoBehaviour
         if (enemyHealth <= 0) // if health reaches zero, destroy the object
         {
             FindFirstObjectByType<ScoreUI>().AddScore(scoreValue); // Update the ScoreUI
+            Instantiate (blood, transform.position, Quaternion.identity);
             Debug.Log(gameObject.name + " has died, destroying object.");
             Object.Destroy(gameObject);
         }

@@ -75992,7 +75992,7 @@ PrefabInstance:
       objectReference: {fileID: 906289221}
     - target: {fileID: 3210674562514186463, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.88
+      value: -16.56
       objectReference: {fileID: 0}
     - target: {fileID: 3210674562514186463, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -76030,9 +76030,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3210674562514186463, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3259014453770173873, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: m_Name
       value: Bandit_WW (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5244718861044413606, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
+      propertyPath: facingDirection
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8430891447572043226, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: playerHealth
@@ -76107,7 +76115,7 @@ Transform:
   m_GameObject: {fileID: 288033831}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 34.5836, y: 19.8189, z: -0.013441352}
+  m_LocalPosition: {x: 34.03, y: 19.8189, z: -0.013441352}
   m_LocalScale: {x: 4.9332933, y: 3.9147723, z: 4.9200096}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -79255,11 +79263,11 @@ PrefabInstance:
       objectReference: {fileID: 1548760971}
     - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5
+      value: 25.63
       objectReference: {fileID: 0}
     - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.8
+      value: 1.06
       objectReference: {fileID: 0}
     - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_LocalPosition.z

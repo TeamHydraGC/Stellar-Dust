@@ -218,7 +218,7 @@ MonoBehaviour:
   maxPauseTime: 2
   minWalkTime: 3
   maxWalkTime: 4
-  facingDirection: -1
+  facingDirection: 0
 --- !u!114 &8430891447572043226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,6 +251,7 @@ MonoBehaviour:
   enemyInvulnTime: 0
   enemyInvulnerable: 0
   enemyDead: 0
+  blood: {fileID: 1650366259809433148, guid: c96375d86925a3f4e8b8434b9602e83a, type: 3}
 --- !u!114 &2457223373827529215
 MonoBehaviour:
   m_ObjectHideFlags: 0
