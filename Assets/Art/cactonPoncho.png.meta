@@ -100,12 +100,12 @@ TextureImporter:
       name: StellarPonchoCactus_0
       rect:
         serializedVersion: 2
-        x: 12
+        x: 10
         y: 0
         width: 25
         height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -133,6 +133,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       StellarPonchoCactus_0: 1684130479
+      cactonPoncho_0: -2028738279
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
