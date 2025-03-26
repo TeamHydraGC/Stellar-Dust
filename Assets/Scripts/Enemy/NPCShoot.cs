@@ -7,13 +7,16 @@ public class NPCShoot : MonoBehaviour
     public Transform shootPoint;     // Point from where the NPC will shoot
     public float detectionRange = 10f; // Range within which NPC detects player
     public float shootInterval = 2f; // Time between shots
+    public AudioClip gunshotSound; // Gunshot sound
 
     private float shootTimer; // Timer to keep track of shooting interval
     private NPCWander npcWander; // Reference to the NPCWander script
+    private AudioSource audioSource; // Reference to the Audio source component
 
     void Start()
     {
         npcWander = GetComponent<NPCWander>(); // Get the NPCWander script
+        audioSource = GetComponent<AudioSource>(); // Get AudioSource comp
     }
 
     void Update()
@@ -62,6 +65,11 @@ public class NPCShoot : MonoBehaviour
         // Instantiate the projectile at the shootPoint position and rotation
         GameObject newProjectile = Instantiate(projectile, shootPoint.position, shootPoint.rotation);
         newProjectile.GetComponent<Rigidbody2D>().linearVelocity = direction * newProjectile.GetComponent<NPCBulletScript>().force;
+
+        if (audioSource != null && gunshotSound != null)
+        {
+            audioSource.PlayOneShot(gunshotSound);
+        }
     }
 }
 

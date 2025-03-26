@@ -273,6 +273,7 @@ MonoBehaviour:
   shootPoint: {fileID: 3143934851810639293}
   detectionRange: 10
   shootInterval: 2
+  gunshotSound: {fileID: 8300000, guid: 4202fc6e0ee3c7847bf8a017ce2992c6, type: 3}
 --- !u!82 &3626041013608471988
 AudioSource:
   m_ObjectHideFlags: 0

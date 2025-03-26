@@ -15,8 +15,9 @@ public class EnemyHealth : MonoBehaviour
     public bool enemyDead = false; // unused for now, will be used to handle death animations in the future
     public GameObject blood; // Blood Particle Prefab
     public GameObject gold; // Gold Particle Prefab
-    public AudioClip bloodSound;
-    public AudioClip goldSound;
+    public AudioClip bloodSound; // Gore-on death sound
+    public AudioClip goldSound; // Gore-off death sound
+
     private AudioSource audioSource;
 
     public static EnemyHealth Instance { get; private set; } // instantiating public variabels for use elsewhere
@@ -31,8 +32,18 @@ public class EnemyHealth : MonoBehaviour
         {
             enemyHealth = enemyMaxHealth;
         }
+        
         audioSource = GetComponent<AudioSource>();
     }
+
+    IEnumerator DestroyAfterSound()
+    {
+        yield return new WaitForSeconds(0.3f); // Adjust delay as needed
+        Destroy(gameObject);
+    }
+
+
+
     public void enemyTakeDamage(int amount) // Method to deal damage to the enemy this script is attached to
     {
         if (enemyInvulnerable == false) // if not invulnerable, deal damage
@@ -59,7 +70,7 @@ public class EnemyHealth : MonoBehaviour
                 PlaySound(goldSound);
             }
 
-            Object.Destroy(gameObject);
+            StartCoroutine(DestroyAfterSound());
         }
 
         //Debug logging separate from health logic
@@ -82,7 +93,12 @@ public class EnemyHealth : MonoBehaviour
     {
         if (clip != null)
         {
+            Debug.Log("Playing sound: " + clip.name);
             audioSource.PlayOneShot(clip);
+        }
+        else
+        {
+            Debug.LogWarning("AudioClip is null!");
         }
     }
 }

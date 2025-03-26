@@ -53,7 +53,7 @@ public class ProjectileFirer : MonoBehaviour
         if (projectileRb != null)
         {
             // Velocity of the projectile
-            projectileRb.velocity = direction * 10f;
+            projectileRb.linearVelocity = direction * 10f;
         }
 
         projectile.AddComponent<ProjectileBehavior>().Initialize(maxProjectileDistance, collisionMask);
