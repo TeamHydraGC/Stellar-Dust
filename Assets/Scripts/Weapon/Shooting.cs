@@ -79,6 +79,13 @@ public class Shooting : MonoBehaviour
             return; // Exit to prevent firing during reload
         }
 
+        // Reload key press (R)
+        if (Input.GetKeyDown(KeyCode.R) && revolver.state != RevolverState.Reloading && revolver.currentAmmo < revolver.maxAmmo)
+        {
+            revolver.state = RevolverState.Reloading; // Set state to reloading
+            reloadTimer = 0; // Reset reload timer
+        }
+
         // Accumulate time for firing cooldown
         if (!canfire)
         {
