@@ -57,6 +57,9 @@ public class EnemyHealth : MonoBehaviour
 
         if (enemyHealth <= 0) // if health reaches zero, destroy the object
         {
+            // Call BountyManager that a bandit is killed!
+            BountyManager.Instance.OnBanditKilled();
+
             FindFirstObjectByType<ScoreUI>().AddScore(scoreValue); // Update the ScoreUI
 
             if (GoreToggle.goreEnabled)
