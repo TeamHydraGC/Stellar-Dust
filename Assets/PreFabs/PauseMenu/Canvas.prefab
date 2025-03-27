@@ -120,7 +120,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2101664836293787481}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
+        m_MethodName: RefreshButtons
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &78950331029434389
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,6 +159,7 @@ GameObject:
   - component: {fileID: 8023601373011515537}
   - component: {fileID: 7358669912291696646}
   - component: {fileID: 8580449944973849972}
+  - component: {fileID: 1542557784875539368}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -259,6 +284,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreToUnlockLevel2: 100
   scoreToUnlockLevel3: 200
+  totalBanditsInLevel: 5
+--- !u!114 &1542557784875539368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78950331029434389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6a31140acd154248b07db0511c41206, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bountyBoardPanel: {fileID: 2465573122031400175}
+  level1Button: {fileID: 5229750764716095793}
+  level2Button: {fileID: 7382677595471455769}
+  level3Button: {fileID: 2969400843913549572}
+  closeButton: {fileID: 5610594175254359031}
 --- !u!1 &192041327839069731
 GameObject:
   m_ObjectHideFlags: 0
@@ -1645,14 +1688,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1304724033059015866}
-  - component: {fileID: 8180440177911581164}
   m_Layer: 0
   m_Name: BountyBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1304724033059015866
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1677,23 +1719,6 @@ RectTransform:
   m_AnchoredPosition: {x: 3, y: -0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &8180440177911581164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2465573122031400175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6a31140acd154248b07db0511c41206, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bountyBoardPanel: {fileID: 2465573122031400175}
-  level1Button: {fileID: 5229750764716095793}
-  level2Button: {fileID: 7382677595471455769}
-  level3Button: {fileID: 2969400843913549572}
-  closeButton: {fileID: 5610594175254359031}
 --- !u!1 &2532721342800850536
 GameObject:
   m_ObjectHideFlags: 0
@@ -4308,6 +4333,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
+        m_MethodName: RefreshButtons
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7927148218434781154
 GameObject:
   m_ObjectHideFlags: 0
@@ -4866,7 +4903,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8180440177911581164}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
         m_MethodName: CloseBountyBoard
         m_Mode: 1
@@ -5254,4 +5291,28 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8276949706438371364}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: LevelSelect, Assembly-CSharp
+        m_MethodName: RefreshButtons
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

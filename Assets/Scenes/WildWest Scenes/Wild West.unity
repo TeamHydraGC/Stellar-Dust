@@ -75992,11 +75992,11 @@ PrefabInstance:
       objectReference: {fileID: 906289221}
     - target: {fileID: 3210674562514186463, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.56
+      value: 49.77
       objectReference: {fileID: 0}
     - target: {fileID: 3210674562514186463, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.4
+      value: -30.57
       objectReference: {fileID: 0}
     - target: {fileID: 3210674562514186463, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -78195,10 +78195,6 @@ PrefabInstance:
     - target: {fileID: 78950331029434389, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 2465573122031400175, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3697349936003473296, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
       propertyPath: m_Pivot.x
@@ -80761,11 +80757,11 @@ PrefabInstance:
       objectReference: {fileID: 906289221}
     - target: {fileID: 3210674562514186463, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 29.81
+      value: 77.67
       objectReference: {fileID: 0}
     - target: {fileID: 3210674562514186463, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.74
+      value: -28.38
       objectReference: {fileID: 0}
     - target: {fileID: 3210674562514186463, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -80802,10 +80798,6 @@ PrefabInstance:
     - target: {fileID: 3259014453770173873, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: m_Name
       value: Bandit_WW
-      objectReference: {fileID: 0}
-    - target: {fileID: 6903713729866679956, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
-      propertyPath: scoreValue
-      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8430891447572043226, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: playerHealth

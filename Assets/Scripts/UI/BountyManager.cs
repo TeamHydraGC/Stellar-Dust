@@ -81,8 +81,16 @@ public class BountyManager : MonoBehaviour
     // Check if a specific level is unlocked
     public bool IsLevelUnlocked(int level)
     {
-        if (level == 2) return isLevel2Unlocked;
-        if (level == 3) return isLevel3Unlocked;
+        if (level == 2)
+        {
+            Debug.Log($"IsLevelUnlocked called for Level 2. Result: {isLevel2Unlocked}");
+            return isLevel2Unlocked;
+        }
+        if (level == 3)
+        {
+            Debug.Log($"IsLevelUnlocked called for Level 3. Result: {isLevel3Unlocked}");
+            return isLevel3Unlocked;
+        }
         return false;
     }
 
@@ -94,7 +102,19 @@ public class BountyManager : MonoBehaviour
     // Complete a bounty and unlock the next level
     public void CompleteBounty(int completedLevel)
     {
-        UnlockLevel(completedLevel + 1);
+        UnlockLevel(completedLevel + 1); // Unlock the next level
         Debug.Log($"Level {completedLevel + 1} unlocked!");
+
+        // Refresh buttons immediately
+        LevelSelect levelSelect = Object.FindFirstObjectByType<LevelSelect>();
+        if (levelSelect != null)
+        {
+            Debug.Log("Refreshing buttons after bounty completion...");
+            levelSelect.RefreshButtons();
+        }
+        else
+        {
+            Debug.LogWarning("LevelSelect not found. Buttons could not be refreshed.");
+        }
     }
 }

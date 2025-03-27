@@ -26,13 +26,22 @@ public class LevelSelect : MonoBehaviour
     // Refresh button states to reflect unlocked levels dynamically
     public void RefreshButtons()
     {
+        // Log the unlock status being checked for each level
+        Debug.Log($"Refreshing buttons...");
+        Debug.Log($"Level 2 unlock status: {BountyManager.Instance.IsLevelUnlocked(2)}");
+        Debug.Log($"Level 3 unlock status: {BountyManager.Instance.IsLevelUnlocked(3)}");
+    
         if (level2Button != null)
-            level2Button.interactable = BountyManager.Instance.IsLevelUnlocked(2); // Enable Level 2 button if unlocked
-
+        {
+            level2Button.interactable = BountyManager.Instance.IsLevelUnlocked(2);
+            Debug.Log($"Level 2 button interactable: {level2Button.interactable}");
+        }
+    
         if (level3Button != null)
-            level3Button.interactable = BountyManager.Instance.IsLevelUnlocked(3); // Enable Level 3 button if unlocked
-
-        Debug.Log("Button states refreshed!");
+        {
+            level3Button.interactable = BountyManager.Instance.IsLevelUnlocked(3);
+            Debug.Log($"Level 3 button interactable: {level3Button.interactable}");
+        }
     }
 
     // Trigger the first bounty (quest) for Level 1
