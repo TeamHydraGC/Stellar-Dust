@@ -1,3 +1,4 @@
+// By: Devin, edits by Vinny
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -12,9 +13,13 @@ public class LevelSelect : MonoBehaviour
 
     void Start()
     {
+        // PlayerPrefs.DeleteAll(); // KEEP COMMENTED!!! Only use to PrefsReset
+        // Debug.Log("PlayerPrefs reset!");
+
+
         // Ensure buttons are assigned
         if (level1Button != null)
-            level1Button.onClick.AddListener(() => LoadLevel("Level1"));
+            level1Button.onClick.AddListener(StartLevel1Bounty);
 
         if (level2Button != null)
         {
@@ -31,6 +36,15 @@ public class LevelSelect : MonoBehaviour
         if (closeButton != null)
             closeButton.onClick.AddListener(() => CloseBountyBoard());
     }
+
+    void StartLevel1Bounty()
+    {
+        // Debug.Log("Level 1 bounty activated! Kill all bandit enemies.");
+    
+        // Trigger logic for the first quest
+        BountyManager.Instance.ActivateFirstBounty();
+    }
+
 
     // Function to load a specific level
     void LoadLevel(string sceneName)

@@ -5,8 +5,8 @@ public class BountyManager : MonoBehaviour
 {
     public static BountyManager Instance;
 
-    public int scoreToUnlockLevel2 = 50; 
-    public int scoreToUnlockLevel3 = 100; 
+    public int scoreToUnlockLevel2 = 100; 
+    public int scoreToUnlockLevel3 = 200; 
 
     private void Awake()
     {
@@ -32,7 +32,7 @@ public class BountyManager : MonoBehaviour
 
         if (currentScore >= scoreToUnlockLevel2 && !IsLevelUnlocked(2))
         {
-            UnlockLevel(2);
+            CompleteBounty(1);
         }
 
         if (currentScore >= scoreToUnlockLevel3 && !IsLevelUnlocked(3))
@@ -50,5 +50,16 @@ public class BountyManager : MonoBehaviour
     public bool IsLevelUnlocked(int level)
     {
         return PlayerPrefs.GetInt($"Level{level}Unlocked", 0) == 1;
+    }
+
+    public void ActivateFirstBounty()
+    {
+        Debug.Log("First bounty activated! Kill all bandits inside the cave below.");
+    }
+
+    public void CompleteBounty(int completedLevel)
+    {
+        UnlockLevel(completedLevel + 1); // Unlock the next level
+        Debug.Log($"Level {completedLevel + 1} unlocked!");
     }
 }
