@@ -6,8 +6,16 @@ public class PlayerScore : MonoBehaviour
     // Singleton wizardry
     public static PlayerScore Instance { get; private set; } 
     private void Awake()
-    {
-        Instance = this;
+    {   
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject); // Preserve the object
+        }
+        else
+        {
+            Destroy(gameObject); // Prevents dups
+        }
     }
 
     // Declaring variables

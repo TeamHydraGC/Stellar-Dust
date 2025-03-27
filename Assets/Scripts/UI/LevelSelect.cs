@@ -17,10 +17,16 @@ public class LevelSelect : MonoBehaviour
             level1Button.onClick.AddListener(() => LoadLevel("Level1"));
 
         if (level2Button != null)
+        {
+            level2Button.interactable = PlayerPrefs.GetInt("Level2Unlocked", 0) == 1;
             level2Button.onClick.AddListener(() => LoadLevel("Level2"));
+        }
 
         if (level3Button != null)
+        {
+            level3Button.interactable = PlayerPrefs.GetInt("Level3Unlocked", 0) == 1;
             level3Button.onClick.AddListener(() => LoadLevel("Level3"));
+        }
 
         if (closeButton != null)
             closeButton.onClick.AddListener(() => CloseBountyBoard());
@@ -40,7 +46,7 @@ public class LevelSelect : MonoBehaviour
     }
 
     // Function to close the bounty board
-    void CloseBountyBoard()
+    public void CloseBountyBoard()
     {
         if (bountyBoardPanel != null)
             bountyBoardPanel.SetActive(false);
