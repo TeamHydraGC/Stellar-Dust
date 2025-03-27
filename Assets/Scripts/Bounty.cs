@@ -4,9 +4,11 @@ using UnityEngine.UI;
 
 public class LevelSelect : MonoBehaviour
 {
+    public GameObject bountyBoardPanel; // Panel for bounty board
     public Button level1Button;
     public Button level2Button;
     public Button level3Button;
+    public Button closeButton; // Button to close the panel
 
     void Start()
     {
@@ -19,11 +21,28 @@ public class LevelSelect : MonoBehaviour
 
         if (level3Button != null)
             level3Button.onClick.AddListener(() => LoadLevel("Level3"));
+
+        if (closeButton != null)
+            closeButton.onClick.AddListener(() => CloseBountyBoard());
     }
 
     // Function to load a specific level
     void LoadLevel(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+    }
+
+    // Function to open the bounty board
+    public void OpenBountyBoard()
+    {
+        if (bountyBoardPanel != null)
+            bountyBoardPanel.SetActive(true);
+    }
+
+    // Function to close the bounty board
+    void CloseBountyBoard()
+    {
+        if (bountyBoardPanel != null)
+            bountyBoardPanel.SetActive(false);
     }
 }
