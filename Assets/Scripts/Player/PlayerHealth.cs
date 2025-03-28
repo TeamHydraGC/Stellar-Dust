@@ -1,4 +1,4 @@
-// Authored by Nate
+// Authored by Nate, with Vin edits
 using Unity.VisualScripting;
 using System.Collections;
 using UnityEngine;
@@ -22,6 +22,12 @@ public class PlayerHealth : MonoBehaviour
         }
         healthBar.healthBarImage.fillAmount = (float)playerHealth / playerMaxHealth;
     }
+
+    private void Awake()
+    {
+        // Prevent the player from being destroyed between scenes
+        DontDestroyOnLoad(gameObject); 
+    }   
 
     public void playerTakeDamage(int amount) // Method to deal damage to the player
     {
@@ -58,5 +64,19 @@ public class PlayerHealth : MonoBehaviour
         yield return new WaitForSeconds(invulnTimeInSeconds);
         playerInvulnerable = !playerInvulnerable;
         Debug.Log(gameObject.name + " is now vulnerable.");
+    }
+
+    private void OnDestroy()
+    {
+        // Use Object.FindObjectsByType instead of FindObjectsOfType
+        NPCShoot[] npcs = Object.FindObjectsByType<NPCShoot>(FindObjectsSortMode.None);
+        foreach (var npc in npcs)
+        {
+            if (npc.player == this.transform)
+            {
+                npc.player = null; // Nullify the reference to prevent errors
+            }
+        }
+        Debug.Log("Player has been destroyed. NPCShoot references cleared.");
     }
 }

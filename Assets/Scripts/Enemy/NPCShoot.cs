@@ -1,12 +1,13 @@
+// By: Vin
 using UnityEngine;
 
 public class NPCShoot : MonoBehaviour
 {
-    public Transform player;         // Reference to the player
-    public GameObject projectile;    // Projectile prefab
-    public Transform shootPoint;     // Point from where the NPC will shoot
+    public Transform player; // Reference to the player
+    public GameObject projectile; // Projectile prefab
+    public Transform shootPoint; // Point from where the NPC will shoot
     public float detectionRange = 10f; // Range within which NPC detects player
-    public float shootInterval = 2f; // Time between shots
+    public float shootInterval = 2f; // Time-* between shots
     public AudioClip gunshotSound; // Gunshot sound
 
     private float shootTimer; // Timer to keep track of shooting interval
@@ -16,22 +17,47 @@ public class NPCShoot : MonoBehaviour
     void Start()
     {
         npcWander = GetComponent<NPCWander>(); // Get the NPCWander script
-        audioSource = GetComponent<AudioSource>(); // Get AudioSource comp
+        audioSource = GetComponent<AudioSource>(); // Get AudioSource component
+
+        // Dynamically assign the player at the start of the scene
+        if (player == null)
+        {
+            GameObject playerObject = GameObject.FindWithTag("Player");
+            if (playerObject != null)
+            {
+                player = playerObject.transform;
+            }
+            else
+            {
+                // Debug.LogWarning("Player not found in the scene. NPCShoot will be inactive.");
+            }
+        }
     }
 
     void Update()
     {
+        // Check if player exists to avoid accessing a null Transform
+        if (player == null)
+        {
+            // Debug.LogWarning("Player reference is null. NPCShoot will stop tracking.");
+            npcWander.enabled = true; // Ensure NPC resumes wandering if player is null
+            return; // Exit Update() to avoid errors
+        }
+
         // Calculate distance to player
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+        // Debug.Log($"NPC distance to player: {distanceToPlayer}");
 
         // Check if the player is within detection range
         if (distanceToPlayer <= detectionRange)
         {
             // Stop wandering
+            // Debug.Log("Player is within detection range. NPC is preparing to shoot.");
             npcWander.enabled = false;
 
             // Determine direction to face the player
             Vector2 direction = (player.position - transform.position).normalized;
+
             if (direction.x > 0)
             {
                 // Face right
@@ -56,6 +82,7 @@ public class NPCShoot : MonoBehaviour
         else
         {
             // Resume wandering
+            // Debug.Log("Player is outside detection range. NPC is wandering.");
             npcWander.enabled = true;
         }
     }
