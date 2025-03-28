@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - Boss
   - Enemy
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX
