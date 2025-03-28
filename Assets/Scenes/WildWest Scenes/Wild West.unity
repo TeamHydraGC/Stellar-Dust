@@ -77040,7 +77040,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &262705843
 Transform:
   m_ObjectHideFlags: 0
@@ -78490,7 +78490,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5791078525129919291, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
   m_PrefabInstance: {fileID: 1539007623}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1539007624}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5562a8b3d135a1641b2cc5ef5054b5d4, type: 3}
@@ -79806,7 +79806,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1453911208}
   m_Layer: 0
-  m_Name: TeleportPoint
+  m_Name: SpawnPoint
   m_TagString: SpawnPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79820,8 +79820,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453911207}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 66.74, y: -1.58, z: -0.07565694}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 66.74, y: -1.47, z: -0.07565695}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -80133,17 +80133,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3928096357643424343, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 5791078525129919291, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1548760971}
     - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 66.89
+      value: -2.04
       objectReference: {fileID: 0}
     - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.21
+      value: -0.03
       objectReference: {fileID: 0}
     - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -80183,7 +80187,7 @@ PrefabInstance:
       objectReference: {fileID: 43412702}
     - target: {fileID: 7923769363428893510, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7923769363428893510, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: initialSpawn
@@ -80192,8 +80196,30 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3928096357643424343, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1539007636}
   m_SourcePrefab: {fileID: 100100000, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+--- !u!1 &1539007624 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3928096357643424343, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+  m_PrefabInstance: {fileID: 1539007623}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1539007636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539007624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0948a19b8b5390418f1a9a6d6c3ec47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teleportSceneIndex: 4
+  teleportDelay: 5
 --- !u!114 &1548760971 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7583897004894254305, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
@@ -81891,6 +81917,7 @@ SceneRoots:
   - {fileID: 1126393045}
   - {fileID: 1539007623}
   - {fileID: 23189534}
+  - {fileID: 1453911208}
   - {fileID: 977981416}
   - {fileID: 189694087}
   - {fileID: 1602213004}
@@ -81899,4 +81926,3 @@ SceneRoots:
   - {fileID: 142136079}
   - {fileID: 2022349395}
   - {fileID: 262705843}
-  - {fileID: 1453911208}

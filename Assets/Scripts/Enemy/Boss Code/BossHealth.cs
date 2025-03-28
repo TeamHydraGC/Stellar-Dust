@@ -1,5 +1,6 @@
 // By: Vindeko...Pretty much a copy of Nate's EnemyHealth Script, to keep everything simple and intact.
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class BossHealth : MonoBehaviour
@@ -54,15 +55,14 @@ public class BossHealth : MonoBehaviour
     private void Die()
     {
         Debug.Log(gameObject.name + " has been defeated!");
-
+    
         // Update the player's score
         FindFirstObjectByType<ScoreUI>().AddScore(scoreValue);
         Debug.Log("Player awarded " + scoreValue + " points!");
-
+    
         // Handle gore effects based on GoreToggle
         if (GoreToggle.goreEnabled)
         {
-            // Gore is enabled: spawn blood effect and play blood sound
             if (bloodEffect != null)
             {
                 Instantiate(bloodEffect, transform.position, Quaternion.identity);
@@ -74,7 +74,6 @@ public class BossHealth : MonoBehaviour
         }
         else
         {
-            // Gore is disabled: spawn gold effect and play gold sound
             if (goldEffect != null)
             {
                 Instantiate(goldEffect, transform.position, Quaternion.identity);
@@ -84,10 +83,22 @@ public class BossHealth : MonoBehaviour
                 audioSource.PlayOneShot(goldSound);
             }
         }
-
-        // Delay destruction to allow sound to play
-        StartCoroutine(DestroyAfterSound());
+    
+        // Trigger player teleport
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            PlayerTeleport playerTeleport = player.GetComponent<PlayerTeleport>();
+            if (playerTeleport != null)
+            {
+                playerTeleport.TriggerTeleport();
+            }
+        }
+    
+        // Destroy the boss GameObject
+        Destroy(gameObject);
     }
+
 
     private IEnumerator DestroyAfterSound()
     {
