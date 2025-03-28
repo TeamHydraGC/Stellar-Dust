@@ -10,6 +10,9 @@ public class BossHealth : MonoBehaviour
     public bool isInvulnerable = false; // For invulnerability mechanics
     public bool bossDead = false; // Tracks if the boss is dead
 
+    // Scoring
+    public int scoreValue = 100; // Points awarded for defeating the boss
+
     // Gore effects
     public GameObject bloodEffect; // Blood Particle Prefab
     public GameObject goldEffect; // Gold Particle Prefab
@@ -51,7 +54,11 @@ public class BossHealth : MonoBehaviour
     private void Die()
     {
         Debug.Log(gameObject.name + " has been defeated!");
-    
+
+        // Update the player's score
+        FindFirstObjectByType<ScoreUI>().AddScore(scoreValue);
+        Debug.Log("Player awarded " + scoreValue + " points!");
+
         // Handle gore effects based on GoreToggle
         if (GoreToggle.goreEnabled)
         {
@@ -77,11 +84,11 @@ public class BossHealth : MonoBehaviour
                 audioSource.PlayOneShot(goldSound);
             }
         }
-    
+
         // Delay destruction to allow sound to play
         StartCoroutine(DestroyAfterSound());
     }
-    
+
     private IEnumerator DestroyAfterSound()
     {
         yield return new WaitForSeconds(0.5f); // Adjust delay as needed
