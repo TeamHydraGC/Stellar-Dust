@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Bullet
+  - Boss
   - Enemy
   layers:
   - Default

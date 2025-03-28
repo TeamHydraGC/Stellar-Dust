@@ -1408,6 +1408,107 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df22eb7ba96690a43b8d71b1ac497c2e, type: 3}
+--- !u!1001 &704683963
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3661270721952056208, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4112233412582619957, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_Name
+      value: MissionCanvas
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
 --- !u!1001 &727794527
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1487,7 +1588,7 @@ GameObject:
   - component: {fileID: 737299617}
   m_Layer: 0
   m_Name: Sandbeast
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1991,6 +2092,10 @@ PrefabInstance:
     - target: {fileID: 3259014453770173873, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: m_Name
       value: Bandit_WW (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3259014453770173873, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8430891447572043226, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: playerHealth
@@ -63493,6 +63598,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bandit_WW (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3259014453770173873, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 8430891447572043226, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: playerHealth
       value: 
@@ -64154,6 +64263,10 @@ PrefabInstance:
     - target: {fileID: 3259014453770173873, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: m_Name
       value: Bandit_WW (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3259014453770173873, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8430891447572043226, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: playerHealth
@@ -64915,6 +65028,10 @@ PrefabInstance:
     - target: {fileID: 3259014453770173873, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: m_Name
       value: Bandit_WW
+      objectReference: {fileID: 0}
+    - target: {fileID: 3259014453770173873, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8430891447572043226, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: playerHealth
@@ -66016,6 +66133,7 @@ SceneRoots:
   - {fileID: 1867519274}
   - {fileID: 418017843}
   - {fileID: 174961459}
+  - {fileID: 704683963}
   - {fileID: 1543124024}
   - {fileID: 1715729495}
   - {fileID: 755452707}

@@ -50,9 +50,18 @@ public class LevelSelect : MonoBehaviour
         BountyManager.Instance.ActivateFirstBounty();
     }
 
+    public void HideBountyBoardOnSceneChange()
+    {
+        if (bountyBoardPanel != null)
+        {
+            bountyBoardPanel.SetActive(false); // Hide the BountyBoard
+        }
+    }
+
     void LoadLevel(string sceneName)
     {
         SceneManager.LoadScene(5);
+        HideBountyBoardOnSceneChange();
     }
 
     public void OpenBountyBoard()

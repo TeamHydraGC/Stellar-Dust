@@ -174,6 +174,22 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2677739592790452877, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
   m_PrefabInstance: {fileID: 1126393045}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &71344304 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 78950331029434389, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+  m_PrefabInstance: {fileID: 1126393045}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &71344306 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8580449944973849972, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+  m_PrefabInstance: {fileID: 1126393045}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71344304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 770dec4a09112df4cbbf9f9445d9e175, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &98836953
 GameObject:
   m_ObjectHideFlags: 0
@@ -75823,6 +75839,123 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3121991981281329368, guid: 058cccb5a2c474d4db511ad56a1d5b90, type: 3}
   m_PrefabInstance: {fileID: 1193604738}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &219254879
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 509155364622473537, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3359529956302185137, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_text
+      value: Kill All The Bandits In The Cave Below!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3359529956302185137, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_margin.z
+      value: -140.00018
+      objectReference: {fileID: 0}
+    - target: {fileID: 3661270721952056208, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4112233412582619957, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_Name
+      value: MissionCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4112233412582619957, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
 --- !u!1001 &227325476
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78276,10 +78409,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5229750764716095793, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5229750764716095793, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 71344306}
+    - target: {fileID: 5229750764716095793, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 71344304}
+    - target: {fileID: 5229750764716095793, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ActivateFirstBounty
+      objectReference: {fileID: 0}
+    - target: {fileID: 5229750764716095793, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5229750764716095793, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BountyManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 7583897004894254305, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 906289210}
+    - target: {fileID: 8580449944973849972, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+      propertyPath: bountyScreen
+      value: 
+      objectReference: {fileID: 1682582625}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -81107,6 +81268,7 @@ SceneRoots:
   - {fileID: 1948049351556914532}
   - {fileID: 1856754256830121641}
   - {fileID: 759662379}
+  - {fileID: 219254879}
   - {fileID: 1126393045}
   - {fileID: 1539007623}
   - {fileID: 23189534}
