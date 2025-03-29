@@ -1,4 +1,4 @@
-// Authored by AJ, damage portion authored by Nate
+// Authored by AJ, damage portion authored by Nate, Vin - added BossHealth Integration
 using UnityEngine;
 using System.Collections;
 using System.Drawing.Text;
@@ -36,6 +36,13 @@ public class BulletScript : MonoBehaviour
             hp.enemyTakeDamage(damageValue);
             Debug.Log("Dealt " + damageValue + " to " + collision.gameObject.name);
         }
+        else if (collision.gameObject.GetComponent<BossHealth>())
+        {
+            BossHealth bossHP = collision.gameObject.GetComponent<BossHealth>();
+            bossHP.TakeDamage(damageValue);
+            Debug.Log("Dealt " + damageValue + " damage to " + collision.gameObject.name);
+        }
+
         Destroy(gameObject);
     }
 

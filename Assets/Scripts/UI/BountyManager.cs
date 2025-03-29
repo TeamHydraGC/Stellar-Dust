@@ -1,9 +1,11 @@
 // By: Vinny
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BountyManager : MonoBehaviour
 {
     public static BountyManager Instance;
+    public GameObject bountyScreen;
 
     public int scoreToUnlockLevel2 = 100; 
     public int scoreToUnlockLevel3 = 200; 
@@ -11,8 +13,8 @@ public class BountyManager : MonoBehaviour
     private bool isLevel2Unlocked = false; 
     private bool isLevel3Unlocked = false; 
 
-    public int totalBanditsInLevel = 5; // Total number of bandits in Level 1
-    private int killedBandits = 0; // Number of bandits killed
+    public int totalBanditsInLevel = 5; 
+    private int killedBandits = 0; 
 
 
     private void Awake()
@@ -20,48 +22,90 @@ public class BountyManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); 
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(gameObject); // Destroy duplicate instances
         }
+
+        // Call InitializeBandits inside Awake
+        InitializeBandits();
+    }
+
+    private void InitializeBandits()
+    {
+        int currentLevel = GetCurrentLevel();
+
+        if (currentLevel == 1)
+        {
+            totalBanditsInLevel = 5; // Set total bandits for Level 1
+            killedBandits = 0; // Reset killed bandits count
+        }
     }
 
     private void Update()
     {
-        // Check if levels should be unlocked based on the score
         CheckForUnlocks();
     }
 
     private void CheckForUnlocks()
     {
-        // The player's current score
         int currentScore = PlayerScore.Instance.currentScore;
 
-        // Unlock Level 2 if the score is met 
         if (currentScore >= scoreToUnlockLevel2 && !isLevel2Unlocked)
         {
             CompleteBounty(1);
         }
 
-        // Unlock Level 3 if the score is met 
         if (currentScore >= scoreToUnlockLevel3 && !isLevel3Unlocked)
         {
             CompleteBounty(2); 
         }
     }
 
+    private int GetCurrentLevel()
+    {
+        string currentScene = SceneManager.GetActiveScene().name;
+
+        if (currentScene == "Wild West") 
+        {
+            return 1;
+        }
+        else if (currentScene == "WW_BossArea") 
+        {
+            return 2;
+        }
+
+        return 0; // Default or invalid level
+    }
+
     public void OnBanditKilled()
     {
-        killedBandits++;
-        Debug.Log($"Bandit killed! Total killed: {killedBandits}/{totalBanditsInLevel}");
-
-        if (killedBandits >= totalBanditsInLevel)
+        int currentLevel = GetCurrentLevel();
+    
+        // Only handle bandit kills for Level 1
+        if (currentLevel == 1)
         {
-            CompleteBounty(1); // Mark the bounty as complete
+            killedBandits++;
+            MissionManager missionManager = Object.FindFirstObjectByType<MissionManager>();
+    
+            if (missionManager != null)
+            {
+                missionManager.ShowMissionObjective($"Bandits left: {totalBanditsInLevel - killedBandits}");
+            }
+    
+            // Complete Level 1's mission when all bandits are defeated
+            if (killedBandits >= totalBanditsInLevel)
+            {
+                if (missionManager != null)
+                {
+                    missionManager.CompleteMission(); // Show "Mission Complete!"
+                }
+                CompleteBounty(1); // Mark Level 1's bounty as complete
+            }
         }
-    }   
+    }
 
 
     public void UnlockLevel(int level)
@@ -69,12 +113,11 @@ public class BountyManager : MonoBehaviour
         if (level == 2)
         {
             isLevel2Unlocked = true; 
-            Debug.Log("Level 2 unlocked!");
+            // Debug.Log("Level 2 unlocked!");
         }
         else if (level == 3)
         {
             isLevel3Unlocked = true; 
-            Debug.Log("Level 3 unlocked!");
         }
     }
 
@@ -83,12 +126,12 @@ public class BountyManager : MonoBehaviour
     {
         if (level == 2)
         {
-            Debug.Log($"IsLevelUnlocked called for Level 2. Result: {isLevel2Unlocked}");
+            // Debug.Log($"IsLevelUnlocked called for Level 2. Result: {isLevel2Unlocked}");
             return isLevel2Unlocked;
         }
         if (level == 3)
         {
-            Debug.Log($"IsLevelUnlocked called for Level 3. Result: {isLevel3Unlocked}");
+            // Debug.Log($"IsLevelUnlocked called for Level 3. Result: {isLevel3Unlocked}");
             return isLevel3Unlocked;
         }
         return false;
@@ -96,7 +139,21 @@ public class BountyManager : MonoBehaviour
 
     public void ActivateFirstBounty()
     {
-        Debug.Log("First bounty activated! Kill all bandits inside the cave below.");
+        // Debug.Log("ActivateFirstBounty() called!");
+
+        MissionManager missionManager = Object.FindFirstObjectByType<MissionManager>();
+        if (missionManager != null)
+        {
+            missionManager.ShowMissionObjective("Kill all the Bandits in the cave below!");
+            missionManager.StartCoroutine(missionManager.HideMissionTextAfterDelay(3f)); // Hide text after 3 seconds
+        }
+
+        // Hide the BountyScreen UI
+        if (bountyScreen != null)
+        {
+            bountyScreen.SetActive(false); 
+        }
+
     }
 
     // Complete a bounty and unlock the next level
@@ -109,12 +166,11 @@ public class BountyManager : MonoBehaviour
         LevelSelect levelSelect = Object.FindFirstObjectByType<LevelSelect>();
         if (levelSelect != null)
         {
-            Debug.Log("Refreshing buttons after bounty completion...");
             levelSelect.RefreshButtons();
         }
         else
         {
-            Debug.LogWarning("LevelSelect not found. Buttons could not be refreshed.");
+            // Debug.LogWarning("LevelSelect not found. Buttons could not be refreshed.");
         }
     }
 }
