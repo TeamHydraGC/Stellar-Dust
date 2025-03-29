@@ -26118,6 +26118,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: e61169a4a46c47b48a19e1750187559a, type: 3}
     - target: {fileID: 351110228053717424, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: piercebullet
+      value: 
+      objectReference: {fileID: 6316478306964465916, guid: e06e7e4cfe4496b4f8154f09c0796645, type: 3}
+    - target: {fileID: 351110228053717424, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: explosivebullet
+      value: 
+      objectReference: {fileID: 6316478306964465916, guid: 9aae4c55d1260454ba0dcb16c767350a, type: 3}
+    - target: {fileID: 351110228053717424, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
       propertyPath: gunFanningUnlocked
       value: 1
       objectReference: {fileID: 0}

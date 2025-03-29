@@ -1,12 +1,18 @@
 using UnityEngine;
-using UnityEngine.UI; 
+using UnityEngine.UI;
+using static Shooting;
 
 // Vinny - Implemented Revolver class with properties, & gun sounds, gun fanning | ENUM from Smiley's Weapon Logic
 public class Shooting : MonoBehaviour
 {
     private Camera maincam;
     private Vector3 mousepos;
+
+    // Bullet prefabs
     public GameObject bullet;
+    public GameObject explosivebullet;
+    public GameObject piercebullet;
+
     public Transform bulletTransform;
     public AudioSource audioSource;
     public AudioClip fireSound;
@@ -27,6 +33,17 @@ public class Shooting : MonoBehaviour
         ReadyToFire, 
         Reloading    
     }
+
+    // Bullets enum
+    public enum BulletTypes
+    {
+        Standard,
+        Explosive,
+        Pierce
+    }
+
+    // Set initial type to be default bullet type
+    public BulletTypes bulletType = BulletTypes.Standard; 
 
     [System.Serializable]
     public class Revolver
@@ -79,6 +96,12 @@ public class Shooting : MonoBehaviour
             return; // Exit to prevent firing during reload
         }
 
+        // Cycle bullet type when Q is pressed
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            CycleBulletType();
+        }
+
         // Reload key press (R)
         if (Input.GetKeyDown(KeyCode.R) && revolver.state != RevolverState.Reloading && revolver.currentAmmo < revolver.maxAmmo)
         {
@@ -114,7 +137,22 @@ public class Shooting : MonoBehaviour
         canfire = false; // Disable firing until the cooldown is finished
         timer = 0; // Reset the timer after firing
         revolver.currentAmmo--; // Decrease ammo count
-        Instantiate(bullet, bulletTransform.position, Quaternion.identity); // Fire the bullet
+
+        GameObject BulletToFire = bullet;
+        switch (bulletType)
+        {
+            case BulletTypes.Standard:
+                BulletToFire = bullet;
+                break;
+            case BulletTypes.Explosive:
+                BulletToFire = explosivebullet;
+                break;
+            case BulletTypes.Pierce:
+                BulletToFire = piercebullet;
+                break;
+        }
+
+        Instantiate(BulletToFire, bulletTransform.position, Quaternion.identity); // Fire the bullet
 
         audioSource.PlayOneShot(fireSound); 
         UpdateBulletUI(); 
@@ -132,7 +170,22 @@ public class Shooting : MonoBehaviour
         while (revolver.currentAmmo > 0)
         {
             revolver.currentAmmo--; // Decrease ammo count
-            Instantiate(bullet, bulletTransform.position, Quaternion.identity); 
+
+            GameObject BulletToFire = bullet;
+            switch (bulletType)
+            {
+                case BulletTypes.Standard:
+                    BulletToFire = bullet;
+                    break;
+                case BulletTypes.Explosive:
+                    BulletToFire = explosivebullet;
+                    break;
+                case BulletTypes.Pierce:
+                    BulletToFire = piercebullet;
+                    break;
+            }
+
+            Instantiate(BulletToFire, bulletTransform.position, Quaternion.identity); 
             audioSource.PlayOneShot(fireSound); 
             UpdateBulletUI(); // Update the UI after firing
             yield return new WaitForSeconds(revolver.fanFireCooldown); // Wait between fan shots
@@ -156,5 +209,11 @@ public class Shooting : MonoBehaviour
     public void UnlockGunFanning()
     {
         gunFanningUnlocked = true; // Call this method after level 1 completion
+    }
+
+    // Method to cycle through bullet types
+    void CycleBulletType()
+    {
+        bulletType = (BulletTypes)(((int)bulletType + 1) % System.Enum.GetValues(typeof(BulletTypes)).Length);
     }
 }

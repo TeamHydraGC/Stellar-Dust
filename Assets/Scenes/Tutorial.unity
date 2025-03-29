@@ -148428,6 +148428,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 351110228053717424, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: canfire
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 351110228053717424, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: piercebullet
+      value: 
+      objectReference: {fileID: 6316478306964465916, guid: e06e7e4cfe4496b4f8154f09c0796645, type: 3}
+    - target: {fileID: 351110228053717424, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: explosivebullet
+      value: 
+      objectReference: {fileID: 6316478306964465916, guid: 9aae4c55d1260454ba0dcb16c767350a, type: 3}
+    - target: {fileID: 351110228053717424, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: 'bulletImages.Array.data[0]'
       value: 
       objectReference: {fileID: 411128300}
