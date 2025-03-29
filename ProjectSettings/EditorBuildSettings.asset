@@ -38,6 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Japan Scenes/4TH_Outdoors2.unity
     guid: edd8fd9899d67884d9e34e649f2d5eae
+  - enabled: 1
+    path: Assets/Scenes/Shop Scene.unity
+    guid: 83f20ab10b76da9448d61c14f2f09416
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: fb5cf4f7496cced4496a18bbcc9e553c, type: 3}
   m_UseUCBPForAssetBundles: 0
