@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SaloonInteraction : MonoBehaviour
 {
@@ -9,8 +10,15 @@ public class SaloonInteraction : MonoBehaviour
 
     void Start()
     {
+        // Ensure the interaction prompt is hidden at the start
         if (interactionPrompt != null)
-            interactionPrompt.SetActive(false); // Hide prompt at start
+            interactionPrompt.SetActive(false);
+
+        // Attempt to reassign the Bounty Board panel dynamically
+        if (bountyBoardPanel == null)
+        {
+            ReassignBountyBoardPanel();
+        }
     }
 
     void Update()
@@ -53,7 +61,44 @@ public class SaloonInteraction : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Bounty Board panel is not assigned in the Inspector!");
+            Debug.LogError("Bounty Board panel is not assigned in the Inspector or dynamically!");
         }
+    }
+
+    private void ReassignBountyBoardPanel()
+    {
+        // Find the parent GameObject (like the Canvas) and search its children
+        Transform parent = GameObject.Find("MainCanvas")?.transform; // Replace "Canvas" with your actual parent name
+        if (parent != null)
+        {
+            Transform panelTransform = parent.Find("BountyBoard"); 
+            if (panelTransform != null)
+            {
+                bountyBoardPanel = panelTransform.gameObject;
+                Debug.Log("Bounty Board panel found successfully!");
+                return;
+            }
+        }
+
+        // Log error if panel is still not found
+        Debug.LogError("Failed to find Bounty Board panel, even among inactive objects. Check its setup and name.");
+    }
+
+    private void OnEnable()
+    {
+        // Hook into scene load events to dynamically reassign the panel
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        // Unhook from scene load events
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Debug.Log("Scene loaded: " + scene.name + ". Attempting to reassign Bounty Board panel...");
+        ReassignBountyBoardPanel();
     }
 }

@@ -55,6 +55,9 @@ public class BossHealth : MonoBehaviour
     private void Die()
     {
         Debug.Log(gameObject.name + " has been defeated!");
+
+        // Unlock Level 3 in the BountyManager
+        BountyManager.Instance.UnlockLevel3AfterSandbeast();
     
         // Update the player's score
         FindFirstObjectByType<ScoreUI>().AddScore(scoreValue);

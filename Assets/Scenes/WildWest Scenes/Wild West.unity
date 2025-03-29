@@ -174,22 +174,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2677739592790452877, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
   m_PrefabInstance: {fileID: 1126393045}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &71344304 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 78950331029434389, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
-  m_PrefabInstance: {fileID: 1126393045}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &71344306 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8580449944973849972, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
-  m_PrefabInstance: {fileID: 1126393045}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 71344304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 770dec4a09112df4cbbf9f9445d9e175, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &98836953
 GameObject:
   m_ObjectHideFlags: 0
@@ -76687,10 +76671,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 509155364622473537, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -64
-      objectReference: {fileID: 0}
     - target: {fileID: 1694278833263703235, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -76771,25 +76751,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3359529956302185137, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
-      propertyPath: m_text
-      value: Kill All The Bandits In The Cave Below!
-      objectReference: {fileID: 0}
-    - target: {fileID: 3359529956302185137, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
-      propertyPath: m_margin.z
-      value: -140.00018
-      objectReference: {fileID: 0}
-    - target: {fileID: 3661270721952056208, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4112233412582619957, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
       propertyPath: m_Name
       value: MissionCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 4112233412582619957, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -78490,7 +78454,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5791078525129919291, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
   m_PrefabInstance: {fileID: 1539007623}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1539007624}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5562a8b3d135a1641b2cc5ef5054b5d4, type: 3}
@@ -78977,7 +78941,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 78950331029434389, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
       propertyPath: m_Name
-      value: Canvas
+      value: MainCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 3697349936003473296, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
       propertyPath: m_Pivot.x
@@ -79059,38 +79023,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5229750764716095793, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5229750764716095793, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 71344306}
-    - target: {fileID: 5229750764716095793, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 71344304}
-    - target: {fileID: 5229750764716095793, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ActivateFirstBounty
-      objectReference: {fileID: 0}
-    - target: {fileID: 5229750764716095793, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5229750764716095793, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: BountyManager, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 7583897004894254305, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 906289210}
-    - target: {fileID: 8580449944973849972, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
-      propertyPath: bountyScreen
-      value: 
-      objectReference: {fileID: 1682582625}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -80106,14 +80042,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 351110228053717424, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
-      propertyPath: piercebullet
-      value: 
-      objectReference: {fileID: 6316478306964465916, guid: e06e7e4cfe4496b4f8154f09c0796645, type: 3}
-    - target: {fileID: 351110228053717424, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
-      propertyPath: explosivebullet
-      value: 
-      objectReference: {fileID: 6316478306964465916, guid: 9aae4c55d1260454ba0dcb16c767350a, type: 3}
-    - target: {fileID: 351110228053717424, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: 'bulletImages.Array.data[0]'
       value: 
       objectReference: {fileID: 388376130}
@@ -80139,10 +80067,6 @@ PrefabInstance:
       objectReference: {fileID: 1718911582}
     - target: {fileID: 3928096357643424343, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3928096357643424343, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
-      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 5791078525129919291, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
@@ -80194,40 +80118,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 43412702}
     - target: {fileID: 7923769363428893510, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7923769363428893510, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: initialSpawn
       value: 
       objectReference: {fileID: 951933481}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3928096357643424343, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1539007636}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
---- !u!1 &1539007624 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3928096357643424343, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
-  m_PrefabInstance: {fileID: 1539007623}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1539007636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1539007624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0948a19b8b5390418f1a9a6d6c3ec47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  teleportSceneIndex: 4
-  teleportDelay: 5
 --- !u!114 &1548760971 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7583897004894254305, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
