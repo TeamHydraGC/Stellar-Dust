@@ -156,6 +156,18 @@ public class BountyManager : MonoBehaviour
 
     }
 
+    public void UnlockLevel3AfterSandbeast()
+    {
+        UnlockLevel(3); // Unlock the third bounty
+        Debug.Log("Third bounty unlocked after defeating the Sandbeast!");
+
+        LevelSelect levelSelect = Object.FindFirstObjectByType<LevelSelect>();
+        if (levelSelect != null)
+        {
+            levelSelect.RefreshButtons();
+        }
+    }
+
     // Complete a bounty and unlock the next level
     public void CompleteBounty(int completedLevel)
     {

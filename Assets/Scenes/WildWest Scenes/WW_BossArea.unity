@@ -1504,6 +1504,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissionCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4112233412582619957, guid: d0a044e0be1337449b5501c19f2c80e3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

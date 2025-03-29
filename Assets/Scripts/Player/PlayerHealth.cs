@@ -23,11 +23,16 @@ public class PlayerHealth : MonoBehaviour
         healthBar.healthBarImage.fillAmount = (float)playerHealth / playerMaxHealth;
     }
 
-    private void Awake()
+    void Awake()
     {
-        // Prevent the player from being destroyed between scenes
-        DontDestroyOnLoad(gameObject); 
-    }   
+        // Check for duplicate player characters
+        if (FindObjectsOfType<PlayerController>().Length > 1)
+        {
+            Destroy(gameObject); // Destroy the duplicate
+        }
+    
+        DontDestroyOnLoad(gameObject); // Keep the original object persistent
+    } 
 
     public void playerTakeDamage(int amount) // Method to deal damage to the player
     {

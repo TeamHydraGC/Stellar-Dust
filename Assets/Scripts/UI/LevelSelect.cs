@@ -19,13 +19,13 @@ public class LevelSelect : MonoBehaviour
 
         // Ensure Level 2 button loads Level 2
         if (level2Button != null)
-            level2Button.onClick.AddListener(() => LoadLevel("Level2Scene"));
+            level2Button.onClick.AddListener(() => LoadLevel("WW_BossArea"));
 
         // Placeholder for Level 3 button
         if (level3Button != null)
         {
             level3Button.interactable = BountyManager.Instance.IsLevelUnlocked(3);
-            level3Button.onClick.AddListener(() => LoadLevel("Level3Scene")); // Update when Level 3 is ready
+            level3Button.onClick.AddListener(() => LoadLevel("1ST_Indoors1")); 
         }
 
         RefreshButtons();
@@ -60,7 +60,8 @@ public class LevelSelect : MonoBehaviour
 
     void LoadLevel(string sceneName)
     {
-        SceneManager.LoadScene(5);
+        Debug.Log($"Loading scene: {sceneName}");
+        SceneManager.LoadScene(sceneName); // Dynamically load the requested scene
         HideBountyBoardOnSceneChange();
     }
 
