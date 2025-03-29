@@ -175,7 +175,7 @@ GameObject:
   - component: {fileID: 4724995848165053228}
   - component: {fileID: 3224003575167280720}
   m_Layer: 0
-  m_Name: Player (Cave)
+  m_Name: WildWestCharacterPrefab
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

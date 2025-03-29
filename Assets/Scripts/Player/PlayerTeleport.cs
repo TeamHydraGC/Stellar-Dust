@@ -24,6 +24,9 @@ public class PlayerTeleport : MonoBehaviour
         Debug.Log("Teleport triggered. Waiting " + teleportDelay + " seconds...");
         yield return new WaitForSeconds(teleportDelay);
 
+        // Save the current scene as the last scene
+        GameManager.Instance.SetLastScene(SceneManager.GetActiveScene().name);
+
         Debug.Log("Teleporting player to scene index: " + teleportSceneIndex);
         SceneManager.LoadScene(teleportSceneIndex);
 
@@ -31,16 +34,36 @@ public class PlayerTeleport : MonoBehaviour
         yield return new WaitUntil(() => SceneManager.GetActiveScene().buildIndex == teleportSceneIndex);
         Debug.Log("Scene loaded successfully.");
 
-        // Find the spawn point in the new scene
-        GameObject spawnPoint = GameObject.FindGameObjectWithTag("SpawnPoint");
-        if (spawnPoint != null)
+        SwitchToSceneSpecificCharacter();
+    }
+
+    private void SwitchToSceneSpecificCharacter()
+    {
+        GameObject characterPrefab;
+    
+        if (GameManager.Instance.lastScene == "TutorialScene")
         {
-            transform.position = spawnPoint.transform.position;
-            Debug.Log("Player teleported to spawn point at: " + spawnPoint.transform.position);
+            Debug.Log("Switching to Wild West character...");
+            characterPrefab = Resources.Load<GameObject>("WildWestCharacterPrefab"); // Adjust path/name
         }
         else
         {
-            Debug.LogError("SpawnPoint with tag 'SpawnPoint' not found!");
+            Debug.Log("Retaining default character...");
+            characterPrefab = Resources.Load<GameObject>("DefaultCharacterPrefab"); // Adjust path/name
+        }
+    
+        GameObject player = GameObject.FindWithTag("Player");
+        if (player != null)
+        {
+            Destroy(player); // Remove the old character
+    
+            GameObject newPlayer = Instantiate(characterPrefab);
+            newPlayer.transform.position = GameObject.FindGameObjectWithTag("SpawnPoint").transform.position;
+            Debug.Log("New character loaded at spawn point.");
+        }
+        else
+        {
+            Debug.LogError("Player object not found! Check setup.");
         }
     }
 }
