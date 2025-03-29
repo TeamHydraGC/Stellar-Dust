@@ -79213,17 +79213,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1602213004}
     m_Modifications:
+    - target: {fileID: 1301772208159881657, guid: 058cccb5a2c474d4db511ad56a1d5b90, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6d70a6df60b40584d929d2b658296ea3, type: 3}
     - target: {fileID: 1431942687760887416, guid: 058cccb5a2c474d4db511ad56a1d5b90, type: 3}
       propertyPath: m_Name
       value: PushableCrate
       objectReference: {fileID: 0}
     - target: {fileID: 3121991981281329368, guid: 058cccb5a2c474d4db511ad56a1d5b90, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.39637396
+      objectReference: {fileID: 0}
+    - target: {fileID: 3121991981281329368, guid: 058cccb5a2c474d4db511ad56a1d5b90, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.39637396
+      objectReference: {fileID: 0}
+    - target: {fileID: 3121991981281329368, guid: 058cccb5a2c474d4db511ad56a1d5b90, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.39637396
+      objectReference: {fileID: 0}
+    - target: {fileID: 3121991981281329368, guid: 058cccb5a2c474d4db511ad56a1d5b90, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.560486
+      value: 4.74
       objectReference: {fileID: 0}
     - target: {fileID: 3121991981281329368, guid: 058cccb5a2c474d4db511ad56a1d5b90, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.7540016
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3121991981281329368, guid: 058cccb5a2c474d4db511ad56a1d5b90, type: 3}
       propertyPath: m_LocalPosition.z
