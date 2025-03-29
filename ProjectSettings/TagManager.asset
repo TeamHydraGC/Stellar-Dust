@@ -9,6 +9,7 @@ TagManager:
   - Boss
   - Enemy
   - SpawnPoint
+  - PlayerSpawn
   layers:
   - Default
   - TransparentFX

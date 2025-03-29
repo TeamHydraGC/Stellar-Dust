@@ -63,7 +63,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2284329833763093749}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.4392548, y: -8.858395, z: 0.048657283}
   m_LocalScale: {x: 0.4988, y: 0.4988, z: 0.4988}
   m_ConstrainProportionsScale: 0
@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  projectile: {fileID: 0}
+  projectile: {fileID: 5173917250410510121, guid: 00651bc035718ec4e949de17a4ae19a9, type: 3}
   shootPoint: {fileID: 8029610510601425325}
   detectionRange: 10
   shootInterval: 2
