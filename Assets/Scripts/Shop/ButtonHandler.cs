@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class ButtonHandler : MonoBehaviour
 {
+    // Script authored by AJ.
     public Button damageButton; // Reference to the button
     private bool buttonPressed = false; // Ensure the button is pressed only once
 
