@@ -87251,14 +87251,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ninja
       objectReference: {fileID: 0}
-    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 47418481
-      objectReference: {fileID: 0}
     - target: {fileID: 8496412615016355387, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.4392548
