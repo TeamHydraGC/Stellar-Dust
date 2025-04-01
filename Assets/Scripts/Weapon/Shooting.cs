@@ -1,25 +1,26 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using static Shooting;
 
 // Vinny - Implemented Revolver class with properties, & gun sounds, gun fanning | ENUM from Smiley's Weapon Logic
 public class Shooting : MonoBehaviour
 {
-    private Camera maincam;
-    private Vector3 mousepos;
+    private Camera maincam; // To calculate mouse position for aiming
+    private Vector3 mousepos; // Store mouse position in world space
 
     // Bullet prefabs
     public GameObject bullet;
     public GameObject explosivebullet;
     public GameObject piercebullet;
 
-    public Transform bulletTransform;
-    public AudioSource audioSource;
-    public AudioClip fireSound;
-    public AudioClip reloadSound; 
+    public Transform bulletTransform; // Spawn point for bullets
+    public AudioSource audioSource; // Audio source for playing sounds
+    public AudioClip fireSound; // Sound for firing the gun
+    public AudioClip reloadSound; // Sound for reloading the gun
 
     public bool canfire = true; // Start with canfire being true, so shooting can begin
-    private float timer;
+    private float timer; // Timer for managing cooldown between shots
     public Revolver revolver = new Revolver(); // Instance of the Revolver class
 
     public Image[] bulletImages; // Array to hold bullet UI images
@@ -27,19 +28,21 @@ public class Shooting : MonoBehaviour
     public bool gunFanningUnlocked = false; // To track if the ability is unlocked
     private bool isFanning = false; // Prevent overlapping fan executions
 
+    public InputActionAsset inputActions; // Reference to the Input Actions asset
+
     // Revolver enum and properties
     public enum RevolverState
     {
-        ReadyToFire, 
-        Reloading    
+        ReadyToFire,  // Gun is ready to fire
+        Reloading     // Gun is in the process of reloading
     }
 
     // Bullets enum
     public enum BulletTypes
     {
-        Standard,
-        Explosive,
-        Pierce
+        Standard,     // Regular bullet
+        Explosive,    // Explosive bullet
+        Pierce        // Bullet that pierces through objects
     }
 
     // Set initial type to be default bullet type
@@ -60,8 +63,21 @@ public class Shooting : MonoBehaviour
 
     void Start()
     {
-        maincam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        maincam = Camera.main; // Initialize the main camera reference
         UpdateBulletUI(); // Ensure the UI starts in the correct state
+
+        if (inputActions == null)
+        {
+            Debug.LogError("InputActions asset is not assigned!");
+            return;
+        }
+
+        // Setup input actions for controller support
+        var playerMap = inputActions.FindActionMap("Player");
+
+        playerMap.FindAction("Shoot").performed += ctx => FireSingleShot(); // R2 for shooting
+        playerMap.FindAction("FanFire").performed += ctx => StartCoroutine(FanFire()); // R1 for gun fanning
+        playerMap.FindAction("Reload").performed += ctx => Reload(); // Triangle for reloading
     }
 
     void Update()
@@ -69,76 +85,34 @@ public class Shooting : MonoBehaviour
         // Convert mouse position to world space
         mousepos = maincam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z));
 
-        // Calculate the direction from the object to the mouse
-        Vector3 rotation = mousepos - transform.position;
-
-        // Calculate the rotation angle to face the mouse
-        float rotZ = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
-
-        // Apply the rotation to the object
-        transform.rotation = Quaternion.Euler(0, 0, rotZ);
-
         // Handle reloading logic
         if (revolver.state == RevolverState.Reloading)
         {
-            if (reloadTimer == 0) // Play reload sound only at the beginning of reloading
-            {
-                audioSource.PlayOneShot(reloadSound); // Play reload sound
-            }
-            reloadTimer += Time.deltaTime; // Increment reload timer
-        
-            if (reloadTimer >= revolver.reloadTime) // Check if reload time is complete
-            {
-                revolver.currentAmmo = revolver.maxAmmo; // Refill ammo
-                revolver.state = RevolverState.ReadyToFire; // Return to ready state
-                UpdateBulletUI(); // Reset the UI after reloading
-            }
-            return; // Exit to prevent firing during reload
-        }
-
-        // Cycle bullet type when Q is pressed
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            CycleBulletType();
-        }
-
-        // Reload key press (R)
-        if (Input.GetKeyDown(KeyCode.R) && revolver.state != RevolverState.Reloading && revolver.currentAmmo < revolver.maxAmmo)
-        {
-            revolver.state = RevolverState.Reloading; // Set state to reloading
-            reloadTimer = 0; // Reset reload timer
+            ReloadLogic(); // Manage reload logic
+            return;
         }
 
         // Accumulate time for firing cooldown
         if (!canfire)
         {
-            timer += Time.deltaTime; // Add the time elapsed since the last frame to the timer
-            if (timer >= revolver.fireCooldown) // If enough time has passed
+            timer += Time.deltaTime;
+            if (timer >= revolver.fireCooldown)
             {
                 canfire = true; // Allow firing again
             }
         }
-
-        // Fire when the left mouse button is pressed, shooting is allowed, revolver is ready, and there is ammo
-        if (Input.GetMouseButton(0) && canfire && revolver.state == RevolverState.ReadyToFire && revolver.currentAmmo > 0)
-        {
-            FireSingleShot();
-        }
-
-        // Check for fan fire (right mouse button) and if unlocked
-        if (Input.GetMouseButtonDown(1) && gunFanningUnlocked && revolver.currentAmmo > 0 && !isFanning)
-        {
-            StartCoroutine(FanFire());
-        }
     }
 
-    void FireSingleShot()
+    public void FireSingleShot()
     {
+        // Check if the gun is ready to fire and there is ammo
+        if (!canfire || revolver.state != RevolverState.ReadyToFire || revolver.currentAmmo <= 0) return;
+
         canfire = false; // Disable firing until the cooldown is finished
         timer = 0; // Reset the timer after firing
         revolver.currentAmmo--; // Decrease ammo count
 
-        GameObject BulletToFire = bullet;
+        GameObject BulletToFire = bullet; // Determine bullet type
         switch (bulletType)
         {
             case BulletTypes.Standard:
@@ -152,26 +126,28 @@ public class Shooting : MonoBehaviour
                 break;
         }
 
-        Instantiate(BulletToFire, bulletTransform.position, Quaternion.identity); // Fire the bullet
-
-        audioSource.PlayOneShot(fireSound); 
-        UpdateBulletUI(); 
+        Instantiate(BulletToFire, bulletTransform.position, Quaternion.identity); // Spawn the bullet
+        audioSource.PlayOneShot(fireSound); // Play firing sound
+        UpdateBulletUI(); // Update the UI after firing
 
         if (revolver.currentAmmo <= 0) // Check if ammo is depleted
         {
             revolver.state = RevolverState.Reloading; // Change state to reloading
-            reloadTimer = 0; 
+            reloadTimer = 0; // Reset reload timer
         }
     }
 
     System.Collections.IEnumerator FanFire()
     {
-        isFanning = true; // Prevent overlapping fan fire executions
+        // Prevent overlapping fan fire executions
+        if (!gunFanningUnlocked || isFanning || revolver.currentAmmo <= 0) yield break;
+
+        isFanning = true;
         while (revolver.currentAmmo > 0)
         {
             revolver.currentAmmo--; // Decrease ammo count
 
-            GameObject BulletToFire = bullet;
+            GameObject BulletToFire = bullet; // Determine bullet type
             switch (bulletType)
             {
                 case BulletTypes.Standard:
@@ -185,35 +161,56 @@ public class Shooting : MonoBehaviour
                     break;
             }
 
-            Instantiate(BulletToFire, bulletTransform.position, Quaternion.identity); 
-            audioSource.PlayOneShot(fireSound); 
+            Instantiate(BulletToFire, bulletTransform.position, Quaternion.identity); // Spawn the bullet
+            audioSource.PlayOneShot(fireSound); // Play firing sound
             UpdateBulletUI(); // Update the UI after firing
             yield return new WaitForSeconds(revolver.fanFireCooldown); // Wait between fan shots
         }
 
         revolver.state = RevolverState.Reloading; // Change state to reloading
-        reloadTimer = 0; 
-        isFanning = false; 
+        reloadTimer = 0; // Reset reload timer
+        isFanning = false; // Allow fan fire again
+    }
+
+    public void TriggerFanFire()
+    {
+        StartCoroutine(FanFire()); // Start the coroutine from this wrapper method
+    }
+
+    public void Reload()
+    {
+        // Check if reloading is already in progress or ammo is full
+        if (revolver.state == RevolverState.Reloading || revolver.currentAmmo == revolver.maxAmmo) return;
+
+        revolver.state = RevolverState.Reloading; // Start reloading
+        reloadTimer = 0; // Reset reload timer
+    }
+
+    void ReloadLogic()
+    {
+        if (reloadTimer == 0)
+        {
+            audioSource.PlayOneShot(reloadSound); // Play reload sound
+        }
+
+        reloadTimer += Time.deltaTime;
+
+        if (reloadTimer >= revolver.reloadTime)
+        {
+            revolver.currentAmmo = revolver.maxAmmo; // Refill ammo
+            revolver.state = RevolverState.ReadyToFire; // Return to ready state
+            UpdateBulletUI(); // Update the UI
+        }
     }
 
     void UpdateBulletUI()
     {
+        // Update the UI based on current ammo
         for (int i = 0; i < bulletImages.Length; i++)
         {
             Color color = bulletImages[i].color;
-            color.a = i < revolver.currentAmmo ? 1f : 0.2f; // Full opacity for remaining bullets
+            color.a = i < revolver.currentAmmo ? 1f : 0.2f;
             bulletImages[i].color = color;
         }
-    }
-
-    public void UnlockGunFanning()
-    {
-        gunFanningUnlocked = true; // Call this method after level 1 completion
-    }
-
-    // Method to cycle through bullet types
-    void CycleBulletType()
-    {
-        bulletType = (BulletTypes)(((int)bulletType + 1) % System.Enum.GetValues(typeof(BulletTypes)).Length);
     }
 }

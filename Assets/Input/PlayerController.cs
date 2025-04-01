@@ -10,19 +10,14 @@ public class PlayerController : MonoBehaviour
     public InputActionAsset inputActions;
 
     private Vector2 moveInput;
-    private bool isFacingRight;
+    private bool isFacingRight = true;
     private bool isOnGround;
     private Rigidbody2D rbody;
-
-    private GrapplingHook grapplingHook;
 
     private void Start()
     {
         moveInput = Vector2.zero;
-        isFacingRight = true;
-        isOnGround = false;
         rbody = GetComponent<Rigidbody2D>();
-        grapplingHook = GetComponent<GrapplingHook>();
 
         if (inputActions == null)
         {
@@ -33,18 +28,14 @@ public class PlayerController : MonoBehaviour
         var playerMap = inputActions.FindActionMap("Player");
         if (playerMap == null)
         {
-            Debug.LogError("Player action map not found! You're probably not using controller.");
+            Debug.LogError("Player action map not found!");
             return;
         }
     }
 
     private void Update()
     {
-        if (rbody == null)
-        {
-            Debug.LogError("Rigidbody2D component is missing!");
-            return;
-        }
+        if (rbody == null) return;
 
         Vector2 velocity = rbody.linearVelocity;
         velocity.x = moveInput.x * movementSpeed;
@@ -59,7 +50,6 @@ public class PlayerController : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
-        Debug.Log("Move Input: " + moveInput);
     }
 
     public void OnJump(InputAction.CallbackContext context)
@@ -67,21 +57,25 @@ public class PlayerController : MonoBehaviour
         if (context.performed && isOnGround)
         {
             rbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-            Debug.Log("Jump");
             audioSource.PlayOneShot(jumpSound);
         }
     }
 
-    public void OnGrapple(InputAction.CallbackContext context)
+    public void OnShoot(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            Debug.Log("Grapple activated!");
-            grapplingHook.ActivateGrapple();
+            // Add your shooting logic here
+            Debug.Log("Bang!");
         }
-        else if (context.canceled)
+    }
+
+    public void OnReload(InputAction.CallbackContext context)
+    {
+        if (context.performed)
         {
-            grapplingHook.DeactivateGrapple();
+            // Add your reloading logic here
+            Debug.Log("Reloading...");
         }
     }
 
