@@ -9314,7 +9314,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5146146717295286854, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
       propertyPath: m_ActionEvents.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5146146717295286854, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
       propertyPath: m_NeverAutoSwitchControlSchemes
@@ -9334,7 +9334,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5146146717295286854, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_ActionId
-      value: f33cc258-ca4d-4dac-8baf-7d935c2d80e8
+      value: 1be6e186-d55e-4a32-96c6-58f0fde3ae2e
       objectReference: {fileID: 0}
     - target: {fileID: 5146146717295286854, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
       propertyPath: m_ActionEvents.Array.data[6].m_ActionId
@@ -9354,7 +9354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5146146717295286854, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_ActionName
-      value: 'Controller/GunFanning[/DualSenseGamepadHID/rightShoulder]'
+      value: 'Controller/Aim[/Mouse/delta,/DualSenseGamepadHID/rightStick]'
       objectReference: {fileID: 0}
     - target: {fileID: 5146146717295286854, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
       propertyPath: m_ActionEvents.Array.data[6].m_ActionName
@@ -9414,7 +9414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5146146717295286854, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5146146717295286854, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
       propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -9486,7 +9486,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5146146717295286854, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: TriggerFanFire
+      value: OnAim
       objectReference: {fileID: 0}
     - target: {fileID: 5146146717295286854, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
       propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName

@@ -8,6 +8,7 @@ public class Shooting : MonoBehaviour
 {
     private Camera maincam; // To calculate mouse position for aiming
     private Vector3 mousepos; // Store mouse position in world space
+    private Vector2 aimInput; // Store aiming input from controller's right stick
 
     // Bullet prefabs
     public GameObject bullet;
@@ -46,7 +47,7 @@ public class Shooting : MonoBehaviour
     }
 
     // Set initial type to be default bullet type
-    public BulletTypes bulletType = BulletTypes.Standard; 
+    public BulletTypes bulletType = BulletTypes.Standard;
 
     [System.Serializable]
     public class Revolver
@@ -78,12 +79,21 @@ public class Shooting : MonoBehaviour
         playerMap.FindAction("Shoot").performed += ctx => FireSingleShot(); // R2 for shooting
         playerMap.FindAction("FanFire").performed += ctx => StartCoroutine(FanFire()); // R1 for gun fanning
         playerMap.FindAction("Reload").performed += ctx => Reload(); // Triangle for reloading
+        playerMap.FindAction("Aim").performed += ctx => OnAim(ctx); // Right stick for aiming
     }
 
     void Update()
     {
-        // Convert mouse position to world space
+        // Convert mouse position to world space for mouse aiming
         mousepos = maincam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z));
+
+        // Handle aiming with controller's right stick
+        if (aimInput != Vector2.zero)
+        {
+            Vector3 aimDirection = new Vector3(aimInput.x, aimInput.y, 0).normalized;
+            float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0, 0, angle);
+        }
 
         // Handle reloading logic
         if (revolver.state == RevolverState.Reloading)
@@ -101,6 +111,12 @@ public class Shooting : MonoBehaviour
                 canfire = true; // Allow firing again
             }
         }
+    }
+
+    public void OnAim(InputAction.CallbackContext context)
+    {
+        aimInput = context.ReadValue<Vector2>();
+        Debug.Log("Aim Input: " + aimInput); // Log the right stick values
     }
 
     public void FireSingleShot()
