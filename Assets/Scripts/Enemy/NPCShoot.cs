@@ -13,7 +13,7 @@ public class NPCShoot : MonoBehaviour
     private float shootTimer; // Timer to keep track of shooting interval
     private NPCWander npcWander; // Reference to the NPCWander script
     private AudioSource audioSource; // Reference to the Audio source component
-
+    public Animator animator;
     void Start()
     {
         npcWander = GetComponent<NPCWander>(); // Get the NPCWander script
@@ -54,7 +54,7 @@ public class NPCShoot : MonoBehaviour
             // Stop wandering
             // Debug.Log("Player is within detection range. NPC is preparing to shoot.");
             npcWander.enabled = false;
-
+           
             // Determine direction to face the player
             Vector2 direction = (player.position - transform.position).normalized;
 

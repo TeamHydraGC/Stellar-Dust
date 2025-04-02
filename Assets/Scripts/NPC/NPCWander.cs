@@ -16,7 +16,9 @@ public class NPCWander : MonoBehaviour
 
     private float randomTime, timer;
     private bool isWalking = true;
-    private bool isFlipping;
+    public bool isFlipping;
+    public Animator animator;
+    public bool ismoving = false;
 
     private void Start()
     {
@@ -24,7 +26,7 @@ public class NPCWander : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         timer += Time.deltaTime;
 
@@ -35,7 +37,20 @@ public class NPCWander : MonoBehaviour
             StartCoroutine(Flip());
 
         if (isWalking)
-            rb.linearVelocity = new Vector2(facingDirection * speed, rb.linearVelocity.y);
+            //rb.linearVelocity = new Vector2(facingDirection * speed, rb.linearVelocity.y);
+            rb.linearVelocity = new Vector2(2, 0);
+
+
+
+
+        if (isWalking == true)
+      
+
+        animator.SetBool("ismoving", true);
+
+        if (isWalking == false)
+
+          animator.SetBool("ismoving", false);
 
         // Debug.Log($"NPC Position: {transform.position.x}, Left Patrol: {leftPatrolX}, Right Patrol: {rightPatrolX}");
     }
@@ -45,8 +60,27 @@ public class NPCWander : MonoBehaviour
         isFlipping = true;
         transform.Rotate(0, 180, 0);
         facingDirection *= -1;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(2.0f);
         isFlipping = false;
+    }
+
+    IEnumerator Moving()
+    {
+
+        Vector3 positioncheck1 = transform.position;
+        yield return new WaitForSeconds(1f);
+        Vector3 positioncheck2 = transform.position;
+
+
+        if (positioncheck1 == positioncheck2)
+        {
+            ismoving = false;
+        }
+        else
+        {
+            ismoving = true;
+        }
+
     }
 
     void StateChange()
