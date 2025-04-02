@@ -222,6 +222,9 @@ MonoBehaviour:
   minWalkTime: 3
   maxWalkTime: 4
   facingDirection: 0
+  isFlipping: 0
+  animator: {fileID: 0}
+  ismoving: 0
 --- !u!114 &8430891447572043226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,6 +279,7 @@ MonoBehaviour:
   detectionRange: 10
   shootInterval: 2
   gunshotSound: {fileID: 8300000, guid: 4202fc6e0ee3c7847bf8a017ce2992c6, type: 3}
+  animator: {fileID: 0}
 --- !u!82 &3626041013608471988
 AudioSource:
   m_ObjectHideFlags: 0

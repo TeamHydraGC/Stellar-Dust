@@ -48401,9 +48401,9 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 51db69b187a4b0e43adae17e91651df5, type: 3}
   m_Resource: {fileID: 8300000, guid: 51db69b187a4b0e43adae17e91651df5, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -48445,7 +48445,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -77973,7 +77973,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 53
+  m_SortingOrder: 1769
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -78374,9 +78374,9 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 4b270e306af6fbf468b2a043f54458c5, type: 3}
   m_Resource: {fileID: 8300000, guid: 4b270e306af6fbf468b2a043f54458c5, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -78418,7 +78418,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -79261,6 +79261,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1837091358}
     m_Modifications:
+    - target: {fileID: 960388578452069582, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2284329833763093749, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_Name
       value: Ninja (4)
@@ -79295,7 +79299,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8496412615016355387, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.048657283
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8496412615016355387, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -160124,9 +160128,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1837091358}
     m_Modifications:
+    - target: {fileID: 960388578452069582, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2284329833763093749, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_Name
       value: Samurai
+      objectReference: {fileID: 0}
+    - target: {fileID: 2351218046222139565, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: enemyHealth
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2351218046222139565, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: enemyMaxHealth
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2472177280853497992, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: player
@@ -160154,15 +160170,15 @@ PrefabInstance:
       objectReference: {fileID: 619786720}
     - target: {fileID: 8496412615016355387, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.6098828
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8496412615016355387, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.6098828
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8496412615016355387, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.6098828
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8496412615016355387, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -160174,7 +160190,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8496412615016355387, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.048657283
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8496412615016355387, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -160203,6 +160219,10 @@ PrefabInstance:
     - target: {fileID: 8496412615016355387, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8496412615016355387, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -160309,6 +160329,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1837091358}
     m_Modifications:
+    - target: {fileID: 960388578452069582, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2284329833763093749, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_Name
       value: Ninja (2)
@@ -160343,7 +160367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8496412615016355387, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.048657283
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8496412615016355387, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -166148,7 +166172,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 33
+  m_SortingOrder: 1002
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -166982,11 +167006,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7651398648859825294, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -49.6
+      value: 195.9
       objectReference: {fileID: 0}
     - target: {fileID: 7651398648859825294, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.9
+      value: 1.9
       objectReference: {fileID: 0}
     - target: {fileID: 7651398648859825294, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -168051,6 +168075,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1837091358}
     m_Modifications:
+    - target: {fileID: 960388578452069582, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2284329833763093749, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_Name
       value: Ninja (3)
@@ -168085,7 +168113,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8496412615016355387, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.048657283
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8496412615016355387, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -168405,6 +168433,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1837091358}
     m_Modifications:
+    - target: {fileID: 960388578452069582, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2284329833763093749, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_Name
       value: Ninja (1)
@@ -168439,7 +168471,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8496412615016355387, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.048657283
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8496412615016355387, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -168753,6 +168785,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1837091358}
     m_Modifications:
+    - target: {fileID: 960388578452069582, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2284329833763093749, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_Name
       value: Ninja
@@ -168768,6 +168804,10 @@ PrefabInstance:
     - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_SortingLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 229
       objectReference: {fileID: 0}
     - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_SortingLayerID
@@ -168787,7 +168827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8496412615016355387, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.048657283
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8496412615016355387, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_LocalRotation.w
