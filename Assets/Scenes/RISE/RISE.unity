@@ -48445,7 +48445,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.5
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -78418,7 +78418,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0.5
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -78467,7 +78467,7 @@ Transform:
   m_GameObject: {fileID: 753716357}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.2, y: 2.887819, z: -0.22959489}
+  m_LocalPosition: {x: 3.3, y: 2.887819, z: -0.22959489}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -79263,7 +79263,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 960388578452069582, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: speed
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2284329833763093749, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_Name
@@ -160130,7 +160130,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 960388578452069582, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: speed
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2284329833763093749, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_Name
@@ -160331,7 +160331,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 960388578452069582, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: speed
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2284329833763093749, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_Name
@@ -166956,6 +166956,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1824691159412811133, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824691159412811133, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 47418481
+      objectReference: {fileID: 0}
     - target: {fileID: 3958039494664132410, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
       propertyPath: 'bulletImages.Array.data[0]'
       value: 
@@ -168077,7 +168085,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 960388578452069582, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: speed
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2284329833763093749, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_Name
@@ -168435,7 +168443,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 960388578452069582, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: speed
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2284329833763093749, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_Name
@@ -168787,7 +168795,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 960388578452069582, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: speed
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2284329833763093749, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
       propertyPath: m_Name

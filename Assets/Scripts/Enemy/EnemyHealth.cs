@@ -1,8 +1,9 @@
 // Authored by Nate and some by Vinny
-// ENSURE EnemyScore.cs RUNS BEFORE EnemyHealth.cs IN UNITY'S SCRIPT EXECUCTION ORDER
+// ENSURE EnemyScore.cs RUNS BEFORE EnemyHealth.cs IN UNITY'S SCRIPT EXECUTION ORDER
 
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement; // Added for scene management
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -20,7 +21,8 @@ public class EnemyHealth : MonoBehaviour
 
     private AudioSource audioSource;
 
-    public static EnemyHealth Instance { get; private set; } // instantiating public variabels for use elsewhere
+    public static EnemyHealth Instance { get; private set; } // Instantiating public variables for use elsewhere
+
     private void Awake()
     {
         Instance = this;
@@ -42,25 +44,26 @@ public class EnemyHealth : MonoBehaviour
         Destroy(gameObject);
     }
 
-
+    IEnumerator ChangeSceneAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(3); 
+    }
 
     public void enemyTakeDamage(int amount) // Method to deal damage to the enemy this script is attached to
     {
-        if (enemyInvulnerable == false) // if not invulnerable, deal damage
+        if (enemyInvulnerable == false) // If not invulnerable, deal damage
         {
             enemyHealth -= amount; // Decreases enemyHealth by an int given by enemyTakeDamage
             Debug.Log(gameObject.name + " health is currently " + enemyHealth);
-            //enemyInvulnerable = !enemyInvulnerable;
-            //StartCoroutine(InvulnAfterDamageTaken()); // Starting coroutine for i-frame timer
-            //Debug.Log(gameObject.name + " is now invulnerable.");
         }
 
-        if (enemyHealth <= 0) // if health reaches zero, destroy the object
+        if (enemyHealth <= 0) // If health reaches zero, handle death
         {
             // Call BountyManager that a bandit is killed!
             BountyManager.Instance.OnBanditKilled();
 
-            //FindFirstObjectByType<ScoreUI>().AddScore(scoreValue); // Update the ScoreUI
+            // FindFirstObjectByType<ScoreUI>().AddScore(scoreValue); // Update the ScoreUI
 
             if (GoreToggle.goreEnabled)
             {
@@ -73,23 +76,16 @@ public class EnemyHealth : MonoBehaviour
                 PlaySound(goldSound);
             }
 
+            // Start timer before changing the scene
+            StartCoroutine(ChangeSceneAfterDelay(3f)); // Delay of 3 seconds
+            
             StartCoroutine(DestroyAfterSound());
         }
 
-        //Debug logging separate from health logic
-        if (enemyHealth == 1) // If health at 1, log a warning, otherwise log current health normally
+        if (enemyHealth == 1) // If health at 1, log a warning
         {
             Debug.LogWarning(gameObject.name + " is at 1 health!");
         }
-        //IEnumerator InvulnAfterDamageTaken() // i-frame shit SPECIFIC TO THE ENEMY THIS SCRIPT IS ATTACHED TO 
-        //{
-        //    if (enemyHealth >= 0)
-        //    {
-        //        yield return new WaitForSeconds(enemyInvulnTime);
-        //        enemyInvulnerable = !enemyInvulnerable;
-        //        Debug.Log(gameObject.name + " now vulnerable.");
-        //    }
-        //}
     }
 
     private void PlaySound(AudioClip clip)
