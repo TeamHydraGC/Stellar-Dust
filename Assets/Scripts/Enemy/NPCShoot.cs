@@ -1,102 +1,130 @@
-// By: Vin
 using UnityEngine;
 
 public class NPCShoot : MonoBehaviour
 {
-    public Transform player; // Reference to the player
-    public GameObject projectile; // Projectile prefab
-    public Transform shootPoint; // Point from where the NPC will shoot
-    public float detectionRange = 10f; // Range within which NPC detects player
-    public float shootInterval = 2f; // Time-* between shots
-    public AudioClip gunshotSound; // Gunshot sound
+    public Transform player; 
+    public GameObject projectile; 
+    public Transform shootPoint; 
+    public float detectionRange = 10f; 
+    public float shootInterval = 2f; 
+    public AudioClip gunshotSound; 
 
-    private float shootTimer; // Timer to keep track of shooting interval
-    private NPCWanderNinja npcWander; // Reference to the NPCWander script
-    private AudioSource audioSource; // Reference to the Audio source component
+    private float shootTimer; 
+    private NPCWanderNinja npcWander; 
+    private AudioSource audioSource; 
 
     void Start()
     {
-        npcWander = GetComponent<NPCWanderNinja>(); // Get the NPCWander script
-        audioSource = GetComponent<AudioSource>(); // Get AudioSource component
+        npcWander = GetComponent<NPCWanderNinja>();
+        audioSource = GetComponent<AudioSource>();
 
-        // Dynamically assign the player at the start of the scene
-        if (player == null)
+        if (npcWander == null)
         {
-            GameObject playerObject = GameObject.FindWithTag("Player");
-            if (playerObject != null)
-            {
-                player = playerObject.transform;
-            }
-            else
-            {
-                // Debug.LogWarning("Player not found in the scene. NPCShoot will be inactive.");
-            }
+            Debug.LogWarning("NPCWanderNinja component not found on NPC.");
         }
+        if (audioSource == null)
+        {
+            Debug.LogWarning("AudioSource component not found on NPC.");
+        }
+
+        // Attempt to assign the player reference at the start
+        FindPlayer();
     }
 
     void Update()
     {
-        // Check if player exists to avoid accessing a null Transform
         if (player == null)
         {
-            // Debug.LogWarning("Player reference is null. NPCShoot will stop tracking.");
-            npcWander.enabled = true; // Ensure NPC resumes wandering if player is null
-            return; // Exit Update() to avoid errors
+            Debug.LogWarning("Player reference is null. NPCShoot will stop tracking.");
+            if (npcWander != null) npcWander.enabled = true;
+            return;
         }
 
-        // Calculate distance to player
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-        // Debug.Log($"NPC distance to player: {distanceToPlayer}");
 
-        // Check if the player is within detection range
         if (distanceToPlayer <= detectionRange)
         {
-            // Stop wandering
-            // Debug.Log("Player is within detection range. NPC is preparing to shoot.");
-            npcWander.enabled = false;
+            if (npcWander != null) npcWander.enabled = false;
 
-            // Determine direction to face the player
             Vector2 direction = (player.position - transform.position).normalized;
 
             if (direction.x > 0)
             {
-                // Face right
                 transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-                shootPoint.localRotation = Quaternion.Euler(0, 0, 0);
+                if (shootPoint != null) shootPoint.localRotation = Quaternion.Euler(0, 0, 0);
             }
             else if (direction.x < 0)
             {
-                // Face left
                 transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-                shootPoint.localRotation = Quaternion.Euler(0, 0, 180);
+                if (shootPoint != null) shootPoint.localRotation = Quaternion.Euler(0, 0, 180);
             }
 
-            // Check if it's time to shoot
             shootTimer += Time.deltaTime;
             if (shootTimer >= shootInterval)
             {
                 Shoot(direction);
-                shootTimer = 0f; // Reset timer
+                shootTimer = 0f;
             }
         }
         else
         {
-            // Resume wandering
-            // Debug.Log("Player is outside detection range. NPC is wandering.");
-            npcWander.enabled = true;
+            if (npcWander != null) npcWander.enabled = true;
         }
     }
 
     void Shoot(Vector2 direction)
     {
-        // Instantiate the projectile at the shootPoint position and rotation
-        GameObject newProjectile = Instantiate(projectile, shootPoint.position, shootPoint.rotation);
-        newProjectile.GetComponent<Rigidbody2D>().linearVelocity = direction * newProjectile.GetComponent<NPCBulletScript>().force;
-
-        if (audioSource != null && gunshotSound != null)
+        if (projectile != null && shootPoint != null)
         {
-            audioSource.PlayOneShot(gunshotSound);
+            GameObject newProjectile = Instantiate(projectile, shootPoint.position, shootPoint.rotation);
+            Rigidbody2D rb = newProjectile.GetComponent<Rigidbody2D>();
+            NPCBulletScript bulletScript = newProjectile.GetComponent<NPCBulletScript>();
+
+            if (rb != null && bulletScript != null)
+            {
+                rb.linearVelocity = direction * bulletScript.force;
+            }
+
+            if (audioSource != null && gunshotSound != null)
+            {
+                audioSource.PlayOneShot(gunshotSound);
+            }
+        }
+        else
+        {
+            Debug.LogWarning("Projectile or ShootPoint is missing. Cannot fire.");
+        }
+    }
+
+    void OnEnable()
+    {
+        PauseMenu.OnGameResumed += HandleGameResumed;
+    }
+
+    void OnDisable()
+    {
+        PauseMenu.OnGameResumed -= HandleGameResumed;
+    }
+
+    void HandleGameResumed()
+    {
+        if (player == null)
+        {
+            FindPlayer();
+        }
+    }
+
+    void FindPlayer()
+    {
+        GameObject playerObject = GameObject.FindWithTag("Player");
+        if (playerObject != null)
+        {
+            player = playerObject.transform;
+            Debug.Log("Player reference successfully assigned.");
+        }
+        else
+        {
+            Debug.LogWarning("Player not found in the scene.");
         }
     }
 }
-

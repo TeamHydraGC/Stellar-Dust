@@ -37,8 +37,8 @@ public class NPCWander : MonoBehaviour
             StartCoroutine(Flip());
 
         if (isWalking)
-            //rb.linearVelocity = new Vector2(facingDirection * speed, rb.linearVelocity.y);
-            rb.linearVelocity = new Vector2(2, 0);
+            rb.linearVelocity = new Vector2(facingDirection * speed, rb.linearVelocity.y);
+            //rb.linearVelocity = new Vector2(2, 0);
 
 
 
