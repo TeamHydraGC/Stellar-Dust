@@ -46,7 +46,7 @@ public class NPCWander : MonoBehaviour
         if (isWalking == true)
       
 
-        animator.SetBool("ismoving", true);
+        // animator.SetBool("ismoving", true);
 
         if (isWalking == false)
 

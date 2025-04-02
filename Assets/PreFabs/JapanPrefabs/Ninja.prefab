@@ -220,6 +220,9 @@ MonoBehaviour:
   minWalkTime: 3
   maxWalkTime: 4
   facingDirection: 1
+  isFlipping: 0
+  animator: {fileID: 0}
+  ismoving: 0
 --- !u!114 &7740389632193523493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,7 +251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 3
   enemyMaxHealth: 3
-  scoreValue: 10
+  scoreValue: 0
   enemyInvulnTime: 0
   enemyInvulnerable: 0
   enemyDead: 0
@@ -274,6 +277,7 @@ MonoBehaviour:
   detectionRange: 10
   shootInterval: 2
   gunshotSound: {fileID: 8300000, guid: 018ea365e9be4704992b100ad1627741, type: 3}
+  animator: {fileID: 0}
 --- !u!82 &3331159445326155999
 AudioSource:
   m_ObjectHideFlags: 0
