@@ -152,7 +152,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 0}
-  firstButton: {fileID: 0}
 --- !u!1 &3928096357643424343
 GameObject:
   m_ObjectHideFlags: 0
@@ -670,12 +669,6 @@ MonoBehaviour:
   audioSource: {fileID: 7570983564878976095}
   jumpSound: {fileID: 8300000, guid: 2c3655b2057355e4885367da15c09367, type: 3}
   animator: {fileID: 743724715844512548}
-  isFacingRight: 1
-  groundCheck: {fileID: 0}
-  groundCheckRadius: 0.1
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!114 &3224003575167280720
 MonoBehaviour:
   m_ObjectHideFlags: 0
