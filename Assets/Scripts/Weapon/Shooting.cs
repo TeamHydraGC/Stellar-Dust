@@ -123,6 +123,7 @@ public class Shooting : MonoBehaviour
     {
         // Check if the gun is ready to fire and there is ammo
         if (!canfire || revolver.state != RevolverState.ReadyToFire || revolver.currentAmmo <= 0) return;
+        if (PauseMenu.isGamePaused) return;
 
         canfire = false; // Disable firing until cooldown finishes
         timer = 0; // Reset cooldown timer
