@@ -11,12 +11,12 @@ public class NPCShoot : MonoBehaviour
     public AudioClip gunshotSound; // Gunshot sound
 
     private float shootTimer; // Timer to keep track of shooting interval
-    private NPCWander npcWander; // Reference to the NPCWander script
+    private NPCWanderNinja npcWander; // Reference to the NPCWander script
     private AudioSource audioSource; // Reference to the Audio source component
     public Animator animator;
     void Start()
     {
-        npcWander = GetComponent<NPCWander>(); // Get the NPCWander script
+        npcWander = GetComponent<NPCWanderNinja>(); // Get the NPCWander script
         audioSource = GetComponent<AudioSource>(); // Get AudioSource component
 
         // Dynamically assign the player at the start of the scene
