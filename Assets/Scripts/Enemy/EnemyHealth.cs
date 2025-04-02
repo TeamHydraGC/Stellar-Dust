@@ -60,7 +60,7 @@ public class EnemyHealth : MonoBehaviour
             // Call BountyManager that a bandit is killed!
             BountyManager.Instance.OnBanditKilled();
 
-            FindFirstObjectByType<ScoreUI>().AddScore(scoreValue); // Update the ScoreUI
+            //FindFirstObjectByType<ScoreUI>().AddScore(scoreValue); // Update the ScoreUI
 
             if (GoreToggle.goreEnabled)
             {
