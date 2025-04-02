@@ -109265,7 +109265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5146146717295286854, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5146146717295286854, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
       propertyPath: m_ActionEvents.Array.data[6].m_PersistentCalls.m_Calls.Array.size
@@ -109427,6 +109427,14 @@ PrefabInstance:
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 1982203052}
+    - target: {fileID: 6369583421161873296, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
+      propertyPath: m_Name
+      value: BulletSpawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 6804674838409169162, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
+      propertyPath: m_Name
+      value: Gun
+      objectReference: {fileID: 0}
     - target: {fileID: 6900712367987131852, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
       propertyPath: initialSpawn
       value: 
@@ -109435,6 +109443,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 568898502}
+    - target: {fileID: 7622736385645220888, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0001
+      objectReference: {fileID: 0}
     - target: {fileID: 7651398648859825294, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 146.9

@@ -5,8 +5,6 @@ using System.Drawing.Text;
 
 public class BulletScript : MonoBehaviour
 {
-    private Vector3 mousepos;
-    private Camera maincam;
     private Rigidbody2D rb;
 
     public float force; // effectively the bullet's speed
@@ -14,18 +12,17 @@ public class BulletScript : MonoBehaviour
 
     void Start()
     {
-        maincam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         rb = GetComponent<Rigidbody2D>();
-        mousepos = maincam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z));
 
-        Vector3 BulletDirection = mousepos - transform.position;
-        Vector3 Rotation = transform.position - mousepos;
+        // Determine bullet direction based on player's facing direction
+        bool isFacingRight = FindObjectOfType<PlayerMovement>().isFacingRight; // Reference PlayerMovement
+        float facingDirection = isFacingRight ? 1f : -1f; // Right if true, left if false
 
-        rb.linearVelocity = new Vector2(BulletDirection.x, BulletDirection.y).normalized * force;
+        // Set bullet velocity
+        rb.linearVelocity = new Vector2(facingDirection * force, 0f); // Adjust force for bullet speed
 
-        float rot = Mathf.Atan2(Rotation.y, Rotation.x) * Mathf.Rad2Deg;
-
-        transform.rotation = Quaternion.Euler(0, 0, rot + 90);
+        // Rotate bullet to face the direction of movement
+        transform.rotation = Quaternion.Euler(0, 0, facingDirection > 0 ? 90 : -90); // 90 degrees for right, -90 for left
     }
 
     public void OnCollisionEnter2D(Collision2D collision)

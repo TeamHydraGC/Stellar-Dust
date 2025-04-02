@@ -6,9 +6,9 @@ using static Shooting;
 // Vinny - Implemented Revolver class with properties, & gun sounds, gun fanning | ENUM from Smiley's Weapon Logic
 public class Shooting : MonoBehaviour
 {
-    private Camera maincam; // To calculate mouse position for aiming
-    private Vector3 mousepos; // Store mouse position in world space
-    private Vector2 aimInput; // Store aiming input from controller's right stick
+    // private Camera maincam; // To calculate mouse position for aiming
+    // private Vector3 mousepos; // Store mouse position in world space
+    // private Vector2 aimInput; // Store aiming input from controller's right stick
 
     // Bullet prefabs
     public GameObject bullet;
@@ -64,7 +64,7 @@ public class Shooting : MonoBehaviour
 
     void Start()
     {
-        maincam = Camera.main; // Initialize the main camera reference
+        // maincam = Camera.main; // Initialize the main camera reference
         UpdateBulletUI(); // Ensure the UI starts in the correct state
 
         if (inputActions == null)
@@ -79,21 +79,21 @@ public class Shooting : MonoBehaviour
         playerMap.FindAction("Shoot").performed += ctx => FireSingleShot(); // R2 for shooting
         playerMap.FindAction("FanFire").performed += ctx => StartCoroutine(FanFire()); // R1 for gun fanning
         playerMap.FindAction("Reload").performed += ctx => Reload(); // Triangle for reloading
-        playerMap.FindAction("Aim").performed += ctx => OnAim(ctx); // Right stick for aiming
+        // playerMap.FindAction("Aim").performed += ctx => OnAim(ctx); // Right stick for aiming
     }
 
     void Update()
     {
         // Convert mouse position to world space for mouse aiming
-        mousepos = maincam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z));
+        // mousepos = maincam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z));
 
         // Handle aiming with controller's right stick
-        if (aimInput != Vector2.zero)
-        {
-            Vector3 aimDirection = new Vector3(aimInput.x, aimInput.y, 0).normalized;
-            float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.Euler(0, 0, angle);
-        }
+        // if (aimInput != Vector2.zero)
+        // {
+        //     Vector3 aimDirection = new Vector3(aimInput.x, aimInput.y, 0).normalized;
+        //     float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
+        //     transform.rotation = Quaternion.Euler(0, 0, angle);
+        // }
 
         // Handle reloading logic
         if (revolver.state == RevolverState.Reloading)
@@ -113,19 +113,19 @@ public class Shooting : MonoBehaviour
         }
     }
 
-    public void OnAim(InputAction.CallbackContext context)
-    {
-        aimInput = context.ReadValue<Vector2>();
-        Debug.Log("Aim Input: " + aimInput); // Log the right stick values
-    }
+    // public void OnAim(InputAction.CallbackContext context)
+    // {
+    //     aimInput = context.ReadValue<Vector2>();
+    //     Debug.Log("Aim Input: " + aimInput); // Log the right stick values
+    // }
 
     public void FireSingleShot()
     {
         // Check if the gun is ready to fire and there is ammo
         if (!canfire || revolver.state != RevolverState.ReadyToFire || revolver.currentAmmo <= 0) return;
 
-        canfire = false; // Disable firing until the cooldown is finished
-        timer = 0; // Reset the timer after firing
+        canfire = false; // Disable firing until cooldown finishes
+        timer = 0; // Reset cooldown timer
         revolver.currentAmmo--; // Decrease ammo count
 
         GameObject BulletToFire = bullet; // Determine bullet type
@@ -142,27 +142,34 @@ public class Shooting : MonoBehaviour
                 break;
         }
 
-        Instantiate(BulletToFire, bulletTransform.position, Quaternion.identity); // Spawn the bullet
-        audioSource.PlayOneShot(fireSound); // Play firing sound
-        UpdateBulletUI(); // Update the UI after firing
+        // Determine direction based on the player's facing direction
+        bool isFacingRight = FindObjectOfType<PlayerMovement>().isFacingRight; // Reference `PlayerMovement`
+        float facingDirection = isFacingRight ? 1f : -1f; // Right if true, left if false
 
-        if (revolver.currentAmmo <= 0) // Check if ammo is depleted
+        // Instantiate bullet and set velocity
+        GameObject instantiatedBullet = Instantiate(BulletToFire, bulletTransform.position, Quaternion.identity);
+        instantiatedBullet.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(facingDirection * 10f, 0f); // Adjust speed
+
+        audioSource.PlayOneShot(fireSound); // Play gunshot sound
+        UpdateBulletUI(); // Update ammo UI
+
+        // Check if out of ammo
+        if (revolver.currentAmmo <= 0)
         {
-            revolver.state = RevolverState.Reloading; // Change state to reloading
+            revolver.state = RevolverState.Reloading; // Start reload process
             reloadTimer = 0; // Reset reload timer
         }
     }
 
     System.Collections.IEnumerator FanFire()
     {
-        // Prevent overlapping fan fire executions
         if (!gunFanningUnlocked || isFanning || revolver.currentAmmo <= 0) yield break;
-
+    
         isFanning = true;
         while (revolver.currentAmmo > 0)
         {
             revolver.currentAmmo--; // Decrease ammo count
-
+    
             GameObject BulletToFire = bullet; // Determine bullet type
             switch (bulletType)
             {
@@ -176,14 +183,21 @@ public class Shooting : MonoBehaviour
                     BulletToFire = piercebullet;
                     break;
             }
-
-            Instantiate(BulletToFire, bulletTransform.position, Quaternion.identity); // Spawn the bullet
-            audioSource.PlayOneShot(fireSound); // Play firing sound
-            UpdateBulletUI(); // Update the UI after firing
+    
+            // Determine direction based on facing direction
+            bool isFacingRight = FindObjectOfType<PlayerMovement>().isFacingRight;
+            float facingDirection = isFacingRight ? 1f : -1f;
+    
+            // Instantiate bullet and set velocity
+            GameObject instantiatedBullet = Instantiate(BulletToFire, bulletTransform.position, Quaternion.identity);
+            instantiatedBullet.GetComponent<Rigidbody2D>().linearVelocity = new Vector2(facingDirection * 10f, 0f);
+    
+            audioSource.PlayOneShot(fireSound); // Play sound
+            UpdateBulletUI(); // Update ammo UI
             yield return new WaitForSeconds(revolver.fanFireCooldown); // Wait between fan shots
         }
 
-        revolver.state = RevolverState.Reloading; // Change state to reloading
+        revolver.state = RevolverState.Reloading; // Start reload process
         reloadTimer = 0; // Reset reload timer
         isFanning = false; // Allow fan fire again
     }

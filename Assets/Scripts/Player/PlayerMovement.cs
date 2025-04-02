@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip jumpSound;
     public Animator animator;
 
-    private bool isFacingRight = true; 
+    public bool isFacingRight = true; 
     private Vector2 moveInput; // Store input direction from controller or keyboard
 
     [SerializeField] private Transform groundCheck; // Position for ground detection

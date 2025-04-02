@@ -327,8 +327,8 @@
                 },
                 {
                     "name": "",
-                    "id": "c3585f45-bd8e-44bd-bbed-0681d0436da0",
-                    "path": "<DualShockGamepad>/rightStick",
+                    "id": "6cf99635-3673-48e6-a910-58c08ca4ef85",
+                    "path": "<Gamepad>/rightStick",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
