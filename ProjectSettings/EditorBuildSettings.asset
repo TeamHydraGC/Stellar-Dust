@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/RISE/GameOver.unity
     guid: 370148f0c5186d5468b2fe8c540ff8d3
   - enabled: 0
+    path: Assets/Scenes/RISE/EMPTY.unity
+    guid: f41348592111de5418134a964f269653
+  - enabled: 0
     path: Assets/Scenes/Tutorial.unity
     guid: 43ab8c3d3d10a8a43955e91159eb3b02
   - enabled: 0

@@ -47,7 +47,7 @@ public class EnemyHealth : MonoBehaviour
     IEnumerator ChangeSceneAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene(3); 
+        SceneManager.LoadScene(2); 
     }
 
     public void enemyTakeDamage(int amount) // Method to deal damage to the enemy this script is attached to
