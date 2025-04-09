@@ -1761,11 +1761,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65227cba6d4b5a442ac33f35769fe5bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossHealth: 5
-  bossMaxHealth: 5
+  bossHealth: 15
+  bossMaxHealth: 15
   isInvulnerable: 0
   bossDead: 0
-  scoreValue: 100
+  scoreValue: 50
   bloodEffect: {fileID: 1650366259809433148, guid: c96375d86925a3f4e8b8434b9602e83a, type: 3}
   goldEffect: {fileID: 4200137178263252358, guid: a6ff0cf51b3852642a940244af6c0fa8, type: 3}
   bloodSound: {fileID: 8300000, guid: 2e9c3308bbe434e4ab1288872c413452, type: 3}
@@ -2041,6 +2041,10 @@ PrefabInstance:
     - target: {fileID: 3259014453770173873, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5066576238792748076, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
+      propertyPath: m_BodyType
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8430891447572043226, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: playerHealth
@@ -2382,7 +2386,7 @@ GameObject:
   - component: {fileID: 1137147163}
   - component: {fileID: 1137147162}
   - component: {fileID: 1137147161}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63547,6 +63551,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5066576238792748076, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8430891447572043226, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: playerHealth
       value: 
@@ -64210,6 +64218,10 @@ PrefabInstance:
     - target: {fileID: 3259014453770173873, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5066576238792748076, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
+      propertyPath: m_BodyType
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8430891447572043226, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: playerHealth
@@ -64975,6 +64987,10 @@ PrefabInstance:
     - target: {fileID: 3259014453770173873, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5066576238792748076, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
+      propertyPath: m_BodyType
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8430891447572043226, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: playerHealth

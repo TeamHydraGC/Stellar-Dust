@@ -147685,10 +147685,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 2677739592790452877, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3697349936003473296, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -147778,6 +147774,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+--- !u!1 &300223499129716853 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 379082928235484843, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+  m_PrefabInstance: {fileID: 300223499129716852}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &652494848224427371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -147822,6 +147823,10 @@ PrefabInstance:
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 1869978585}
+    - target: {fileID: 5815278901493318974, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
+      propertyPath: firstButton
+      value: 
+      objectReference: {fileID: 300223499129716853}
     - target: {fileID: 6900712367987131852, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
       propertyPath: initialSpawn
       value: 
