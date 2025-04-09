@@ -1083,6 +1083,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &565572097 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 379082928235484843, guid: 0752c73014e07de4885fd0f15fc8bd5b, type: 3}
+  m_PrefabInstance: {fileID: 795633194}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &648908505
 GameObject:
   m_ObjectHideFlags: 0
@@ -15396,7 +15401,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -26258,6 +26263,10 @@ PrefabInstance:
       propertyPath: gunFanningUnlocked
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1357456650853968623, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2141673639466722160, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
       value: 0.49052358
@@ -26302,6 +26311,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 795633195}
+    - target: {fileID: 5791078525129919291, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: playerHealth
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6349399957949673988, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.22
@@ -26354,6 +26367,58 @@ PrefabInstance:
       propertyPath: walkSpeed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: m_DefaultControlScheme
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionId
+      value: 11a42d75-8bb4-474d-94a1-77735bbea968
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_ActionId
+      value: f33cc258-ca4d-4dac-8baf-7d935c2d80e8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionId
+      value: 0b7b272c-0b83-4f75-b2fd-46bb4b30c56a
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionId
+      value: 1be6e186-d55e-4a32-96c6-58f0fde3ae2e
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionId
+      value: 6667fdd1-f11e-40c0-b4f6-f7d97157e5a2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionName
+      value: Controller/ShootingAction
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_ActionName
+      value: 'Controller/GunFanning[/Mouse/rightButton]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionName
+      value: 'Controller/ReloadAction[/Keyboard/r]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionName
+      value: 'Controller/Aim[/Mouse/delta]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionName
+      value: Controller/UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: bf53a5d59f9f7144dbe79446e3c3c1be, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26394,6 +26459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 795633196}
+  firstButton: {fileID: 565572097}
 --- !u!95 &1649219715
 Animator:
   serializedVersion: 7

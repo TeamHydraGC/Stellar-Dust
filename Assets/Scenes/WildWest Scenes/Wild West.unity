@@ -80139,10 +80139,6 @@ PrefabInstance:
       propertyPath: 'bulletImages.Array.data[5]'
       value: 
       objectReference: {fileID: 1718911582}
-    - target: {fileID: 5689760213933903136, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
-      propertyPath: orthographic size
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 5815278901493318974, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
       propertyPath: pauseMenu
       value: 
