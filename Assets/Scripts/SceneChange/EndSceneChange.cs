@@ -10,7 +10,7 @@ public class EndSceneChange : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         // Load the Wild West scene
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(2);
 
         // Use a coroutine to ensure the player is repositioned after the scene is loaded
         StartCoroutine(WaitForSceneLoad());
@@ -19,7 +19,7 @@ public class EndSceneChange : MonoBehaviour
     private IEnumerator WaitForSceneLoad()
     {
         // Wait for the scene to load fully
-        yield return new WaitUntil(() => SceneManager.GetActiveScene().buildIndex == 4);
+        yield return new WaitUntil(() => SceneManager.GetActiveScene().buildIndex == 2);
 
         // Find the player object and teleport them
         GameObject player = GameObject.FindWithTag("Player");

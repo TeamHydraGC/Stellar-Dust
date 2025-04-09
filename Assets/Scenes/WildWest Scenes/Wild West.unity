@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 115708737}
   - component: {fileID: 115708736}
   - component: {fileID: 115708738}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79282,6 +79282,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 058cccb5a2c474d4db511ad56a1d5b90, type: 3}
+--- !u!4 &1231237554 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3361570908913016355, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+  m_PrefabInstance: {fileID: 1539007623}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1310725106
 GameObject:
   m_ObjectHideFlags: 0
@@ -80138,6 +80143,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4724995848165053228, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: groundCheck
+      value: 
+      objectReference: {fileID: 1231237554}
     - target: {fileID: 5791078525129919291, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: healthBar
       value: 
@@ -80190,6 +80199,62 @@ PrefabInstance:
       propertyPath: initialSpawn
       value: 
       objectReference: {fileID: 951933481}
+    - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_DefaultControlScheme
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionId
+      value: 11a42d75-8bb4-474d-94a1-77735bbea968
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_ActionId
+      value: f33cc258-ca4d-4dac-8baf-7d935c2d80e8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionId
+      value: 0b7b272c-0b83-4f75-b2fd-46bb4b30c56a
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionId
+      value: 1be6e186-d55e-4a32-96c6-58f0fde3ae2e
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionId
+      value: 6667fdd1-f11e-40c0-b4f6-f7d97157e5a2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionName
+      value: Controller/ShootingAction
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_ActionName
+      value: 'Controller/GunFanning[/Mouse/rightButton]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionName
+      value: 'Controller/ReloadAction[/Keyboard/r]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[5].m_ActionName
+      value: 'Controller/Aim[/Mouse/delta]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionName
+      value: Controller/UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
