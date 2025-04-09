@@ -32,6 +32,18 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3125561803007935479, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125561803007935479, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125561803007935479, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 47418481
+      objectReference: {fileID: 0}
     - target: {fileID: 3224003575167280720, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -46,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4250022232982044750, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4
+      value: 2.22
       objectReference: {fileID: 0}
     - target: {fileID: 4724995848165053228, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: moveSpeed
@@ -64,13 +76,21 @@ PrefabInstance:
       propertyPath: groundLayer.m_Bits
       value: 64
       objectReference: {fileID: 0}
+    - target: {fileID: 5791078525129919291, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: playerHealth
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5791078525129919291, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: playerMaxHealth
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 146.9
+      value: 195.9
       objectReference: {fileID: 0}
     - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.68
+      value: 1.9
       objectReference: {fileID: 0}
     - target: {fileID: 6349399957949673988, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -125,6 +145,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_ActionEvents.Array.data[2].m_ActionId
       value: 11a42d75-8bb4-474d-94a1-77735bbea968
       objectReference: {fileID: 0}
@@ -141,6 +165,10 @@ PrefabInstance:
       value: 1be6e186-d55e-4a32-96c6-58f0fde3ae2e
       objectReference: {fileID: 0}
     - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionId
+      value: 6667fdd1-f11e-40c0-b4f6-f7d97157e5a2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_ActionEvents.Array.data[2].m_ActionName
       value: Controller/ShootingAction
       objectReference: {fileID: 0}
@@ -155,6 +183,10 @@ PrefabInstance:
     - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_ActionEvents.Array.data[5].m_ActionName
       value: 'Controller/Aim[/Mouse/delta,/DualSenseGamepadHID/rightStick]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: m_ActionEvents.Array.data[6].m_ActionName
+      value: Controller/UI
       objectReference: {fileID: 0}
     - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.size
@@ -227,6 +259,10 @@ PrefabInstance:
     - target: {fileID: 8455625105314446540, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
       propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8990510676579953578, guid: 623f5f71db4e56143a5c1838b2658d3a, type: 3}
+      propertyPath: orthographic size
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
