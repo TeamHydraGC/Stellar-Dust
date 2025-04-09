@@ -13,6 +13,7 @@ public class PlayerHealth : MonoBehaviour
     public bool playerInvulnerable = false; // Used for invulnerability after taking damage, DO NOT TOUCH
     public bool playerDead = false; // If true, player goes to GameOver scene
     public HealthBar healthBar; // Reference to the HealthBar
+    private Vector3 initialPosition; 
 
     private void Start() // Set playerHealth to playerMaxHealth on start 
     {
@@ -20,7 +21,11 @@ public class PlayerHealth : MonoBehaviour
         {
             playerHealth = playerMaxHealth;
         }
+
+        initialPosition = transform.position;
         healthBar.healthBarImage.fillAmount = (float)playerHealth / playerMaxHealth;
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     void Awake()
@@ -60,7 +65,7 @@ public class PlayerHealth : MonoBehaviour
         {
             Debug.Log(gameObject.name + " health <= 0, entering Game Over screen.");
             playerDead = true;
-            SceneManager.LoadScene(sceneBuildIndex: 2);
+            SceneManager.LoadScene(sceneBuildIndex: 8);
             playerDead = !playerDead;
         }
     }
@@ -71,8 +76,22 @@ public class PlayerHealth : MonoBehaviour
         Debug.Log(gameObject.name + " is now vulnerable.");
     }
 
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Reset player state when the scene reloads
+        playerHealth = playerMaxHealth;
+        transform.position = initialPosition;
+        playerInvulnerable = false; // Reset invulnerability
+        healthBar.healthBarImage.fillAmount = (float)playerHealth / playerMaxHealth;
+
+        Debug.Log("Player state reset after scene reload.");
+    }
+
+
     private void OnDestroy()
     {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+
         // Use Object.FindObjectsByType instead of FindObjectsOfType
         NPCShoot[] npcs = Object.FindObjectsByType<NPCShoot>(FindObjectsSortMode.None);
         foreach (var npc in npcs)

@@ -79,11 +79,10 @@ public class PauseMenu : MonoBehaviour
 
     public void Restart()
     {
-        // Reset game state flags before restarting the scene
         isGamePaused = false;
-
-        SceneManager.LoadScene(3); // Reload the current scene
-        SceneManager.LoadScene(1);
-        Time.timeScale = 1; // Reset time scale
+        Time.timeScale = 1;
+    
+        // Reload the current scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
