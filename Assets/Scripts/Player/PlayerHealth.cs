@@ -78,13 +78,25 @@ public class PlayerHealth : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // Reset player state when the scene reloads
+        // Find the spawn point in the new scene
+        GameObject spawnPoint = GameObject.FindGameObjectWithTag("SpawnPoint");
+    
+        if (spawnPoint != null)
+        {
+            // Move the player to the spawn point's position
+            transform.position = spawnPoint.transform.position;
+            Debug.Log("Player repositioned to spawn point in the new scene.");
+        }
+        else
+        {
+            Debug.LogWarning("Spawn point not found in the scene. Using initial position.");
+            transform.position = initialPosition; // Fallback to initial position
+        }
+    
+        // Reset other player states
         playerHealth = playerMaxHealth;
-        transform.position = initialPosition;
-        playerInvulnerable = false; // Reset invulnerability
+        playerInvulnerable = false;
         healthBar.healthBarImage.fillAmount = (float)playerHealth / playerMaxHealth;
-
-        Debug.Log("Player state reset after scene reload.");
     }
 
 

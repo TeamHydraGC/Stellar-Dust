@@ -68,7 +68,7 @@ public class SaloonInteraction : MonoBehaviour
     private void ReassignBountyBoardPanel()
     {
         // Find the parent GameObject (like the Canvas) and search its children
-        Transform parent = GameObject.Find("MainCanvas")?.transform; // Replace "Canvas" with your actual parent name
+        Transform parent = GameObject.Find("Canvas")?.transform; // Replace "Canvas" with your actual parent name
         if (parent != null)
         {
             Transform panelTransform = parent.Find("BountyBoard"); 
