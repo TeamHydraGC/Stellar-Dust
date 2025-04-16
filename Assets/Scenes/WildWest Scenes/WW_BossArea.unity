@@ -1990,10 +1990,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 352594331}
     m_Modifications:
-    - target: {fileID: 2457223373827529215, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3210674562514186463, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.19
@@ -2037,18 +2033,6 @@ PrefabInstance:
     - target: {fileID: 3259014453770173873, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: m_Name
       value: Bandit_WW (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3259014453770173873, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 5066576238792748076, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8430891447572043226, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
-      propertyPath: playerHealth
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -63499,10 +63483,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 352594331}
     m_Modifications:
-    - target: {fileID: 2457223373827529215, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3210674562514186463, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.41
@@ -63546,18 +63526,6 @@ PrefabInstance:
     - target: {fileID: 3259014453770173873, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: m_Name
       value: Bandit_WW (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3259014453770173873, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 5066576238792748076, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8430891447572043226, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
-      propertyPath: playerHealth
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -64167,10 +64135,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 352594331}
     m_Modifications:
-    - target: {fileID: 2457223373827529215, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3210674562514186463, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.99
@@ -64214,18 +64178,6 @@ PrefabInstance:
     - target: {fileID: 3259014453770173873, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: m_Name
       value: Bandit_WW (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3259014453770173873, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 5066576238792748076, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8430891447572043226, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
-      propertyPath: playerHealth
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -64936,10 +64888,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 352594331}
     m_Modifications:
-    - target: {fileID: 2457223373827529215, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3210674562514186463, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.98
@@ -64983,18 +64931,6 @@ PrefabInstance:
     - target: {fileID: 3259014453770173873, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
       propertyPath: m_Name
       value: Bandit_WW
-      objectReference: {fileID: 0}
-    - target: {fileID: 3259014453770173873, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 5066576238792748076, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8430891447572043226, guid: 380cf4476fe7f8441a59d50817a8b0a8, type: 3}
-      propertyPath: playerHealth
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
