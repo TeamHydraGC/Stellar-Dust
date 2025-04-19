@@ -1770,6 +1770,7 @@ MonoBehaviour:
   goldEffect: {fileID: 4200137178263252358, guid: a6ff0cf51b3852642a940244af6c0fa8, type: 3}
   bloodSound: {fileID: 8300000, guid: 2e9c3308bbe434e4ab1288872c413452, type: 3}
   goldSound: {fileID: 8300000, guid: 527c75cadcb560f469f3c67e92e950ae, type: 3}
+  sceneIndexToLoad: 4
 --- !u!82 &737299623
 AudioSource:
   m_ObjectHideFlags: 0

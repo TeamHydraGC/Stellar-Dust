@@ -18,6 +18,9 @@ public class BossHealth : MonoBehaviour
 
     private AudioSource audioSource;
 
+    // New variable: scene index to load when this boss dies
+    public int sceneIndexToLoad;
+
     void Awake()
     {
         audioSource = GetComponent<AudioSource>();
@@ -100,17 +103,19 @@ public class BossHealth : MonoBehaviour
             }
         }
 
-        // Teleport player to another scene
-        TeleportToScene("TargetSceneName"); // Replace "TargetSceneName" with your desired scene's name
+        // Load the specified scene index for this boss
+        if (sceneIndexToLoad >= 0)
+        {
+            Debug.Log("Loading scene index: " + sceneIndexToLoad);
+            SceneManager.LoadScene(sceneIndexToLoad); // Load the assigned scene by index
+        }
+        else
+        {
+            Debug.LogError("Invalid scene index set for " + gameObject.name);
+        }
 
         // Destroy the boss GameObject
         Destroy(gameObject);
-    }
-
-    private void TeleportToScene(string sceneName)
-    {
-        Debug.Log("Teleporting to scene: " + sceneName);
-        SceneManager.LoadScene(5); // Load the specified scene
     }
 
     public void ActivateInvulnerability(float duration)
