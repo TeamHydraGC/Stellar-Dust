@@ -5,46 +5,46 @@ using System.Collections;
 
 public class BossHealth : MonoBehaviour
 {
-    // Health variables
-    public int bossHealth; // Current health
-    public int bossMaxHealth; // Maximum health, set in the Inspector
-    public bool isInvulnerable = false; // For invulnerability mechanics
-    public bool bossDead = false; // Tracks if the boss is dead
+    public int bossHealth;
+    public int bossMaxHealth;
+    public bool isInvulnerable = false;
+    public bool bossDead = false;
+    public int scoreValue = 100;
 
-    // Scoring
-    public int scoreValue = 100; // Points awarded for defeating the boss
-
-    // Gore effects
-    public GameObject bloodEffect; // Blood Particle Prefab
-    public GameObject goldEffect; // Gold Particle Prefab
-    public AudioClip bloodSound; // Sound for gore-on death
-    public AudioClip goldSound; // Sound for gore-off death
+    public GameObject bloodEffect;
+    public GameObject goldEffect;
+    public AudioClip bloodSound;
+    public AudioClip goldSound;
 
     private AudioSource audioSource;
 
-    public static BossHealth Instance { get; private set; }
-
-    private void Awake()
+    void Awake()
     {
-        Instance = this;
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null) // Null check for AudioSource
+        {
+            Debug.LogError("AudioSource is missing on " + gameObject.name);
+        }
     }
 
-    private void Start()
+    void Start()
     {
-        // Initialize health
         bossHealth = bossMaxHealth;
-
-        audioSource = GetComponent<AudioSource>();
+        if (bossHealth <= 0) // Check initial health
+        {
+            Debug.LogError("BossMaxHealth should be greater than 0!");
+            bossHealth = 1; // Assign default value if uninitialized
+        }
     }
 
     public void TakeDamage(int amount)
     {
-        if (!isInvulnerable) // Only take damage if not invulnerable
+        if (!isInvulnerable)
         {
-            bossHealth -= amount; // Subtract damage
+            bossHealth -= amount;
             Debug.Log(gameObject.name + " health is currently " + bossHealth);
 
-            if (bossHealth <= 0 && !bossDead) // Trigger death if health reaches zero
+            if (bossHealth <= 0 && !bossDead)
             {
                 bossDead = true;
                 Die();
@@ -56,14 +56,27 @@ public class BossHealth : MonoBehaviour
     {
         Debug.Log(gameObject.name + " has been defeated!");
 
-        // Unlock Level 3 in the BountyManager
-        BountyManager.Instance.UnlockLevel3AfterSandbeast();
-    
-        // Update the player's score
-        FindFirstObjectByType<ScoreUI>().AddScore(scoreValue);
-        Debug.Log("Player awarded " + scoreValue + " points!");
-    
-        // Handle gore effects based on GoreToggle
+        if (BountyManager.Instance != null)
+        {
+            BountyManager.Instance.UnlockLevel3AfterSandbeast();
+        }
+        else
+        {
+            Debug.LogError("BountyManager instance not found!");
+        }
+
+        ScoreUI scoreUI = FindObjectOfType<ScoreUI>();
+        if (scoreUI != null)
+        {
+            scoreUI.AddScore(scoreValue);
+            Debug.Log("Player awarded " + scoreValue + " points!");
+        }
+        else
+        {
+            Debug.LogError("ScoreUI component not found in the scene!");
+        }
+
+        // Handle gore effects
         if (GoreToggle.goreEnabled)
         {
             if (bloodEffect != null)
@@ -86,27 +99,18 @@ public class BossHealth : MonoBehaviour
                 audioSource.PlayOneShot(goldSound);
             }
         }
-    
-        // Trigger player teleport
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if (player != null)
-        {
-            PlayerTeleport playerTeleport = player.GetComponent<PlayerTeleport>();
-            if (playerTeleport != null)
-            {
-                playerTeleport.TriggerTeleport();
-            }
-        }
-    
+
+        // Teleport player to another scene
+        TeleportToScene("TargetSceneName"); // Replace "TargetSceneName" with your desired scene's name
+
         // Destroy the boss GameObject
         Destroy(gameObject);
     }
 
-
-    private IEnumerator DestroyAfterSound()
+    private void TeleportToScene(string sceneName)
     {
-        yield return new WaitForSeconds(0.5f); // Adjust delay as needed
-        Destroy(gameObject);
+        Debug.Log("Teleporting to scene: " + sceneName);
+        SceneManager.LoadScene(5); // Load the specified scene
     }
 
     public void ActivateInvulnerability(float duration)
@@ -117,9 +121,7 @@ public class BossHealth : MonoBehaviour
     private IEnumerator InvulnerabilityTimer(float duration)
     {
         isInvulnerable = true;
-        Debug.Log(gameObject.name + " is now invulnerable for " + duration + " seconds.");
         yield return new WaitForSeconds(duration);
         isInvulnerable = false;
-        Debug.Log(gameObject.name + " is no longer invulnerable.");
     }
 }

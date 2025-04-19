@@ -251,14 +251,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 815004027}
     m_Modifications:
-    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 47418481
-      objectReference: {fileID: 0}
     - target: {fileID: 9149868483130159245, guid: f16ad26594e29df468157bb09c44dfbf, type: 3}
       propertyPath: m_LocalPosition.x
       value: -44.6
@@ -302,6 +294,14 @@ PrefabInstance:
     - target: {fileID: 9173303611300265443, guid: f16ad26594e29df468157bb09c44dfbf, type: 3}
       propertyPath: m_Name
       value: Ninja Variant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 47418481
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7275,11 +7275,11 @@ PrefabInstance:
       objectReference: {fileID: 828792914}
     - target: {fileID: 7651398648859825294, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.1
+      value: -13.417496
       objectReference: {fileID: 0}
     - target: {fileID: 7651398648859825294, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.1
+      value: -0.79305506
       objectReference: {fileID: 0}
     - target: {fileID: 7651398648859825294, guid: 20c0ae632a09ca047ad680f613e6b0e4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13243,14 +13243,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 815004027}
     m_Modifications:
-    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 47418481
-      objectReference: {fileID: 0}
     - target: {fileID: 9149868483130159245, guid: f16ad26594e29df468157bb09c44dfbf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 50.41
@@ -13295,6 +13287,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ninja Variant (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 47418481
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13313,14 +13313,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 815004027}
     m_Modifications:
-    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 47418481
-      objectReference: {fileID: 0}
     - target: {fileID: 9149868483130159245, guid: f16ad26594e29df468157bb09c44dfbf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.6
@@ -13365,6 +13357,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ninja Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 47418481
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13383,14 +13383,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 815004027}
     m_Modifications:
-    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 47418481
-      objectReference: {fileID: 0}
     - target: {fileID: 9149868483130159245, guid: f16ad26594e29df468157bb09c44dfbf, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21.4
@@ -13434,6 +13426,14 @@ PrefabInstance:
     - target: {fileID: 9173303611300265443, guid: f16ad26594e29df468157bb09c44dfbf, type: 3}
       propertyPath: m_Name
       value: Ninja Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 47418481
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13481,7 +13481,7 @@ Transform:
   m_GameObject: {fileID: 815004026}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 159.89905, y: 4.2951946, z: -0.048657283}
+  m_LocalPosition: {x: 142.37155, y: -1.0778604, z: -0.048657283}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13658,7 +13658,7 @@ Transform:
   m_GameObject: {fileID: 855643335}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -17.527496, y: -5.373055, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13758,14 +13758,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 815004027}
     m_Modifications:
-    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 47418481
-      objectReference: {fileID: 0}
     - target: {fileID: 9149868483130159245, guid: f16ad26594e29df468157bb09c44dfbf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 86.18
@@ -13809,6 +13801,14 @@ PrefabInstance:
     - target: {fileID: 9173303611300265443, guid: f16ad26594e29df468157bb09c44dfbf, type: 3}
       propertyPath: m_Name
       value: Ninja Variant (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 47418481
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14018,14 +14018,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 815004027}
     m_Modifications:
-    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 47418481
-      objectReference: {fileID: 0}
     - target: {fileID: 9149868483130159245, guid: f16ad26594e29df468157bb09c44dfbf, type: 3}
       propertyPath: m_LocalPosition.x
       value: -77.6
@@ -14069,6 +14061,14 @@ PrefabInstance:
     - target: {fileID: 9173303611300265443, guid: f16ad26594e29df468157bb09c44dfbf, type: 3}
       propertyPath: m_Name
       value: Ninja Variant (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 47418481
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14118,7 +14118,7 @@ Transform:
   m_GameObject: {fileID: 1072951024}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -17.527496, y: -5.373055, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16260,7 +16260,7 @@ Transform:
   m_GameObject: {fileID: 1241932461}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.472504, y: 1.7730552, z: 0.070644766}
+  m_LocalPosition: {x: -20, y: -3.6, z: 0.070644766}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -63329,7 +63329,7 @@ Transform:
   m_GameObject: {fileID: 1521023089}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -17.527496, y: -5.373055, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -64301,14 +64301,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 815004027}
     m_Modifications:
-    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 47418481
-      objectReference: {fileID: 0}
     - target: {fileID: 9149868483130159245, guid: f16ad26594e29df468157bb09c44dfbf, type: 3}
       propertyPath: m_LocalPosition.x
       value: -128.82
@@ -64352,6 +64344,14 @@ PrefabInstance:
     - target: {fileID: 9173303611300265443, guid: f16ad26594e29df468157bb09c44dfbf, type: 3}
       propertyPath: m_Name
       value: Ninja Variant (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 47418481
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -64437,14 +64437,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 815004027}
     m_Modifications:
-    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 47418481
-      objectReference: {fileID: 0}
     - target: {fileID: 9149868483130159245, guid: f16ad26594e29df468157bb09c44dfbf, type: 3}
       propertyPath: m_LocalPosition.x
       value: -106.34
@@ -64488,6 +64480,14 @@ PrefabInstance:
     - target: {fileID: 9173303611300265443, guid: f16ad26594e29df468157bb09c44dfbf, type: 3}
       propertyPath: m_Name
       value: Ninja Variant (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7209470965583611589, guid: 84b4faca3a6fa97449248e61c9067e1c, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 47418481
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -85363,7 +85363,7 @@ Transform:
   m_GameObject: {fileID: 2064524341}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 249.07, y: 0, z: 0}
+  m_LocalPosition: {x: 231.54251, y: -5.373055, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -1,51 +1,56 @@
 // Authored by AJ, damage portion authored by Nate, Vin - added BossHealth Integration
 using UnityEngine;
-using System.Collections;
-using System.Drawing.Text;
 
 public class BulletScript : MonoBehaviour
 {
     private Rigidbody2D rb;
-
-    public float force; // effectively the bullet's speed
+    public float force; // Bullet speed
     public int damageValue = 1;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        if (rb == null) // Null check for Rigidbody2D
+        {
+            Debug.LogError("Rigidbody2D is missing on " + gameObject.name);
+            return;
+        }
+
+        PlayerMovement playerMovement = FindObjectOfType<PlayerMovement>();
+        if (playerMovement == null) // Null check for PlayerMovement
+        {
+            Debug.LogError("PlayerMovement component not found in the scene!");
+            return;
+        }
 
         // Determine bullet direction based on player's facing direction
-        bool isFacingRight = FindObjectOfType<PlayerMovement>().isFacingRight; // Reference PlayerMovement
-        float facingDirection = isFacingRight ? 1f : -1f; // Right if true, left if false
+        bool isFacingRight = playerMovement.isFacingRight;
+        float facingDirection = isFacingRight ? 1f : -1f;
 
         // Set bullet velocity
-        rb.linearVelocity = new Vector2(facingDirection * force, 0f); // Adjust force for bullet speed
+        rb.linearVelocity = new Vector2(facingDirection * force, 0f);
 
         // Rotate bullet to face the direction of movement
-        transform.rotation = Quaternion.Euler(0, 0, facingDirection > 0 ? 90 : -90); // 90 degrees for right, -90 for left
+        transform.rotation = Quaternion.Euler(0, 0, facingDirection > 0 ? 90 : -90);
     }
 
-    public void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.GetComponent<EnemyHealth>())
+        if (collision.gameObject.TryGetComponent(out EnemyHealth enemyHealth)) // Safely get EnemyHealth
         {
-            EnemyHealth hp = collision.gameObject.GetComponent<EnemyHealth>();
-            hp.enemyTakeDamage(damageValue);
-            Debug.Log("Dealt " + damageValue + " to " + collision.gameObject.name);
-        }
-        else if (collision.gameObject.GetComponent<BossHealth>())
-        {
-            BossHealth bossHP = collision.gameObject.GetComponent<BossHealth>();
-            bossHP.TakeDamage(damageValue);
+            enemyHealth.enemyTakeDamage(damageValue);
             Debug.Log("Dealt " + damageValue + " damage to " + collision.gameObject.name);
         }
+        else if (collision.gameObject.TryGetComponent(out BossHealth bossHealth)) // Safely get BossHealth
+        {
+            bossHealth.TakeDamage(damageValue);
+            Debug.Log("Dealt " + damageValue + " damage to " + collision.gameObject.name);
+        }
+        else
+        {
+            Debug.Log("Collision object does not have EnemyHealth or BossHealth.");
+        }
 
-        Destroy(gameObject);
+        Destroy(gameObject); // Destroy bullet after collision
     }
-
-
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    Destroy(gameObject);
-    //}
 }

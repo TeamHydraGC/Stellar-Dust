@@ -3,16 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class jponeTOjptwo : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        //Change the scene to the outdoors
-        if (collision.transform.name == "Player")
+        if (collision.gameObject.name == "Player") 
         {
-            SceneManager.LoadScene(7);
+            SceneManager.LoadScene(5); 
         }
-
-
     }
-
-
 }
